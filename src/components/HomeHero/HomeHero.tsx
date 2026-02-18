@@ -51,13 +51,18 @@ const HomeHero = () => {
                 alt="a guy in a white shirt and virtual reality glasses"
               />
             </div>
-            <div className={style.imagelight}><img src="./images/home/hero-main-decor.png" alt="" /></div>
+            <div className={style.imagelight}>
+              <img
+                src="./images/home/hero-main-decor.png"
+                alt="multicolored abstraction"
+              />
+            </div>
           </div>
         </div>
         <div className={style.decorbottom}>
           <img src="./images/home/hero-decor-bottom-left.png" alt="fon decor" />
         </div>
-        <HomeHeroCards/>
+        <HomeHeroCards />
       </div>
     </section>
   );

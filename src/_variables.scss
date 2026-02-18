@@ -8,6 +8,8 @@ $blackLightColor: #252532;
 $greyColor: #b0b0b2;
 $greydarkColor: #d1d1d1;
 $whiteColor: #ffffff;
+$circleBorderColor: rgba(255, 255, 255, 0.17);
+$circleBgColor: #333751;
 $linearGradientMain: linear-gradient(
   to right,
   $linearGradientBlueColor,
@@ -68,4 +70,14 @@ $linearGradientWhite: linear-gradient(to right, $whiteColor, transparent);
     bottom: -2.3rem;
     right: 1.43rem;
   }
+}
+
+@mixin circle($width, $height){
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  border: 0.1rem solid $circleBorderColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
