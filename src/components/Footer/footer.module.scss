@@ -1,0 +1,98 @@
+@use "../../variables" as *;
+
+.up {
+  padding: 3.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid $linearGradientBlueColor;
+  border-image: $linearGradientMain;
+  border-image-slice: 1;
+}
+
+.links {
+max-width: 24.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socialitem {
+  position: relative;
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blackColor;
+  transition: all 0.5s ease;
+  &::before {
+    content: "";
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    background: $linearGradientMain;
+    z-index: -1;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.columns {
+  width: 77.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.menuitem {
+  color: $whiteColor;
+  transition: all 0.5s ease;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.down {
+  padding: 3.2rem 0 4rem;
+  text-align: center;
+}

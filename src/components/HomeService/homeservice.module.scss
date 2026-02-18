@@ -1,0 +1,66 @@
+@use "../../variables" as *;
+
+.service {
+  padding: 7.5rem 0 20.8rem;
+}
+
+.infoblock {
+  margin-bottom: 4.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.subtitle {
+  @include titleHeader;
+}
+
+.title {
+  @include title;
+}
+
+.text {
+  max-width: 62.5rem;
+  color: $greydarkColor;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.card {
+  padding: 3.8rem 3.2rem;
+  background-color: rgba(37, 37, 50, 0.6);
+  border: 0.1rem solid $whiteColor;
+  border-image: $linearGradientWhite;
+  border-image-slice: 1;
+
+  &:nth-child(2),
+   &:nth-child(5){
+    transform: translateY(5.7rem);
+  }
+
+   &:nth-child(3),
+   &:nth-child(6){
+    transform: translateY(11.4rem);
+  }
+}
+
+.img {
+    margin-bottom: 5.8rem;
+}
+
+.cardtitle {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 1.4rem;
+    line-height: 200%;
+    color: $greyColor;
+}

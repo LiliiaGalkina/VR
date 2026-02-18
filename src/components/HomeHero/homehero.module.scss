@@ -1,0 +1,83 @@
+.hero {
+  padding: 1.3rem 0 6rem;
+  .container {
+    position: relative;
+  }
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content {
+  max-width: 54rem;
+}
+
+.title {
+  margin-bottom: 1.2rem;
+  font-size: 6.4rem;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.text {
+  margin-bottom: 3.2rem;
+}
+
+.button {
+  margin-bottom: 4.2rem;
+  max-width: 20.6rem;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.clientimages {
+  img:nth-child(2),
+  img:last-child {
+    margin-left: -1.2rem;
+  }
+}
+
+.info {
+  span {
+    font-weight: 600;
+  }
+}
+
+.images {
+  position: relative;
+}
+
+.maimimage {
+  img {
+    width: 100%;
+  }
+}
+
+.imagelight {
+  position: absolute;
+  top: 0;
+  right: -12rem;
+  z-index: -1;
+}
+
+.decorbottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}

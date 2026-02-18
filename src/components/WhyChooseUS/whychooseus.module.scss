@@ -1,0 +1,54 @@
+@use "../../variables" as *;
+
+.whychoose {
+  padding: 0 0;
+}
+
+.items {
+    min-height: 77.32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.8rem;
+}
+
+.content {
+  max-width: 56.2rem;
+}
+
+.images {
+  @include imagWhithBgLight(6rem, -2.8rem, 6.64rem);
+  width: 51.8rem;
+  position: relative;
+}
+
+.subtitle {
+    @include titleHeader;
+}
+
+.title {
+    @include title;
+    margin-bottom: 3.2rem;
+}
+
+.blockitem {
+    &:not(:last-child) {
+        margin-bottom: 4.8rem;
+    }
+
+    div {
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.2rem;
+        border-bottom: 0.1rem solid $greyColor;
+    }
+    img {
+        cursor: pointer;
+    }
+}
+
+.text {
+    color: $greydarkColor;
+}

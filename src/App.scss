@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+html {
+     font-size: 10px;
+}
+
+body {
+     width: 100%;
+     background-color: $blackColor;
+     font-family: "Chakra Petch", sans-serif;
+     font-size: 1.6rem;
+     line-height: 175%;
+     font-weight: 300;
+     color: $whiteColor;
+}
+
+.container {
+     margin: 0 auto;
+     max-width: 123rem;
+     padding: 0 1.5rem;
+}

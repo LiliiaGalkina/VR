@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.button {
+  @include button;
+  border: 0.1rem solid $linearGradientBlueColor;
+  border-image: $linearGradientMain;
+  border-image-slice: 1;
+  transition: all 0.8s ease;
+
+  &:hover {
+    background: $linearGradientMain;
+  }
+}
