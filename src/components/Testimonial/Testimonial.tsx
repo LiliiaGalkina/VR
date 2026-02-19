@@ -5,14 +5,50 @@ const Testimonial = () => {
     <section className={style.testimonial}>
       <div className="container">
         <div className={style.circle1}>
+          <div className={style.circlefoto1}>
+            <img
+              src="/images/home/hero-circle-foto1.png"
+              alt="foto in circle"
+            />
+          </div>
+          <div className={style.circlefoto2}>
+            <img
+              src="public/images/home/hero-circle-foto3.png"
+              alt="foto in circle"
+            />
+          </div>
           <div className={style.circle2}>
             <div className={style.titleblock}>
               <h3 className={style.subtitle}>TESTIMONIAL</h3>
               <h2 className={style.title}>What Our Clients Are Saying</h2>
             </div>
+            <div className={style.circlefoto3}>
+              <img
+                src="/images/home/testimonial-circle-foto2.png"
+                alt="foto in circle"
+              />
+            </div>
             <div className={style.circle3}>
+              <div className={style.circlefoto4}>
+                <img
+                  src="/images/home/testimonial-circle-foto3.png"
+                  alt="foto in circle"
+                />
+              </div>
               <div className={style.circle4}>
+                <div className={style.circlefoto5}>
+                  <img
+                    src="/images/home/testimonial-circle-foto1.png"
+                    alt="foto in circle"
+                  />
+                </div>
                 <div className={style.circle5}>
+                  <div className={style.circlefoto6}>
+                    <img
+                      src="public/images/home/hero-circle-foto2.png"
+                      alt="foto in circle"
+                    />
+                  </div>
                   <div className={style.circle6}>
                     <div className={style.images}>
                       <div className={style.maimimage}>

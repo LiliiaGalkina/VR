@@ -9,6 +9,7 @@ $greyColor: #b0b0b2;
 $greydarkColor: #d1d1d1;
 $whiteColor: #ffffff;
 $circleBorderColor: rgba(255, 255, 255, 0.17);
+$circlefotoBorderColor: #7c7c84;
 $circleBgColor: #333751;
 $linearGradientMain: linear-gradient(
   to right,
@@ -16,6 +17,7 @@ $linearGradientMain: linear-gradient(
   $linearGradientPurpleColor
 );
 $linearGradientWhite: linear-gradient(to right, $whiteColor, transparent);
+$linearGradientBorderCircleFoto: linear-gradient(to right, $blackLightColor, $circlefotoBorderColor);
 
 //миксины
 @mixin button {
@@ -80,4 +82,31 @@ $linearGradientWhite: linear-gradient(to right, $whiteColor, transparent);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin testimonialCircleFoto {
+	position: absolute;
+	width: 7.5rem;
+	height: 7.5rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $blackColor;
+	border: 0.1rem solid $circlefotoBorderColor;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	z-index: 3;
+	
+
+	img {
+		width: 5.045rem;
+		height: 5.045rem;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&:hover {
+		background-image: $linearGradientMain;
+	}
 }

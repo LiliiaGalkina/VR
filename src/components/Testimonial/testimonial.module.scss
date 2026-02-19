@@ -1,78 +1,120 @@
 @use "../../variables" as *;
 
 .testimonial {
-    padding: 5rem 0;
-  
+  padding: 5rem 0;
 }
 
 .circle1 {
-    @include circle(124.7rem, 124.7rem);
+  @include circle(124.7rem, 124.7rem);
+  position: relative;
 }
 
 .circle2 {
-    @include circle(108.4rem, 108.4rem);
-    position: relative;
+  @include circle(108.4rem, 108.4rem);
+  position: relative;
 }
 
 .circle3 {
-    @include circle(89.9rem, 89.9rem);
+  @include circle(89.9rem, 89.9rem);
+  position: relative;
 }
 
 .circle4 {
-    @include circle(73.1rem, 73.1rem);
+  @include circle(73.1rem, 73.1rem);
+  position: relative;
 }
 
 .circle5 {
-    @include circle(56.46rem, 56.46rem);
-
+  @include circle(56.46rem, 56.46rem);
+  position: relative;
 }
 
 .circle6 {
-    position: relative;
-    @include circle(38.95rem, 38.95rem);
-   background-color: $circleBgColor;
+  position: relative;
+  @include circle(38.95rem, 38.95rem);
+  background-color: $circleBgColor;
 }
 
 .images {
-    width: 66.3rem;
-    
-    position: absolute;
-    bottom: -1rem;
+  width: 66.3rem;
+
+  position: absolute;
+  bottom: -1rem;
 }
 .maimimage {
-   max-width: 66.3rem;
-   height: 47.23rem;
-   position: relative;
+  max-width: 66.3rem;
+  height: 47.23rem;
+  position: relative;
 }
 
 .mainimgdown {
-    width: 38.95rem;
-    position: absolute;
-   bottom: 1rem;
-   left: 13.8rem;
+  width: 38.95rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 13.8rem;
 }
 .mainimgup {
-    position: absolute;
-    left: 3rem;
-    bottom: 10.5rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 10.5rem;
 }
 
 .imagelight {
-    position: absolute;
-    top: -5rem;
-    left: -30%;
+  position: absolute;
+  top: -5rem;
+  left: -30%;
 }
 
 .titleblock {
-    position: absolute;
-    top: 2.9rem;
-    text-align: center;
+  position: absolute;
+  top: 2.9rem;
+  text-align: center;
 }
 
 .subtitle {
-    @include titleHeader;
+  @include titleHeader;
 }
 
 .title {
-    @include title;
+  @include title;
+}
+
+.circlefoto1,
+.circlefoto2,
+.circlefoto3,
+.circlefoto4,
+.circlefoto5,
+.circlefoto6 {
+  @include testimonialCircleFoto;
+}
+
+.circlefoto6 {
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.circlefoto5 {
+  top: 0;
+  transform: translateY(-50%);
+  transform: translateX(16rem);
+}
+
+.circlefoto4 {
+  right: 0;
+  transform: translateX(50%);
+}
+
+.circlefoto3 {
+  bottom: 20rem;
+  transform: translateX(-45rem);
+}
+
+.circlefoto2 {
+	bottom: 10rem;
+	transform: translateX(40rem);
+}
+
+.circlefoto1 {
+	left: 3.5rem;
+	transform: translateY(-30rem);
 }
