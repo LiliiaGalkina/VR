@@ -10,12 +10,26 @@ const Testimonial = () => {
               src="/images/home/hero-circle-foto1.png"
               alt="foto in circle"
             />
+            <div className={style.beige}>
+              <p>
+                The team was professional, responsive, and a pleasure to work
+                with. We highly recommend VRNas for any VR needs.
+              </p>
+              <span>Robert Fox - CEO Anono</span>
+            </div>
           </div>
           <div className={style.circlefoto2}>
             <img
               src="public/images/home/hero-circle-foto3.png"
               alt="foto in circle"
             />
+            <div className={style.beige}>
+              <p>
+                The team was professional, responsive, and a pleasure to work
+                with. We highly recommend VRNas for any VR needs.
+              </p>
+              <span>Robert Fox - CEO Anono</span>
+            </div>
           </div>
           <div className={style.circle2}>
             <div className={style.titleblock}>
@@ -27,6 +41,13 @@ const Testimonial = () => {
                 src="/images/home/testimonial-circle-foto2.png"
                 alt="foto in circle"
               />
+              <div className={style.beige}>
+                <p>
+                  The team was professional, responsive, and a pleasure to work
+                  with. We highly recommend VRNas for any VR needs.
+                </p>
+                <span>Robert Fox - CEO Anono</span>
+              </div>
             </div>
             <div className={style.circle3}>
               <div className={style.circlefoto4}>
@@ -34,6 +55,13 @@ const Testimonial = () => {
                   src="/images/home/testimonial-circle-foto3.png"
                   alt="foto in circle"
                 />
+                <div className={style.beige}>
+                  <p>
+                    The team was professional, responsive, and a pleasure to
+                    work with. We highly recommend VRNas for any VR needs.
+                  </p>
+                  <span>Robert Fox - CEO Anono</span>
+                </div>
               </div>
               <div className={style.circle4}>
                 <div className={style.circlefoto5}>
@@ -41,6 +69,13 @@ const Testimonial = () => {
                     src="/images/home/testimonial-circle-foto1.png"
                     alt="foto in circle"
                   />
+                  <div className={style.beige}>
+                    <p>
+                      The team was professional, responsive, and a pleasure to
+                      work with. We highly recommend VRNas for any VR needs.
+                    </p>
+                    <span>Robert Fox - CEO Anono</span>
+                  </div>
                 </div>
                 <div className={style.circle5}>
                   <div className={style.circlefoto6}>
@@ -48,6 +83,13 @@ const Testimonial = () => {
                       src="public/images/home/hero-circle-foto2.png"
                       alt="foto in circle"
                     />
+                    <div className={style.beige}>
+                      <p>
+                        The team was professional, responsive, and a pleasure to
+                        work with. We highly recommend VRNas for any VR needs.
+                      </p>
+                      <span>Robert Fox - CEO Anono</span>
+                    </div>
                   </div>
                   <div className={style.circle6}>
                     <div className={style.images}>
