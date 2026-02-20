@@ -20,7 +20,7 @@ const Testimonial = () => {
           </div>
           <div className={style.circlefoto2}>
             <img
-              src="public/images/home/hero-circle-foto3.png"
+              src="/images/home/hero-circle-foto3.png"
               alt="foto in circle"
             />
             <div className={style.beige}>
@@ -80,7 +80,7 @@ const Testimonial = () => {
                 <div className={style.circle5}>
                   <div className={style.circlefoto6}>
                     <img
-                      src="public/images/home/hero-circle-foto2.png"
+                      src="/images/home/hero-circle-foto2.png"
                       alt="foto in circle"
                     />
                     <div className={style.beige}>
@@ -95,19 +95,19 @@ const Testimonial = () => {
                     <div className={style.images}>
                       <div className={style.maimimage}>
                         <img
-                          src="./images/home/testimonial-maindown.png"
+                          src="/images/home/testimonial-maindown.png"
                           alt="a guy in a white shirt and virtual reality glasses"
                           className={style.mainimgdown}
                         />
                         <img
-                          src="./images/home/testimonial-mainup.png"
+                          src="/images/home/testimonial-mainup.png"
                           alt="a guy in a white shirt and virtual reality glasses"
                           className={style.mainimgup}
                         />
                       </div>
                       <div className={style.imagelight}>
                         <img
-                          src="./images/home/testimonial-light.png"
+                          src="/images/home/testimonial-light.png"
                           alt="multicolored abstraction"
                         />
                       </div>

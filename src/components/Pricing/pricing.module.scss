@@ -1,0 +1,126 @@
+@use "../../variables" as *;
+
+.pricing {
+  padding: 5rem 0 7.5rem;
+}
+
+.subtitle {
+  @include titleHeader;
+}
+
+.title {
+  @include title;
+  margin-bottom: 1.6rem;
+}
+
+.text {
+  margin-bottom: 4rem;
+  max-width: 62.5rem;
+  color: $greydarkColor;
+}
+
+.items {
+  display: flex;
+  position: relative;
+  padding: 5.5rem 4.2rem;
+  background-color: $blackLightColor;
+  border: 0.1rem solid $whiteColor;
+  border-image: $linearGradientWhite;
+  border-image-slice: 1;
+}
+
+.content {
+  max-width: 80rem;
+  padding-right: 11.8rem;
+  border-right: 0.1rem solid $greydarkColor;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.pricingitem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.colored {
+  width: 4.3rem;
+  height: 4.3rem;
+  padding: 0.1rem;
+  border-radius: 50%;
+  background: $linearGradientMain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 4.1rem;
+  height: 4.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $blackColor;
+}
+
+.itemtitle {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.itemtext {
+  font-weight: 400;
+  color: $greyColor;
+}
+
+.light {
+  display: block;
+  position: absolute;
+  top: -10rem;
+  right: -5.3rem;
+  filter: blur(20rem)
+}
+
+.started {
+  position: absolute;
+  bottom: -4.8rem;
+  right: 14.2rem;
+  width: 32.1rem;
+  min-height: 22.2rem;
+	padding: 2rem;
+  background-color: $blackColor;
+  border: 0.1rem solid $linearGradientBlueColor;
+  border-image: $linearGradientMain;
+  border-image-slice: 1;
+  text-align: center;
+}
+
+.headtext {
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: $greydarkColor;
+}
+
+.price {
+	display: block;
+	margin-bottom: 1.4rem;
+	font-size: 6rem;
+	line-height: 110%;
+	font-weight: 600;
+}
+
+.button {
+	margin: 0 auto 1.4rem;
+	max-width: 18.2rem;
+}
+
+.footertext {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $greyColor;
+}
