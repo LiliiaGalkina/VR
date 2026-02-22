@@ -1,0 +1,142 @@
+@use "../../variables" as *;
+
+.partners {
+  padding: 7.5rem 0 27.5rem;
+}
+
+.subtitle {
+  @include titleHeader;
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto 1.2rem;
+  text-align: center;
+}
+
+.title {
+  @include title;
+  margin-bottom: 5.8rem;
+  text-align: center;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border: 1px solid $circleBorderColor;
+  border-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.circle1 {
+  width: 100%;
+  height: 54rem;
+}
+
+.circle2 {
+  width: 87%;
+  height: 45.85rem;
+  position: relative;
+}
+
+.circle3 {
+  width: 83%;
+  height: 38rem;
+}
+
+.circle4 {
+  width: 82%;
+  height: 31.136rem;
+  position: relative;
+}
+
+.maimimage {
+  max-width: 70.7rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mainimgdown {
+  position: absolute;
+  top: 5rem;
+  transform: translateX(-50%);
+}
+
+.mainimgup {
+  position: absolute;
+  top: -5rem;
+  transform: translateX(-50%);
+}
+
+.bg {
+  position: absolute;
+  top: 5.1rem;
+  transform: translateX(-50%);
+}
+
+.light {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.partner {
+  padding: 0.2rem;
+  position: absolute;
+  width: 10.6rem;
+  height: 10.6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $linearGradientBorderCircleFoto;
+
+  &:first-child {
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+  }
+  &:nth-child(2) {
+    bottom: 19rem;
+    left: 3rem;
+  }
+  &:nth-child(3) {
+    top: 0;
+    left: 21rem;
+  }
+  &:nth-child(4) {
+    top: 0;
+    transform: translateY(-50%);
+  }
+  &:nth-child(5) {
+    top: 0;
+    right: 21rem;
+  }
+  &:nth-child(6) {
+    bottom: 19rem;
+    right: 3rem;
+  }
+  &:nth-child(7) {
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%);
+  }
+}
+
+.innerpartner {
+  width: 10.2rem;
+  height: 10.2rem;
+  border-radius: 50%;
+  background-color: $blackColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.logoImg {
+  opacity: 1;
+}

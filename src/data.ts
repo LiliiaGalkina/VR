@@ -84,3 +84,41 @@ export const pricing = [
     text: "We stand behind our services and are committed to ensuring that you are completely satisfied with the final product. If for any reason you are not happy with our services, we will work with you to make it right or provide a full refund.",
   },
 ];
+
+export const partners = [
+  {
+    id: 1,
+    img: "/images/home/partners-logo1.svg",
+    alt: "partners logo",
+  },
+  {
+    id: 2,
+    img: "/images/home/partners-logo2.svg",
+    alt: "partners logo",
+  },
+  {
+    id: 3,
+    img: "/images/home/partners-logo3.svg",
+    alt: "partners logo",
+  },
+  {
+    id: 4,
+    img: "/images/home/partners-logo4.svg",
+    alt: "partners logo",
+  },
+  {
+    id: 5,
+    img: "/images/home/partners-logo5.svg",
+    alt: "partners logo",
+  },
+  {
+    id: 6,
+    img: "/images/home/partners-logo6.svg",
+    alt: "partners logo",
+  },
+  {
+    id: 7,
+    img: "/images/home/partners-logo7.svg",
+    alt: "partners logo",
+  },
+];

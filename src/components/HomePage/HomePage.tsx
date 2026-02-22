@@ -5,6 +5,7 @@ import WhyChooseUs from "../WhyChooseUS/WhyChooseUs";
 import DreamsToLife from "../DreamsToLife/DreamsToLife";
 import Testimonial from "../Testimonial/Testimonial";
 import Pricing from "../Pricing/Pricing";
+import Partners from "../Partners/Partners";
 
 const HomePage = () => {
     return (
@@ -15,7 +16,8 @@ const HomePage = () => {
             <WhyChooseUs/>
             <DreamsToLife/>
 			<Testimonial />
-			<Pricing/>
+			<Pricing />
+			<Partners/>
         </main>
     )
 }
