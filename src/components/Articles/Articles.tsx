@@ -49,7 +49,8 @@ const Articles = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
-            </div>
+					  </div>
+					  <img src="/images/home/articles-main-light.png" alt="multicolored abstractive" className={style.light} />
           </div>
           <div className={style.content}>
             <h3 className={style.itemtitle}>Recent Article</h3>

@@ -2,7 +2,8 @@ import style from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={style.footer}>
+	  <footer className={style.footer}>
+		  <img src="/images/home/footer-decor.png" alt="multicolored abstractive" className={style.decor} />
       <div className="container">
         <div className={style.up}>
           <div className={style.links}>

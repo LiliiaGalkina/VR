@@ -3,7 +3,8 @@ import ButtonBorder from "../ButtonBorder/ButtonBorder";
 
 const Header = () => {
   return (
-    <header className={style.header}>
+	  <header className={style.header}>
+		  <img src="/images/home/header-decor-up.png" alt="multicolored abstractive" className={style.headerdecor } />
       <div className="container">
         <div className={style.items}>
           <a href="#" className={style.logo}>
