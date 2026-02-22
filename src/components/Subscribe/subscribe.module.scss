@@ -1,0 +1,47 @@
+@use "../../variables" as *;
+
+.subscribe {
+  padding: 7.5rem 0 6.4rem;
+}
+
+.items {
+  width: 100%;
+  padding: 3.8rem 7.4rem 3.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $linearGradientMain;
+}
+
+.title {
+  @include title(4rem);
+  max-width: 53rem;
+}
+
+.form {
+  display: flex;
+}
+
+.email {
+  padding: 1.4rem 1rem 1.4rem 4.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.07);
+  background-image: url("/images/home/subscribe-message.png");
+  background-repeat: no-repeat;
+  background-position: 1rem 50% ;
+  color: $whiteColor;
+  &::placeholder {
+    color: $whiteColor;
+  }
+}
+
+.button {
+  padding: 1.667rem;
+  background-color: rgba(255, 255, 255, 0.21);
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.31);
+  }
+}

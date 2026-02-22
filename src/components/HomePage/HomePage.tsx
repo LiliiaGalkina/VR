@@ -7,6 +7,7 @@ import Testimonial from "../Testimonial/Testimonial";
 import Pricing from "../Pricing/Pricing";
 import Partners from "../Partners/Partners";
 import Articles from "../Articles/Articles";
+import Subscribe from "../Subscribe/Subscribe";
 
 const HomePage = () => {
     return (
@@ -19,7 +20,8 @@ const HomePage = () => {
 			<Testimonial />
 			<Pricing />
 			<Partners />
-			<Articles/>
+			<Articles />
+			<Subscribe/>
         </main>
     )
 }
