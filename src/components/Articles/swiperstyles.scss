@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.swiper {
+	height: 50rem;
+}
+
+.swiper-wrapper {
+	height: 42.5rem;
+}
+
+.swiper-pagination {
+	bottom: -0.1rem;
+
+}
+
+.swiper-pagination-bullet {
+	width: 0.9rem;
+	height: 0.3rem;
+	border-radius: 0;
+	background: $whiteColor;
+	
+}
+
+.swiper-pagination-bullet-active {
+	width: 1.7rem;
+	height: 0.3rem;
+	border-radius: 0;
+	background: $whiteColor;
+	
+}

@@ -122,3 +122,121 @@ export const partners = [
     alt: "partners logo",
   },
 ];
+
+export const articles = [
+  {
+    id: 1,
+    img: "/images/home/articles1.png",
+    alt: "VR classes",
+    category: "VR Education",
+    text: "The Future of Education: How VR is Revolutionizing the Classroom",
+  },
+  {
+    id: 2,
+    img: "/images/home/articles2.png",
+    alt: "man in VR classes",
+    category: "VR Architecture",
+    text: "Bringing Designs to Life: How VR is Changing Architecture",
+  },
+  {
+    id: 3,
+    img: "/images/home/articles3.png",
+    alt: "VR classes",
+    category: "VR Entertainment ",
+    text: "Making Events Memorable: The Power of VR for Corporate...",
+  },
+  {
+    id: 4,
+    img: "/images/home/articles4.png",
+    alt: "VR classes",
+    category: "two men in VR Event",
+    text: "Exploring New Worlds: The Benefits of VR Travel",
+  },
+  {
+    id: 5,
+    img: "/images/home/articles1.png",
+    alt: "VR classes",
+    category: "VR Education",
+    text: "The Future of Education: How VR is Revolutionizing the Classroom",
+  },
+  {
+    id: 6,
+    img: "/images/home/articles2.png",
+    alt: "man in VR classes",
+    category: "VR Architecture",
+    text: "Bringing Designs to Life: How VR is Changing Architecture",
+  },
+  {
+    id: 7,
+    img: "/images/home/articles3.png",
+    alt: "VR classes",
+    category: "VR Entertainment ",
+    text: "Making Events Memorable: The Power of VR for Corporate...",
+  },
+  {
+    id: 8,
+    img: "/images/home/articles4.png",
+    alt: "VR classes",
+    category: "two men in VR Event",
+    text: "Exploring New Worlds: The Benefits of VR Travel",
+  },
+  {
+    id: 9,
+    img: "/images/home/articles1.png",
+    alt: "VR classes",
+    category: "VR Education",
+    text: "The Future of Education: How VR is Revolutionizing the Classroom",
+  },
+  {
+    id: 10,
+    img: "/images/home/articles2.png",
+    alt: "man in VR classes",
+    category: "VR Architecture",
+    text: "Bringing Designs to Life: How VR is Changing Architecture",
+  },
+  {
+    id: 11,
+    img: "/images/home/articles3.png",
+    alt: "VR classes",
+    category: "VR Entertainment ",
+    text: "Making Events Memorable: The Power of VR for Corporate...",
+  },
+  {
+    id: 12,
+    img: "/images/home/articles4.png",
+    alt: "VR classes",
+    category: "two men in VR Event",
+    text: "Exploring New Worlds: The Benefits of VR Travel",
+  },
+];
+
+export const articlesSliderItems = [
+  {
+    id: 1,
+    img: "/images/home/articles-main.png",
+    alt: "a guy wearing virtual reality glasses driving a game car",
+    category: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 2,
+    img: "/images/home/articles-main.png",
+    alt: "a guy wearing virtual reality glasses driving a game car",
+    category: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 3,
+    img: "/images/home/articles-main.png",
+    alt: "a guy wearing virtual reality glasses driving a game car",
+    category: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 4,
+    img: "/images/home/articles-main.png",
+    alt: "a guy wearing virtual reality glasses driving a game car",
+    category: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+]; 

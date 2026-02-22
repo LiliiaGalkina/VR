@@ -1,0 +1,159 @@
+@use "../../variables" as *;
+
+.ourarticles {
+  min-width: 100%;
+  padding: 7.5rem 0;
+}
+
+.subtitle {
+  @include titleHeader;
+}
+
+.titleblock {
+  margin-bottom: 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  @include title(4.2rem);
+}
+
+.mainbutton {
+  width: 14rem;
+}
+
+.items {
+  min-height: 60.5rem;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: -12rem;
+  height: 100%;
+  width: 73rem;
+  padding: 3.2rem 0 0 9.7rem;
+  background-color: $blackLightColor;
+  border: 0.1rem solid $whiteColor;
+  border-image: $linearGradientWhite;
+  border-image-slice: 1;
+}
+
+.itemtitle {
+  @include title(2.8rem);
+  margin-bottom: 3.2rem;
+}
+
+.articles {
+  padding-right: 4.6rem;
+  width: 55.9rem;
+  height: 50.4rem;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $greyColor;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $whiteColor;
+    border: 3px solid $whiteColor;
+  }
+}
+
+.article {
+  padding-bottom: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+  border-bottom: 0.1rem solid $circleBorderColor;
+  &:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+}
+
+.image {
+  max-width: 14.2rem;
+}
+
+.info {
+  font-size: 1.8rem;
+  font-weight: 400;
+  span {
+    margin-bottom: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 1.6rem;
+    background-color: $circlefotoBorderColor;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+.arrow {
+  width: 4rem;
+  height: 4rem;
+  padding: 1.33rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid $linearGradientBlueColor;
+  border-image: $linearGradientMain;
+  border-image-slice: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+	box-shadow: 0 0 1rem $linearGradientBlueColor;
+  }
+}
+
+.slider {
+  max-width: 63.6rem;
+  height: 50rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.slideritem {
+  position: relative;
+  height: 42.5rem;
+}
+
+.maimimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.beige {
+  margin-bottom: 1.2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1.6rem;
+  background-color: $circlefotoBorderColor;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.block {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2.4rem;
+}
+
+.titlesliderblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.9rem;
+}
+
+.slidertitle {
+  @include title(3.2rem);
+  max-width: 50.9rem;
+}
+
+.swiper-pagination {
+  bottom: 20px !important;
+}

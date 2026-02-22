@@ -6,6 +6,7 @@ import DreamsToLife from "../DreamsToLife/DreamsToLife";
 import Testimonial from "../Testimonial/Testimonial";
 import Pricing from "../Pricing/Pricing";
 import Partners from "../Partners/Partners";
+import Articles from "../Articles/Articles";
 
 const HomePage = () => {
     return (
@@ -17,7 +18,8 @@ const HomePage = () => {
             <DreamsToLife/>
 			<Testimonial />
 			<Pricing />
-			<Partners/>
+			<Partners />
+			<Articles/>
         </main>
     )
 }
