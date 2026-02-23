@@ -3,6 +3,7 @@ $blueColor: #19b5f1;
 $purpleColor: #ca6aeb;
 $linearGradientBlueColor: #0cbaf1;
 $linearGradientPurpleColor: #e95ce9;
+$bgMenuMobile: #613F75;
 $blackColor: #18181b;
 $blackLightColor: #252532;
 $greyColor: #b0b0b2;
@@ -17,7 +18,11 @@ $linearGradientMain: linear-gradient(
   $linearGradientPurpleColor
 );
 $linearGradientWhite: linear-gradient(to right, $whiteColor, transparent);
-$linearGradientBorderCircleFoto: linear-gradient(to right, $blackLightColor, $circlefotoBorderColor);
+$linearGradientBorderCircleFoto: linear-gradient(
+  to right,
+  $blackLightColor,
+  $circlefotoBorderColor
+);
 
 //миксины
 @mixin button {
@@ -45,7 +50,7 @@ $linearGradientBorderCircleFoto: linear-gradient(to right, $blackLightColor, $ci
   background-clip: text;
 }
 
-@mixin imagWhithBgLight($bgPosVal, $lightPosX, $lightPosY){
+@mixin imagWhithBgLight($bgPosVal, $lightPosX, $lightPosY) {
   .image {
     img {
       width: 100%;
@@ -64,7 +69,6 @@ $linearGradientBorderCircleFoto: linear-gradient(to right, $blackLightColor, $ci
     position: absolute;
     bottom: $lightPosY;
     left: $lightPosX;
-   
   }
   .video {
     max-width: 19.6rem;
@@ -74,7 +78,7 @@ $linearGradientBorderCircleFoto: linear-gradient(to right, $blackLightColor, $ci
   }
 }
 
-@mixin circle($width, $height){
+@mixin circle($width, $height) {
   width: $width;
   height: $height;
   border-radius: 50%;
@@ -85,28 +89,57 @@ $linearGradientBorderCircleFoto: linear-gradient(to right, $blackLightColor, $ci
 }
 
 @mixin testimonialCircleFoto {
-	position: absolute;
-	width: 7.5rem;
-	height: 7.5rem;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: $blackColor;
-	border: 0.1rem solid $circlefotoBorderColor;
-	transition: all 0.5s ease;
-	cursor: pointer;
-	z-index: 3;
-	
+  position: absolute;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blackColor;
+  border: 0.1rem solid $circlefotoBorderColor;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 3;
 
-	img {
-		width: 5.045rem;
-		height: 5.045rem;
-		border-radius: 50%;
-		overflow: hidden;
-	}
+  img {
+    width: 5.045rem;
+    height: 5.045rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 
-	&:hover {
-		background-image: $linearGradientMain;
-	}
+  &:hover {
+    background-image: $linearGradientMain;
+  }
+}
+
+@mixin burger($top, $right) {
+  display: block;
+  padding: 0.8rem;
+  position: absolute;
+  top: $top;
+  right: $right;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0.1rem solid $linearGradientBlueColor;
+  border-image: $linearGradientMain;
+  border-image-slice: 1;
+  z-index: 8;
+  span {
+    position: absolute;
+    background-color: $whiteColor;
+    right: 0.8;
+    top: 1.5rem;
+    width: 1.4rem;
+    height: 0.1rem;
+    transition: all 0.3s ease 0s;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0.1rem;
+    transition: all 0.3s ease 0s;
+  }
 }
