@@ -17,7 +17,7 @@ const Subscribe = () => {
             />
             <button type="submit" className={style.button}>
               <img
-                src="public/images/home/subscriba-send-arrow.svg"
+                src="/images/home/subscriba-send-arrow.svg"
                 alt="send-arrow"
               />
             </button>
