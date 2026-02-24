@@ -86,13 +86,13 @@
 }
 
 @media (max-width: 480px) {
-	.bg {
-		width: 28rem;
-	}
-	.video {
-		width: 15rem;
-	}
-	  .title {
+  .bg {
+    width: 28rem;
+  }
+  .video {
+    width: 15rem;
+  }
+  .title {
     @include title(3rem);
   }
 }
