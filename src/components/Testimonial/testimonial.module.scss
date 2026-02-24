@@ -1,12 +1,16 @@
 @use "../../variables" as *;
 
 .testimonial {
+  height: 134.7rem;
   padding: 5rem 0;
+  position: relative;
 }
 
 .circle1 {
   @include circle(124.7rem, 124.7rem);
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .circle2 {
@@ -67,7 +71,9 @@
 
 .titleblock {
   position: absolute;
-  top: 2.9rem;
+  top: 14.9rem;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -158,5 +164,111 @@
     left: -7.1rem;
     border: 6.2rem solid transparent;
     border-right: 0.8rem solid $whiteColor;
+  }
+}
+
+@media (max-width: 1190px) {
+  .testimonial {
+    height: 146.7rem;
+  }
+  .titleblock {
+    margin-bottom: 2.9rem;
+    position: static;
+    transform: translateX(0);
+  }
+  .circlefoto1 {
+    left: 30.5rem;
+    transform: translateY(-47rem);
+  }
+  .circlefoto5 {
+    top: -2rem;
+    transform: translateX(10rem);
+  }
+  .circlefoto3 {
+    bottom: 2rem;
+    transform: translateX(-25rem);
+  }
+  .circlefoto4 {
+    bottom: -2rem;
+    right: 32rem;
+  }
+  .circlefoto2 {
+    bottom: -3rem;
+    transform: translateX(7rem);
+  }
+}
+
+@media (max-width: 870px) {
+  .title {
+    @include title(3.6rem);
+  }
+  .circlefoto1 {
+    left: 35.5rem;
+    transform: translateY(-49rem);
+  }
+  .circlefoto5 {
+    top: -3.2rem;
+    transform: translateX(-3rem);
+  }
+  .circlefoto6 {
+    bottom: 7rem;
+    left: 5rem;
+  }
+  .circlefoto4 {
+    bottom: 5rem;
+    right: 47rem;
+  }
+  .circlefoto2 {
+    bottom: -3rem;
+    transform: translateX(-1rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .beige {
+    opacity: 0;
+  }
+  .title {
+    @include title(3rem);
+  }
+  .circlefoto1 {
+    left: 40.5rem;
+    transform: translateY(-51rem);
+  }
+  .circlefoto3 {
+    bottom: -1rem;
+    transform: translateX(-18rem);
+  }
+  .circlefoto6 {
+    bottom: 1rem;
+    left: 33rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainimgdown {
+    width: 28rem;
+    bottom: 0.8rem;
+    left: 19.2rem;
+  }
+  .mainimgup {
+    width: 44rem;
+    left: 11.4rem;
+    bottom: 7.3rem;
+  }
+  .circle6 {
+    @include circle(30.4rem, 30.4rem);
+  }
+   .circlefoto1 {
+    left: 50.5rem;
+    transform: translateY(-53.5rem);
+  }
+    .circlefoto3 {
+    bottom: -3rem;
+    transform: translateX(-9rem);
+  }
+    .circlefoto2 {
+    bottom: -3rem;
+    transform: translateX(8rem);
   }
 }
