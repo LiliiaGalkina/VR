@@ -1,7 +1,7 @@
-import style from "./homeservice.module.scss";
+import style from "./service.module.scss";
 import { homeServiceItems } from "../../data";
 
-const HomeService = () => {
+const Service = () => {
     return (
       <section className={style.service}>
         <div className="container">
@@ -32,4 +32,4 @@ const HomeService = () => {
     );
 }
 
-export default HomeService;
+export default Service;

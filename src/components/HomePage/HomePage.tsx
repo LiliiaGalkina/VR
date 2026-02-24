@@ -1,6 +1,6 @@
 import HomeHero from "../HomeHero/HomeHero";
 import HomeAbout from "../HomeAbout/HomeAbout";
-import HomeService from "../HomeService/HomeService";
+import Service from "../Service/Service";
 import WhyChooseUs from "../WhyChooseUS/WhyChooseUs";
 import DreamsToLife from "../DreamsToLife/DreamsToLife";
 import Testimonial from "../Testimonial/Testimonial";
@@ -14,7 +14,7 @@ const HomePage = () => {
         <main>
             <HomeHero/>
             <HomeAbout/>
-            <HomeService/>
+            <Service/>
             <WhyChooseUs/>
             <DreamsToLife/>
 			<Testimonial />
