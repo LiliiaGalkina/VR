@@ -144,6 +144,7 @@
   border: 0.1rem solid $whiteColor;
   border-image: $linearGradientWhite;
   border-image-slice: 1;
+  z-index: 7;
 
   p {
     margin-bottom: 0.8rem;
@@ -205,44 +206,118 @@
 }
 
 @media (max-width: 870px) {
+  .testimonial {
+    height: 130.7rem;
+  }
+  .circle1 {
+    @include circle(108.4rem, 108.4rem);
+  }
+
+  .circle2 {
+    @include circle(89.9rem, 89.9rem);
+  }
+
+  .circle3 {
+    @include circle(73.1rem, 73.1rem);
+  }
+
+  .circle4 {
+    @include circle(56.46rem, 56.46rem);
+  }
+
+  .circle5 {
+    @include circle(38.95rem, 38.95rem);
+  }
+
+  .circle6 {
+    @include circle(28.95rem, 28.95rem);
+  }
   .circlefoto1 {
-    left: 35.5rem;
-    transform: translateY(-49rem);
+    left: 30.5rem;
+    transform: translateY(-50rem);
   }
   .circlefoto5 {
-    top: -3.2rem;
-    transform: translateX(-3rem);
+    top: -12.2rem;
+    transform: translateX(-5rem);
   }
   .circlefoto6 {
-    bottom: 7rem;
-    left: 5rem;
+    bottom: 0;
+    left: -4rem;
   }
   .circlefoto4 {
-    bottom: 5rem;
-    right: 47rem;
+    bottom: -3rem;
+    right: 28rem;
   }
   .circlefoto2 {
     bottom: -3rem;
-    transform: translateX(-1rem);
+  }
+  .circlefoto3 {
+    bottom: 3.5rem;
+    transform: translateX(-25rem);
   }
 }
 
 @media (max-width: 600px) {
+	  .testimonial {
+    height: 105.7rem;
+  }
+	.circle1 {
+    @include circle(82.9rem, 82.9rem);
+  }
+
+  .circle2 {
+    @include circle(71.1rem, 71.1rem);
+  }
+
+  .circle3 {
+    @include circle(58.46rem, 58.46rem);
+  }
+
+  .circle4 {
+    @include circle(45.95rem, 45.95rem);
+  }
+
+  .circle5 {
+    @include circle(32.95rem, 32.95rem);
+  }
+
+  .circle6 {
+    @include circle(20.95rem, 20.95rem);
+  }
   .beige {
     opacity: 0;
   }
+  .maimimage {
+  max-width: 46.3rem;
+  height: 47.23rem;
+}
+
+.mainimgdown {
+  width: 20.95rem;
+  bottom: 1rem;
+  left: 22.8rem;
+}
+.mainimgup {
+	 max-width: 33.7rem;
+  left: 16.6rem;
+  bottom: 6.1rem;
+}
 
   .circlefoto1 {
     left: 40.5rem;
-    transform: translateY(-51rem);
+    transform: translateY(-35rem);
   }
   .circlefoto3 {
-    bottom: -1rem;
+    bottom: 1rem;
     transform: translateX(-18rem);
   }
   .circlefoto6 {
-    bottom: 1rem;
-    left: 33rem;
+    bottom: -4rem;
+    left: 22rem;
+  }
+    .circlefoto5 {
+    top: -8.2rem;
+    transform: translateX(-10rem);
   }
 }
 
@@ -250,23 +325,7 @@
   .title {
     @include title(3rem);
   }
-  .mainimgdown {
-    width: 28rem;
-    bottom: 0.8rem;
-    left: 19.2rem;
-  }
-  .mainimgup {
-    width: 44rem;
-    left: 11.4rem;
-    bottom: 7.3rem;
-  }
-  .circle6 {
-    @include circle(30.4rem, 30.4rem);
-  }
-  .circlefoto1 {
-    left: 50.5rem;
-    transform: translateY(-53.5rem);
-  }
+
   .circlefoto3 {
     bottom: -3rem;
     transform: translateX(-9rem);
