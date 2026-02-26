@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+    border-radius: 0.4rem;
   background: $linearGradientMain;
 }
 
@@ -45,3 +46,49 @@
     background-color: rgba(255, 255, 255, 0.31);
   }
 }
+
+@media (max-width: 1100px) {
+	.items {
+		  padding: 3rem;
+	}
+	.title {
+		@include title(3.2rem)
+	}
+}
+
+@media (max-width: 768px) {
+	.subscribe {
+  padding: 1rem 0 5rem;
+}
+	.items {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.title {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.title {
+		@include title(2.8rem);
+	}
+}
+
+@media (max-width: 375px) {
+	.items {
+		padding: 1rem;
+	}
+		.title {
+		@include title(2.6rem);
+	}
+	.email {
+		padding: 0.5rem;
+		background-image: none;
+		font-size: 1.5rem;
+	}
+	.button {
+		padding: 1rem;
+	}
+}
+
