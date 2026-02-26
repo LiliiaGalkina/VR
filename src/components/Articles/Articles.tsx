@@ -19,7 +19,7 @@ const Articles = () => {
           </div>
         </div>
         <div className={style.items}>
-          <div className={style.slideritem}>
+          <div className={style.slidercontainer}>
             <h3 className={style.itemtitle}>Popular Article</h3>
             <div className={style.slider}>
               <Swiper
@@ -32,7 +32,7 @@ const Articles = () => {
                     <img
                       src={item.img}
                       alt={item.alt}
-                      className={style.mainimage}
+                      className={style.sliderimage}
                     />
                     <div className={style.block}>
                       <span className={style.beige}>{item.category}</span>
