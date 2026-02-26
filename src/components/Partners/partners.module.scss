@@ -2,6 +2,7 @@
 
 .partners {
   padding: 7.5rem 0 27.5rem;
+  position: relative;
 }
 
 .subtitle {
@@ -140,4 +141,304 @@
 
 .logoImg {
   opacity: 1;
+}
+
+@media (max-width: 1100px) {
+  .title {
+    @include title(3.6rem);
+  }
+  .partner {
+    width: 8rem;
+    height: 8rem;
+    &:nth-child(2) {
+      bottom: 15rem;
+      left: 2rem;
+    }
+    &:nth-child(3) {
+      top: 1rem;
+      left: 15rem;
+    }
+    &:nth-child(5) {
+      top: 1rem;
+      right: 15rem;
+    }
+    &:nth-child(6) {
+      bottom: 15rem;
+      right: 2rem;
+    }
+  }
+  .innerpartner {
+    width: 7.6rem;
+    height: 7.6rem;
+  }
+  .logoImg {
+    width: 80%;
+  }
+  .circle1 {
+    height: 44rem;
+  }
+  .circle2 {
+    height: 35.85rem;
+  }
+  .circle3 {
+    height: 28rem;
+  }
+  .circle4 {
+    height: 21.136rem;
+  }
+  .maimimage {
+    max-width: 60.7rem;
+  }
+  .mainimgup {
+    max-width: 60.7rem;
+    top: -3.7rem;
+  }
+  .mainimgdown {
+    max-width: 39rem;
+  }
+  .bg {
+    max-width: 39rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .partners {
+    min-height: 90rem;
+  }
+  .circle1 {
+    width: 70rem;
+    height: 41rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .partner {
+    &:nth-child(2) {
+      left: 1rem;
+    }
+    &:nth-child(3) {
+      left: 11rem;
+    }
+    &:nth-child(5) {
+      right: 11rem;
+    }
+    &:nth-child(6) {
+      right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .circle1 {
+    width: 60rem;
+    height: 41rem;
+  }
+  .mainimgup {
+    left: -0.5rem;
+    top: 0.7rem;
+  }
+  .mainimgdown {
+    left: -0.5rem;
+    top: 9rem;
+  }
+  .bg {
+    left: -0.5rem;
+    top: 9rem;
+  }
+  .partner {
+    &:nth-child(2) {
+      left: 0;
+      bottom: 14rem;
+    }
+    &:nth-child(3) {
+      top: 2rem;
+      left: 8rem;
+    }
+    &:nth-child(5) {
+      top: 2rem;
+      right: 8rem;
+    }
+    &:nth-child(6) {
+      right: 0;
+      bottom: 14rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .partners {
+    min-height: 80rem;
+  }
+  .circle1 {
+    width: 45rem;
+    height: 26rem;
+    border: none;
+  }
+  .circle2 {
+    height: 25rem;
+  }
+  .circle3 {
+    height: 19rem;
+  }
+  .circle4 {
+    height: 14rem;
+  }
+  .maimimage {
+    max-width: 45rem;
+  }
+  .mainimgup {
+    max-width: 45rem;
+    top: 7rem;
+  }
+  .mainimgdown {
+    max-width: 29rem;
+    top: 13rem;
+  }
+  .bg {
+    max-width: 29rem;
+    top: 13rem;
+  }
+  .partner {
+    width: 6rem;
+    height: 6rem;
+    &:nth-child(2) {
+      bottom: 10rem;
+    }
+    &:nth-child(3) {
+      top: 0.5rem;
+      left: 7rem;
+    }
+    &:nth-child(5) {
+      top: 0.5rem;
+      right: 7rem;
+    }
+    &:nth-child(6) {
+      bottom: 10rem;
+    }
+  }
+  .innerpartner {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+  .light {
+    top: -14rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners {
+    min-height: 62rem;
+  }
+  .title {
+    @include title(3rem);
+  }
+  .circle1 {
+    width: 35rem;
+    height: 20rem;
+  }
+  .circle2 {
+    height: 20rem;
+  }
+  .circle3 {
+    height: 15rem;
+  }
+  .circle4 {
+    height: 11rem;
+  }
+  .partner {
+    &:nth-child(2) {
+      left: -0.5rem;
+      bottom: 8rem;
+    }
+    &:nth-child(3) {
+      top: -0.5rem;
+      left: 4rem;
+    }
+    &:nth-child(5) {
+      top: -0.5rem;
+      right: 4rem;
+    }
+    &:nth-child(6) {
+      right: -0.5rem;
+      bottom: 8rem;
+    }
+  }
+  .maimimage {
+    max-width: 35rem;
+  }
+  .mainimgup {
+    max-width: 35rem;
+    top: 3rem;
+  }
+  .mainimgdown {
+    max-width: 22rem;
+    top: 8rem;
+  }
+  .bg {
+    max-width: 22rem;
+    top: 8rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .partners {
+    min-height: 54rem;
+  }
+  .circle1 {
+    width: 26rem;
+    height: 16rem;
+  }
+  .circle2 {
+    height: 15rem;
+  }
+  .circle3 {
+    height: 10rem;
+  }
+  .circle4 {
+    height: 8rem;
+  }
+  .partner {
+    width: 5rem;
+    height: 5rem;
+    &:nth-child(2) {
+      bottom: 6rem;
+    }
+    &:nth-child(3) {
+      top: -0.46rem;
+      left: 3.2rem;
+    }
+    &:nth-child(5) {
+      top: -0.46rem;
+      right: 3.2rem;
+    }
+    &:nth-child(6) {
+      bottom: 6rem;
+    }
+  }
+  .innerpartner {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+  .maimimage {
+    max-width: 27rem;
+  }
+  .mainimgup {
+    max-width: 27rem;
+	left: 0;
+    top: 2rem;
+  }
+  .mainimgdown {
+    max-width: 17rem;
+	left: 0;
+    top: 6rem;
+  }
+  .bg {
+    max-width: 17rem;
+	left: 0;
+    top: 6rem;
+  }
+    .light {
+    top: -20rem;
+  }
 }

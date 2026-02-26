@@ -80,7 +80,7 @@
   height: 19.9rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .title {
     @include title(3.6rem);
   }
@@ -104,9 +104,6 @@
 }
 
 @media (max-width: 600px) {
-  .title {
-    @include title(3rem);
-  }
   .videoblock {
     height: 32.2rem;
   }
@@ -124,22 +121,24 @@
 }
 
 @media (max-width: 480px) {
+  .title {
+    @include title(3rem);
+  }
   .videoblock {
     height: 25.4rem;
   }
   .videotitle {
     @include title(2rem);
-	left: 1rem;
-	top: 3.8rem;
+    left: 1rem;
+    top: 3.8rem;
   }
   .play {
     width: 4rem;
     height: 4rem;
   }
   .beige {
-	top: 1.2rem;
-	left: 1rem;
-	font-size: 1.2rem;
+    top: 1.2rem;
+    left: 1rem;
+    font-size: 1.2rem;
   }
-  
 }

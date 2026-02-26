@@ -53,15 +53,18 @@
   color: $greydarkColor;
 }
 
+@media (max-width: 1100px) {
+  .title {
+    @include title(3.6rem);
+  }
+}
+
 @media (max-width: 1024px) {
   .items {
     gap: 3rem;
   }
   .content {
     max-width: 45rem;
-  }
-  .title {
-    @include title(3.6rem);
   }
 }
 
@@ -101,12 +104,12 @@
   }
 
   .video {
-	width: 15rem;
+    width: 15rem;
   }
 }
 
 @media (max-width: 375px) {
-	  .images {
+  .images {
     width: 27rem;
   }
   .bg {
