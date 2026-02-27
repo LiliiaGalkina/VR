@@ -74,10 +74,11 @@
 
 .videolight {
   position: absolute;
-  top: -8.7rem;
-  left: -16.7rem;
+  top: -12.7rem;
+  left: -9.7rem;
   width: 45.4rem;
-  height: 19.9rem;
+  height: 29.9rem;
+  filter: blur(3rem);
 }
 
 @media (max-width: 1100px) {

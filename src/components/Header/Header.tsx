@@ -1,6 +1,7 @@
 import style from "./header.module.scss";
 import ButtonBorder from "../ButtonBorder/ButtonBorder";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,9 @@ const Header = () => {
       />
       <div className="container">
         <div className={style.items}>
-          <a href="#" className={style.logo}>
+          <Link to={"/"} className={style.logo}>
             <img src="./images/logo.png" alt="logo" />
-          </a>
+          </Link>
           <nav className={style.menu}>
             <div
              className={isMenuOpen ? style.burgeractive : style.burger}
@@ -26,14 +27,14 @@ const Header = () => {
             </div>
             <ul className={isMenuOpen ? style.menulistactive : style.menulist}>
               <li className={style.menuitem}>
-                <a href="#" className={style.menulink}>
+                <Link to={"/"} className={style.menulink}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className={style.menuitem}>
-                <a href="#" className={style.menulink}>
+                <Link to={"/about"} className={style.menulink}>
                   About us
-                </a>
+                </Link>
               </li>
               <li className={style.menuitem}>
                 <a href="#" className={style.menulink}>

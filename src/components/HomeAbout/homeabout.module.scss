@@ -11,12 +11,6 @@
   gap: 6.8rem;
 }
 
-.images {
-  @include imagWhithBgLight(left, -2.36rem, 9.43rem);
-  width: 51.8rem;
-  position: relative;
-}
-
 .content {
   max-width: 56.2rem;
 }
@@ -77,21 +71,9 @@
   .content {
     max-width: 100%;
   }
-  .images {
-    width: 100%;
-  }
-  .image {
-    max-width: 59rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .bg {
-    width: 28rem;
-  }
-  .video {
-    width: 15rem;
-  }
   .title {
     @include title(3rem);
   }

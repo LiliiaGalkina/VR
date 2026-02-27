@@ -1,34 +1,20 @@
 import style from "./homeabout.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
+import ImagesBlock from "../ImagesBlock/ImagesBlock";
 
 const HomeAbout = () => {
   return (
     <section className={style.about}>
       <div className="container">
         <div className={style.items}>
-          <div className={style.images}>
-            <div className={style.image}>
-              <img
-                src="/images/home/about-main.png"
-                alt="a guy wearing virtual reality glasses with his hand raised"
-              />
-            </div>
-            <img
-              src="/images/home/about-main-bg.png"
-              className={style.bg}
-              alt="purple rectangle"
-            />
-            <img
-              src="/images/home/about-main-light.png"
-              className={style.light}
-              alt="multicolored abstraction"
-            />
-            <img
-              src="/images/home/about-video.png"
-              className={style.video}
-              alt="virtual reality glasses"
-            />
-          </div>
+          <ImagesBlock
+            mainimage="/images/home/about-main.png"
+            mainimagealt="a guy wearing virtual reality glasses with his hand raised"
+            video="/images/home/about-video.png"
+            videoalt="virtual reality glasses"
+            light="/images/home/about-main-light.png"
+            bg="/images/home/about-main-bg.png"
+          />
           <div className={style.content}>
             <h3 className={style.subtitle}>ABOUT US</h3>
             <h2 className={style.title}>

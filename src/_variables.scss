@@ -69,6 +69,7 @@ $linearGradientBorderCircleFoto: linear-gradient(
     position: absolute;
     bottom: $lightPosY;
     left: $lightPosX;
+	filter: blur(4rem);
   }
   .video {
     max-width: 19.6rem;

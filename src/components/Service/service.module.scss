@@ -5,6 +5,7 @@
 }
 
 .infoblock {
+	position: relative;
   margin-bottom: 4.6rem;
   display: flex;
   justify-content: space-between;
@@ -22,6 +23,16 @@
 .text {
   max-width: 62.5rem;
   color: $greydarkColor;
+}
+
+.light {
+	position: absolute;
+	top: -7rem;
+	right: 0;
+	width: 45.4rem;
+	height: 25rem;
+	right: 0;
+	filter: blur(4rem);
 }
 
 .cards {
@@ -84,6 +95,9 @@
   .text {
     max-width: 100%;
   }
+  .light {
+	top: 0;
+  }
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -109,5 +123,10 @@
 @media (max-width: 480px) {
   .title {
     @include title(3rem);
+  }
+   .light {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
   }
 }

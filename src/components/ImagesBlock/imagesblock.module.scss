@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+
+.images {
+  @include imagWhithBgLight(0, -2.36rem, 9.43rem);
+  max-width: 51.8rem;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .images {
+    margin: 0 auto;
+  }
+  .image {
+    max-width: 59rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .bg {
+    width: 28rem;
+  }
+  .video {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 375px) {
+.images {
+	  @include imagWhithBgLight(0, -2.36rem, 0);
+}
+  .bg {
+    width: 22rem;
+  }
+  .video {
+    width: 13rem;
+  }
+}

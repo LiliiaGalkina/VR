@@ -47,20 +47,20 @@ const HomeHero = () => {
           <div className={style.images}>
             <div className={style.maimimage}>
               <img
-                src="./images/home/hero-main.png"
+                src="/images/home/hero-main.png"
                 alt="a guy in a white shirt and virtual reality glasses"
               />
             </div>
             <div className={style.imagelight}>
               <img
-                src="./images/home/hero-main-decor.png"
+                src="/images/home/hero-main-decor.png"
                 alt="multicolored abstraction"
               />
             </div>
           </div>
         </div>
         <div className={style.decorbottom}>
-          <img src="./images/home/hero-decor-bottom-left.png" alt="fon decor" />
+          <img src="/images/home/hero-decor-bottom-left.png" alt="fon decor" />
         </div>
         <HomeHeroCards />
       </div>
