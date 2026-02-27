@@ -3,6 +3,7 @@ import style from "./aboutpage.module.scss";
 import AboutUs from "../AboutUs/AboutUs";
 import HomeHeroCards from "../HomeHeroCards/HomeHeroCards";
 import AboutWhyChoose from "../AboutWhyChoose/AboutWhyChoose";
+import Team from "../Team/Team";
 
 const AboutPage = () => {
   return (
@@ -31,7 +32,8 @@ const AboutPage = () => {
           </h2>
           <HomeHeroCards />
 			  </section>
-			  <AboutWhyChoose/>
+			  <AboutWhyChoose />
+			  <Team/>
       </div>
     </main>
   );

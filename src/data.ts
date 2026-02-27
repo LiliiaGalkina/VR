@@ -240,3 +240,34 @@ export const articlesSliderItems = [
     title: "Entertainment Goes Virtual: The Rise of VR Gaming",
   },
 ]; 
+
+export const team = [
+  {
+    id: 1,
+    image: "/images/about/team1.png",
+    alt: "foto Bondan Prabowo",
+    name: "Bondan Prabowo",
+    position: "CEO",
+  },
+  {
+    id: 2,
+    image: "/images/about/team2.png",
+    alt: "foto Bayu Aji",
+    name: "Bayu Aji",
+    position: "VR Development",
+  },
+  {
+    id: 3,
+    image: "/images/about/team3.png",
+    alt: "foto Agung Brandon",
+    name: "Agung Brandon",
+    position: "VR Artist",
+  },
+  {
+    id: 4,
+    image: "/images/about/team4.png",
+    alt: "foto Aril Laso",
+    name: "Aril Laso",
+    position: "UI / UX Designer",
+  },
+];
