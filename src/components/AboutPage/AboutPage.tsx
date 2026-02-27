@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import style from "./aboutpage.module.scss";
+import AboutUs from "../AboutUs/AboutUs";
+import HomeHeroCards from "../HomeHeroCards/HomeHeroCards";
+import AboutWhyChoose from "../AboutWhyChoose/AboutWhyChoose";
 
 const AboutPage = () => {
   return (
@@ -8,10 +11,27 @@ const AboutPage = () => {
         <section className={style.titleblock}>
           <h2 className={style.title}>About Us</h2>
           <div className={style.breadcrumbs}>
-            <Link to={"/"}>Home</Link>
-            <span>About us</span>
+            <Link to={"/"} className={style.link}>
+              Home
+            </Link>
+            <img src="/images/about/titleblock-arrow.svg" alt="arrow right" />
+            <span className={style.text}>About us</span>
           </div>
+          <img
+            src="/images/about/titleblock-light.png"
+            alt="multicolor abstractive"
+            className={style.light}
+          />
         </section>
+        <AboutUs />
+        <section className={style.whychoosecards}>
+				  <h3 className={style.subtitle}>WHY CHOOSE US</h3>
+          <h2 className={style.sectiontitle}>
+            Empowering Your Virtual Reality Experience
+          </h2>
+          <HomeHeroCards />
+			  </section>
+			  <AboutWhyChoose/>
       </div>
     </main>
   );

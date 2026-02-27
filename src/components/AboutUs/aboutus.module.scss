@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.aboutus {
+	padding: 15rem 0 9rem;
+}
+
+.items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+.content {
+	max-width: 62.5rem;
+}
+
+.subtitle {
+	@include titleHeader;
+}
+
+.title {
+	@include title;
+	margin-bottom: 1.8rem;
+}
+
+.text {
+	color: $greydarkColor;
+}
+

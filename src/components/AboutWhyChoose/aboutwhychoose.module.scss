@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.whychoose {
+  padding: 0 0 10rem;
+}
+
+.items {
+  min-height: 77.32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.8rem;
+}
