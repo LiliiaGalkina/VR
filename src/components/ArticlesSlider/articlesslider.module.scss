@@ -1,0 +1,133 @@
+@use "../../variables" as *;
+
+.slidercontainer {
+  position: relative;
+}
+
+.light {
+  position: absolute;
+  top: -10rem;
+  left: -10.6rem;
+  filter: blur(4rem);
+}
+
+.itemtitle {
+  @include title(2.8rem);
+  margin-bottom: 3.2rem;
+}
+
+.slider {
+  max-width: 63.6rem;
+  height: 50rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.slideritem {
+  position: relative;
+  height: 42.5rem;
+}
+
+.sliderimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.beige {
+  margin-bottom: 1.2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1.6rem;
+  background-color: $circlefotoBorderColor;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.block {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2.4rem;
+}
+
+.titlesliderblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.9rem;
+}
+
+.slidertitle {
+  @include title(3.2rem);
+  max-width: 50.9rem;
+}
+
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.arrow {
+  width: 4rem;
+  height: 4rem;
+  padding: 1.33rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid $linearGradientBlueColor;
+  border-image: $linearGradientMain;
+  border-image-slice: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    box-shadow: 0 0 1rem $linearGradientBlueColor;
+  }
+}
+
+@media (max-width: 1190px) {
+  .slidercontainer {
+    margin-bottom: 4rem;
+  }
+  .slider {
+    position: static;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .block {
+    width: 100%;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slidertitle {
+    @include title(2.4rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .block {
+    bottom: 1.6rem;
+    left: 1.6rem;
+  }
+  .slidertitle {
+    @include title(1.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .slidertitle {
+    @include title(1.6rem);
+  }
+  .beige {
+    font-size: 1.3rem;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .slidertitle {
+    @include title(1.4rem);
+  }
+}

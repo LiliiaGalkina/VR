@@ -143,11 +143,12 @@
     border-bottom: 0.1rem solid $greydarkColor;
   }
   .emptyblock {
-    height: 40.7rem;
+    height: 18.7rem;
   }
 
   .started {
-    left: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -8.8rem;
   }
 }
@@ -159,26 +160,21 @@
   .items {
     padding: 3rem 2rem;
   }
-  .started {
-    left: 1rem;
-  }
 }
 
 @media (max-width: 375px) {
   .emptyblock {
-    height: 20rem;
+    height: 15rem;
   }
   .started {
-    bottom: -6.8rem;
-   left: 2rem;
     width: 22rem;
     min-height: auto;
     padding: 2rem;
   }
   .price {
-	  font-size: 4rem;
+    font-size: 4rem;
   }
   .colored {
-	display: none;
+    display: none;
   }
 }

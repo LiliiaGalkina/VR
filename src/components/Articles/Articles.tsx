@@ -1,11 +1,7 @@
 import style from "./articles.module.scss";
 import ButtonBorder from "../ButtonBorder/ButtonBorder";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { articles } from "../../data";
-import { articlesSliderItems } from "../../data";
-import { Pagination } from "swiper/modules";
-import "swiper/swiper-bundle.css";
-import "./swiperstyles.scss";
+import ArticlesSlider from "../ArticlesSlider/ArticlesSlider";
+import ArticlesBlock from "../ArticlesBlock/ArticlesBlock";
 
 const Articles = () => {
   return (
@@ -19,63 +15,8 @@ const Articles = () => {
           </div>
         </div>
         <div className={style.items}>
-          <div className={style.slidercontainer}>
-            <h3 className={style.itemtitle}>Popular Article</h3>
-            <div className={style.slider}>
-              <Swiper
-							  modules={[Pagination]}
-							  slidesPerView={1}
-							  pagination={{ clickable: true }}
-              >
-                {articlesSliderItems.map((item) => (
-                  <SwiperSlide key={item.id} className={style.slideritem}>
-                    <img
-                      src={item.img}
-                      alt={item.alt}
-                      className={style.sliderimage}
-                    />
-                    <div className={style.block}>
-                      <span className={style.beige}>{item.category}</span>
-                      <div className={style.titlesliderblock}>
-                        <h3 className={style.slidertitle}>{item.title}</h3>
-                        <div className={style.arrow}>
-                          <img
-                            src="/images/home/articles-arrow-right.svg"
-                            alt="arrow-right"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-					  </div>
-					  <img src="/images/home/articles-main-light.png" alt="multicolored abstractive" className={style.light} />
-          </div>
-          <div className={style.content}>
-            <h3 className={style.itemtitle}>Recent Article</h3>
-            <div className={style.articles}>
-              {articles.map((article) => (
-                <div key={article.id} className={style.article}>
-                  <img
-                    src={article.img}
-                    alt={article.alt}
-                    className={style.image}
-                  />
-                  <div className={style.info}>
-                    <span>{article.category}</span>
-                    <p className={style.text}>{article.text}</p>
-                  </div>
-                  <div className={style.arrow}>
-                    <img
-                      src="/images/home/articles-arrow-right.svg"
-                      alt="arrow-right"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ArticlesSlider />
+          <ArticlesBlock />
         </div>
       </div>
     </section>
