@@ -271,3 +271,31 @@ export const team = [
     position: "UI / UX Designer",
   },
 ];
+
+export const faqItems = [
+  {
+    id: 1,
+    title: "What is virtual reality?",
+    text: "Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.",
+  },
+  {
+    id: 2,
+    title: "What types of VR services do you offer?",
+    text: "Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.",
+  },
+  {
+    id: 3,
+    title: "How much does your VR services cost?",
+    text: "Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.",
+  },
+  {
+    id: 4,
+    title: "What equipment do I need to use your VR services?",
+    text: "Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.",
+  },
+  {
+    id: 5,
+    title: "Can I try out your VR services before I commit?",
+    text: "Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.",
+  },
+];

@@ -10,3 +10,8 @@ export type PropsImagesBlock = {
 	light: string;
 	bg?: string;
 }
+
+export type PropsFaqItem = {
+  title: string;
+  text: string;
+};

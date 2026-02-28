@@ -2,9 +2,10 @@ import { useState } from "react";
 import style from "./whychoosecontentblock.module.scss";
 
 const WhyChooseContentBlock = () => {
-	  const [block1, setBlock1] = useState(false);
+	const [block1, setBlock1] = useState(false);
     const [block2, setBlock2] = useState(false);
-    const [block3, setBlock3] = useState(false);
+	const [block3, setBlock3] = useState(false);
+	
 	return (
     <div className={style.content}>
       <h3 className={style.subtitle}>WHY CHOOSE US</h3>

@@ -4,6 +4,8 @@ import AboutUs from "../AboutUs/AboutUs";
 import HomeHeroCards from "../HomeHeroCards/HomeHeroCards";
 import AboutWhyChoose from "../AboutWhyChoose/AboutWhyChoose";
 import Team from "../Team/Team";
+import Partners from "../Partners/Partners";
+import Faq from "../Faq/Faq";
 
 const AboutPage = () => {
   return (
@@ -33,7 +35,9 @@ const AboutPage = () => {
           <HomeHeroCards />
 			  </section>
 			  <AboutWhyChoose />
-			  <Team/>
+			  <Team />
+			  <Partners />
+			  <Faq/>
       </div>
     </main>
   );
