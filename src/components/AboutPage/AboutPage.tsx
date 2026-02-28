@@ -28,16 +28,16 @@ const AboutPage = () => {
         </section>
         <AboutUs />
         <section className={style.whychoosecards}>
-				  <h3 className={style.subtitle}>WHY CHOOSE US</h3>
+          <h3 className={style.subtitle}>WHY CHOOSE US</h3>
           <h2 className={style.sectiontitle}>
             Empowering Your Virtual Reality Experience
           </h2>
           <HomeHeroCards />
-			  </section>
-			  <AboutWhyChoose />
-			  <Team />
-			  <Partners />
-			  <Faq/>
+        </section>
+        <AboutWhyChoose />
+        <Team />
+        <Partners />
+        <Faq />
       </div>
     </main>
   );

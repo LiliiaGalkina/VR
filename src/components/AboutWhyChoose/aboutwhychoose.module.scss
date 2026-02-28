@@ -11,3 +11,21 @@
   align-items: center;
   gap: 6.8rem;
 }
+
+@media (max-width: 1024px) {
+  .whychoose {
+    padding: 0 0 5rem;
+  }
+  .items {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .items {
+    width: 100%;
+    min-height: auto;
+    flex-direction: column-reverse;
+    gap: 7rem;
+  }
+}

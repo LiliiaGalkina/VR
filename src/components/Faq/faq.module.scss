@@ -1,83 +1,111 @@
 @use "../../variables" as *;
 
 .faq {
-	position: relative;
-	margin: 0 auto;
-	max-width: 79rem;
-	padding: 7.5rem 0;
-	text-align: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 79rem;
+  padding: 7.5rem 0;
+  text-align: center;
 }
 
 .subtitle {
-	@include titleHeader;
+  @include titleHeader;
 }
 
 .title {
-	@include title;
-	margin-bottom: 2.4rem;
+  @include title;
+  margin-bottom: 2.4rem;
 }
 
 .text {
-	margin-bottom: 4.8rem;
-	color: $greyColor;
+  margin-bottom: 4.8rem;
+  color: $greyColor;
 }
 
 .items {
-	display: flex;
-	flex-direction: column;
-	gap: 2.4rem;
-	text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: left;
 }
 
 .item {
-	padding: 2.4rem;
-	background-color: $blackLightColor;
-	 border: 0.1rem solid $whiteColor;
+  padding: 2.4rem;
+  background-color: $blackLightColor;
+  border: 0.1rem solid $whiteColor;
   border-image: $linearGradientWhite;
   border-image-slice: 1;
 }
 
 .itemactive {
-		padding: 2.4rem;
-	background-color: $blackLightColor;
-	 border: 0.1rem solid $linearGradientBlueColor;
+  padding: 2.4rem;
+  background-color: $blackLightColor;
+  border: 0.1rem solid $linearGradientBlueColor;
   border-image: $linearGradientMain;
   border-image-slice: 1;
 }
 
 .itemup {
-	margin-bottom: 1.2rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .itemtitle {
-	@include title(2rem);
+  @include title(2rem);
 }
 
 .arrow {
-	width: 1.2rem;
-	cursor: pointer;
-	transition: all 0.5s ease;
-	&:hover {
-		box-shadow: 0 0 1rem $whiteColor;
-	}
+  width: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    box-shadow: 0 0 1rem $whiteColor;
+  }
 }
 
 .itemtext {
-	display: none;
-	padding-top: 1.2rem;
-	font-weight: 400;
-	color: $greyColor;
-	border-top: 0.1rem solid $circlefotoBorderColor;
+  display: none;
+  padding-top: 1.2rem;
+  font-weight: 400;
+  color: $greyColor;
+  border-top: 0.1rem solid $circlefotoBorderColor;
 }
 
 .light {
-	position: absolute;
-	top: 1rem;
-	right: -40%;
-	filter: blur(4rem);
-	z-index: -1;
+  position: absolute;
+  top: 1rem;
+  right: -40%;
+  filter: blur(4rem);
+  z-index: -1;
+}
+
+@media (max-width: 1100px) {
+  .title {
+    @include title(3.6rem);
+  }
+}
+
+@media (max-width: 620px) {
+  .item,
+  .itemactive {
+    padding: 2rem 1rem;
+  }
+  .itemtitle {
+    @include title(1.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  title {
+    @include title(3rem);
+  }
+}
+
+@media (max-width: 320px) {
+  .itemtitle {
+    @include title(1.6rem);
+  }
 }

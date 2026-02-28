@@ -15,8 +15,14 @@ const Team = () => {
       <div className={style.items}>
         {team.map((item) => (
           <div className={style.item}>
-            <img src={item.image} alt={item.alt} />
-            <img src="/images/about/team-bg.png" alt="bg rectangle" className={style.bg} />
+            <div className={style.inneritem}>
+              <img src={item.image} alt={item.alt} />
+              <img
+                src="/images/about/team-bg.png"
+                alt="bg rectangle"
+                className={style.bg}
+              />
+            </div>
             <div className={style.legend}>
               <span className={style.name}>{item.name}</span>
               <span className={style.position}>{item.position}</span>
