@@ -1,0 +1,115 @@
+@use "../../variables" as *;
+
+.pricing {
+  padding: 15rem 0 7.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  @include titleHeader;
+}
+
+.title {
+  @include title;
+  margin-bottom: 1.6rem;
+}
+
+.text {
+  margin: 0 auto 4rem;
+  max-width: 75.1rem;
+  font-weight: 400;
+  color: $greyColor;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: space-between;
+  gap: 6.2rem;
+}
+
+.card {
+  padding: 3.5rem;
+  border-radius: 0.6rem;
+  background-color: $blackLightColor;
+  text-align: left;
+  transition: all 0.5s ease;
+  border: 0.1rem solid $blackLightColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover {
+    border: 0.1rem solid $linearGradientBlueColor;
+    border-image: $linearGradientMain;
+    border-image-slice: 1;
+  }
+}
+
+.name {
+  margin-bottom: 0.9rem;
+  font-size: 1.8rem;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.price {
+  @include title(6.4rem);
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.5%;
+  span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $whiteLight;
+    letter-spacing: 0;
+  }
+}
+
+.itemtext {
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+  color: $greyColor;
+}
+
+.list {
+  margin-bottom: 3.2rem;
+
+  li {
+    list-style: circle url("public/images/pricing/check.png") inside;
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .pricing {
+    padding: 7.5rem 0;
+  }
+  .cards {
+    gap: 4rem 2rem;
+  }
+  .card {
+    padding: 2rem;
+  }
+  .title {
+    @include title(3.6rem);
+  }
+}
+
+@media (max-width: 649px) {
+	.cards {
+		grid-template-columns: 1fr;
+	}
+  .card {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+	.title {
+		@include title(3rem);
+	}
+	.price {
+		 @include title(5rem);
+	}
+}

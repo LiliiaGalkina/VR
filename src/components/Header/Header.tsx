@@ -37,14 +37,14 @@ const Header = () => {
                 </Link>
               </li>
               <li className={style.menuitem}>
-                <a href="#" className={style.menulink}>
+                <Link to={"/service"} className={style.menulink}>
                   Service
-                </a>
+                </Link>
               </li>
               <li className={style.menuitem}>
-                <a href="#" className={style.menulink}>
-                  Page
-                </a>
+                <Link to={"/pricing"} className={style.menulink}>
+                  Pricing
+                </Link>
               </li>
               <li className={style.menuitem}>
                 <a href="#" className={style.menulink}>

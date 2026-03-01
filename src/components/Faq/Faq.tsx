@@ -3,7 +3,6 @@ import { faqItems } from "../../data";
 import FaqItem from "./FaqItem";
 
 const Faq = () => {
-	
 
   return (
     <section className={style.faq}>
@@ -16,7 +15,7 @@ const Faq = () => {
       </p>
       <div className={style.items}>
         {faqItems.map((faqitem) => (
-          <FaqItem title={faqitem.title} text={faqitem.text}/>
+          <FaqItem id={faqitem.id} title={faqitem.title} text={faqitem.text}/>
         ))}
       </div>
       <img

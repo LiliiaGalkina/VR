@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./footer.module.scss";
 
 const Footer = () => {
@@ -35,15 +36,15 @@ const Footer = () => {
             <div className={style.column}>
               <h4 className={style.title}>Quicklinks</h4>
               <nav className={style.menu}>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/"} className={style.menuitem}>
                   Home
-                </a>
+                </Link>
                 <a href="#" className={style.menuitem}>
                   Pricing Plan
                 </a>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/service"} className={style.menuitem}>
                   Service
-                </a>
+                </Link>
                 <a href="#" className={style.menuitem}>
                   Blog
                 </a>
@@ -55,9 +56,9 @@ const Footer = () => {
             <div className={style.column}>
               <h4 className={style.title}>Support</h4>
               <nav className={style.menu}>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/about"} className={style.menuitem}>
                   About us
-                </a>
+                </Link>
                 <a href="#" className={style.menuitem}>
                   Contact us
                 </a>

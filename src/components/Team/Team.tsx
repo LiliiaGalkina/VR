@@ -14,7 +14,7 @@ const Team = () => {
       </div>
       <div className={style.items}>
         {team.map((item) => (
-          <div className={style.item}>
+          <div key={item.id} className={style.item}>
             <div className={style.inneritem}>
               <img src={item.image} alt={item.alt} />
               <img

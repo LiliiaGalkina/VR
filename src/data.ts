@@ -299,3 +299,42 @@ export const faqItems = [
     text: "Virtual reality (VR) is a technology that uses headsets or other devices to create a simulated environment. Users can interact with this environment as if it were real, allowing for immersive experiences in gaming, education, training, and more.",
   },
 ];
+
+export const achievements = [
+	{
+		id: 1,
+		title: "happy clients",
+		text: "300k+"
+	},
+		{
+		id: 2,
+		title: "project complete",
+		text: "123k+"
+	},
+			{
+		id: 3,
+		title: "years experience",
+		text: "10k+"
+	},
+]
+
+export const pricingPlans = [
+  {
+    id: 1,
+    name: "Basic Plan",
+    price: 99,
+    otheritem: "No access to exclusive events or promotions",
+  },
+  {
+    id: 2,
+    name: "Standard Plan",
+    price: 149,
+    otheritem: "Access to exclusive events and promotions",
+  },
+  {
+    id: 3,
+    name: "Premium Plan",
+    price: 200,
+    otheritem: "Priority access to exclusive events and promotions",
+  },
+];
