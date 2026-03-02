@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.team {
+	padding: 15rem 0 7.5rem;
+	text-align: center;
+}
+
+.subtitle {
+  @include titleHeader;
+}
+
+.title {
+  @include title;
+  margin-bottom: 4.8rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3.1rem;
+}

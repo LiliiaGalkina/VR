@@ -23,6 +23,8 @@
 .button {
   width: 14rem;
   text-transform: uppercase;
+  color: $whiteColor;
+  font-weight: 700;
 }
 
 .items {
@@ -31,52 +33,6 @@
   gap: 0.928rem;
 }
 
-.item {
-  position: relative;
-  padding: 0.928rem;
-  border: 0.1rem solid $linearGradientBlueColor;
-  border-image: $linearGradientMain;
-  border-image-slice: 1;
-}
-
-.inneritem {
-  position: relative;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.legend {
-  position: absolute;
-  bottom: 1.84rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.name {
-  font-weight: 600;
-}
-
-.position {
-  font-size: 1.2rem;
-  line-height: 166.67%;
-  font-weight: 400;
-  color: $greyColor;
-}
 
 @media (max-width: 1100px) {
   .team {

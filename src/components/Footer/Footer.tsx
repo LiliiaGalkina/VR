@@ -39,18 +39,18 @@ const Footer = () => {
                 <Link to={"/"} className={style.menuitem}>
                   Home
                 </Link>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/pricing"} className={style.menuitem}>
                   Pricing Plan
-                </a>
+                </Link>
                 <Link to={"/service"} className={style.menuitem}>
                   Service
                 </Link>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/blog"} className={style.menuitem}>
                   Blog
-                </a>
-                <a href="#" className={style.menuitem}>
+                </Link>
+                <Link to={"/team"} className={style.menuitem}>
                   Our Team
-                </a>
+                </Link>
               </nav>
             </div>
             <div className={style.column}>

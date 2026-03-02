@@ -22,7 +22,7 @@ const AboutPage = () => {
           <HomeHeroCards />
         </section>
         <AboutWhyChoose />
-        <Team />
+			  <Team count={4} />
         <Partners />
 			  <Faq />
 			  <Subscribe/>

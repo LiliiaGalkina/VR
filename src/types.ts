@@ -27,3 +27,15 @@ export type PropsPricingPlan = {
   price: number;
   otheritem: string;
 };
+
+export type PropsTeam = {
+	count: number;
+}
+
+export type PropdTeamItem = {
+	id: number;
+	image: string;
+	alt: string;
+	name: string;
+	position: string;
+}

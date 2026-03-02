@@ -1,33 +1,24 @@
 import style from "./team.module.scss";
 import ButtonBorder from "../ButtonBorder/ButtonBorder";
 import { team } from "../../data";
+import type { PropsTeam } from "../../types";
+import type React from "react";
+import TeamItem from "../TeamItem/TeamItem";
+import { Link } from "react-router-dom";
 
-const Team = () => {
+const Team:React.FC<PropsTeam> = ({count}) => {
   return (
     <section className={style.team}>
       <h3 className={style.subtitle}>OUR TEAM</h3>
       <div className={style.titleblock}>
         <h2 className={style.title}>Our Professionals Team</h2>
-        <div className={style.button}>
+        <Link to={"/team"} className={style.button}>
           <ButtonBorder textButton="see all" />
-        </div>
+        </Link>
       </div>
       <div className={style.items}>
-        {team.map((item) => (
-          <div key={item.id} className={style.item}>
-            <div className={style.inneritem}>
-              <img src={item.image} alt={item.alt} />
-              <img
-                src="/images/about/team-bg.png"
-                alt="bg rectangle"
-                className={style.bg}
-              />
-            </div>
-            <div className={style.legend}>
-              <span className={style.name}>{item.name}</span>
-              <span className={style.position}>{item.position}</span>
-            </div>
-          </div>
+        {team.slice(0, count).map((item) => (
+			<TeamItem id={item.id} image={item.image} alt={item.alt} name={item.name} position={item.position}/>
         ))}
       </div>
     </section>

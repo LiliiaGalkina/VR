@@ -47,9 +47,9 @@ const Header = () => {
                 </Link>
               </li>
               <li className={style.menuitem}>
-                <a href="#" className={style.menulink}>
+                <Link to={"./blog"} className={style.menulink}>
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

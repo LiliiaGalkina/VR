@@ -239,7 +239,7 @@ export const articlesSliderItems = [
     category: "VR Games",
     title: "Entertainment Goes Virtual: The Rise of VR Gaming",
   },
-]; 
+];
 
 export const team = [
   {
@@ -269,6 +269,20 @@ export const team = [
     alt: "foto Aril Laso",
     name: "Aril Laso",
     position: "UI / UX Designer",
+  },
+  {
+    id: 5,
+    image: "/images/about/team5.png",
+    alt: "foto Aldo Boy",
+    name: "Aldo Boy",
+    position: "3D Designer",
+  },
+  {
+    id: 6,
+    image: "/images/about/team6.png",
+    alt: "foto Beni Barak",
+    name: "Beni Barak",
+    position: "3D Artist",
   },
 ];
 
@@ -301,22 +315,22 @@ export const faqItems = [
 ];
 
 export const achievements = [
-	{
-		id: 1,
-		title: "happy clients",
-		text: "300k+"
-	},
-		{
-		id: 2,
-		title: "project complete",
-		text: "123k+"
-	},
-			{
-		id: 3,
-		title: "years experience",
-		text: "10k+"
-	},
-]
+  {
+    id: 1,
+    title: "happy clients",
+    text: "300k+",
+  },
+  {
+    id: 2,
+    title: "project complete",
+    text: "123k+",
+  },
+  {
+    id: 3,
+    title: "years experience",
+    text: "10k+",
+  },
+];
 
 export const pricingPlans = [
   {
@@ -336,5 +350,200 @@ export const pricingPlans = [
     name: "Premium Plan",
     price: 200,
     otheritem: "Priority access to exclusive events and promotions",
+  },
+];
+
+export const blogItems = [
+  {
+    id: 1,
+    image: "/images/blog/blog1.png",
+    alt: "a guy in VR glasses plays in VR Games",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 2,
+    image: "/images/blog/blog2.png",
+    alt: "VR glasses ",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 3,
+    image: "/images/blog/blog3.png",
+    alt: "VR glasses on the sofa",
+    beige: "VR Entertainment ",
+    title:
+      "Making Events Memorable: The Power of VR for Corporate and Special Occasions",
+  },
+  {
+    id: 4,
+    image: "/images/blog/blog4.png",
+    alt: "two guys in VR glasses play in VR Games",
+    beige: "VR Event",
+    title: "Exploring New Worlds: The Benefits of VR Travel",
+  },
+  {
+    id: 5,
+    image: "/images/blog/blog5.png",
+    alt: "a guy in VR glasses held out his hands",
+    beige: "VR Architecture",
+    title: "Bringing Designs to Life: How VR is Changing Architecture",
+  },
+  {
+    id: 6,
+    image: "/images/blog/blog6.png",
+    alt: "the index finger presses the infinity symbol",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 7,
+    image: "/images/blog/blog7.png",
+    alt: "two girls in VR glasses",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 8,
+    image: "/images/blog/blog8.png",
+    alt: "a guy in VR glasses",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 9,
+    image: "/images/blog/blog9.png",
+    alt: "VR glasses on the table",
+    beige: "VR Education",
+    title: "The Future of Education: How VR is Revolutionizing the Classroom",
+  },
+  {
+    id: 10,
+    image: "/images/blog/blog5.png",
+    alt: "a guy in VR glasses held out his hands",
+    beige: "VR Architecture",
+    title: "Bringing Designs to Life: How VR is Changing Architecture",
+  },
+  {
+    id: 11,
+    image: "/images/blog/blog6.png",
+    alt: "the index finger presses the infinity symbol",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 12,
+    image: "/images/blog/blog8.png",
+    alt: "a guy in VR glasses",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 13,
+    image: "/images/blog/blog9.png",
+    alt: "VR glasses on the table",
+    beige: "VR Education",
+    title: "The Future of Education: How VR is Revolutionizing the Classroom",
+  },
+  {
+    id: 14,
+    image: "/images/blog/blog4.png",
+    alt: "two guys in VR glasses play in VR Games",
+    beige: "VR Event",
+    title: "Exploring New Worlds: The Benefits of VR Travel",
+  },
+  {
+    id: 15,
+    image: "/images/blog/blog1.png",
+    alt: "a guy in VR glasses plays in VR Games",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 16,
+    image: "/images/blog/blog2.png",
+    alt: "VR glasses ",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 17,
+    image: "/images/blog/blog3.png",
+    alt: "VR glasses on the sofa",
+    beige: "VR Entertainment ",
+    title:
+      "Making Events Memorable: The Power of VR for Corporate and Special Occasions",
+  },
+  {
+    id: 18,
+    image: "/images/blog/blog7.png",
+    alt: "two girls in VR glasses",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 19,
+    image: "/images/blog/blog6.png",
+    alt: "the index finger presses the infinity symbol",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 20,
+    image: "/images/blog/blog7.png",
+    alt: "two girls in VR glasses",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 21,
+    image: "/images/blog/blog2.png",
+    alt: "VR glasses ",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 22,
+    image: "/images/blog/blog3.png",
+    alt: "VR glasses on the sofa",
+    beige: "VR Entertainment ",
+    title:
+      "Making Events Memorable: The Power of VR for Corporate and Special Occasions",
+  },
+  {
+    id: 23,
+    image: "/images/blog/blog8.png",
+    alt: "a guy in VR glasses",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 24,
+    image: "/images/blog/blog9.png",
+    alt: "VR glasses on the table",
+    beige: "VR Education",
+    title: "The Future of Education: How VR is Revolutionizing the Classroom",
+  },
+  {
+    id: 25,
+    image: "/images/blog/blog1.png",
+    alt: "a guy in VR glasses plays in VR Games",
+    beige: "VR Games",
+    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+  },
+  {
+    id: 26,
+    image: "/images/blog/blog4.png",
+    alt: "two guys in VR glasses play in VR Games",
+    beige: "VR Event",
+    title: "Exploring New Worlds: The Benefits of VR Travel",
+  },
+  {
+    id: 27,
+    image: "/images/blog/blog5.png",
+    alt: "a guy in VR glasses held out his hands",
+    beige: "VR Architecture",
+    title: "Bringing Designs to Life: How VR is Changing Architecture",
   },
 ];
