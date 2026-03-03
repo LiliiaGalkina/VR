@@ -6,6 +6,7 @@ import PricingPage from "./components/PricingPage/PricingPage";
 import BlogPage from "./components/BlogPage/BlogPage";
 import TeamPage from "./components/TeamPage/TeamPage";
 import FaqPage from "./components/FaqPage/FaqPage";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 
 const AppRouter = () => {
 	return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
 			<Route path={"/blog"} element={<BlogPage />} />
 			<Route path={"/team"} element={<TeamPage/>} />
 			<Route path={"/faq"} element={<FaqPage/>}/>
+			<Route path={"/policy"} element={<PrivacyPolicy/>}/>
 		</Routes>
 	)
 }
