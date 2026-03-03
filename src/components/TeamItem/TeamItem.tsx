@@ -1,8 +1,8 @@
 import style from "./teamitem.module.scss";
-import type { PropdTeamItem } from "../../types";
+import type { PropsTeamItem } from "../../types";
 import type React from "react";
 
-const TeamItem: React.FC<PropdTeamItem> = ({
+const TeamItem: React.FC<PropsTeamItem> = ({
   id,
   image,
   alt,

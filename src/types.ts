@@ -32,10 +32,18 @@ export type PropsTeam = {
 	count: number;
 }
 
-export type PropdTeamItem = {
+export type PropsTeamItem = {
 	id: number;
 	image: string;
 	alt: string;
 	name: string;
 	position: string;
+}
+
+export interface IBlogItems {
+  id:number;
+  image: string;
+  alt: string;
+  beige: string;
+  title: string;
 }
