@@ -2,8 +2,14 @@ import style from "./teamitem.module.scss";
 import type { PropdTeamItem } from "../../types";
 import type React from "react";
 
-const TeamItem:React.FC<PropdTeamItem> = ({id, image, alt, name, position}) => {
-	return (
+const TeamItem: React.FC<PropdTeamItem> = ({
+  id,
+  image,
+  alt,
+  name,
+  position,
+}) => {
+  return (
     <div key={id} className={style.item}>
       <div className={style.inneritem}>
         <img src={image} alt={alt} />
@@ -17,8 +23,25 @@ const TeamItem:React.FC<PropdTeamItem> = ({id, image, alt, name, position}) => {
         <span className={style.name}>{name}</span>
         <span className={style.position}>{position}</span>
       </div>
+      <div className={style.social}>
+        <div className={style.outitem}>
+          <a href="#" className={style.socialitem}>
+            <img src="/images/home/footer-instagram.svg" alt="instagram" />
+          </a>
+        </div>
+        <div className={style.outitem}>
+          <a href="#" className={style.socialitem}>
+            <img src="/images/home/footer-fb.svg" alt="facebook" />
+          </a>
+        </div>
+        <div className={style.outitem}>
+          <a href="#" className={style.socialitem}>
+            <img src="/images/home/footer-twitter.svg" alt="twitter" />
+          </a>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default TeamItem;

@@ -6,18 +6,16 @@ import ArticlesBlock from "../ArticlesBlock/ArticlesBlock";
 const Articles = () => {
   return (
     <section className={style.ourarticles}>
-      <div className="container">
-        <h3 className={style.subtitle}>OUR ARTICLES</h3>
-        <div className={style.titleblock}>
-          <h2 className={style.title}>Stay Up-to-Date with Our VR Insights</h2>
-          <div className={style.mainbutton}>
-            <ButtonBorder textButton="SEE ALL" />
-          </div>
+      <h3 className={style.subtitle}>OUR ARTICLES</h3>
+      <div className={style.titleblock}>
+        <h2 className={style.title}>Stay Up-to-Date with Our VR Insights</h2>
+        <div className={style.mainbutton}>
+          <ButtonBorder textButton="SEE ALL" />
         </div>
-        <div className={style.items}>
-          <ArticlesSlider />
-          <ArticlesBlock />
-        </div>
+      </div>
+      <div className={style.items}>
+        <ArticlesSlider />
+        <ArticlesBlock />
       </div>
     </section>
   );

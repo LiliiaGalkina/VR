@@ -4,7 +4,6 @@ import { partners } from "../../data";
 const Partners = () => {
   return (
     <section className={style.partners}>
-      <div className="container">
         <h3 className={style.subtitle}>Our Trusted Partners</h3>
         <h2 className={style.title}>Discover the Companies We Work With</h2>
         <div className={style.circle1}>
@@ -48,7 +47,6 @@ const Partners = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };

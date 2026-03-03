@@ -10,20 +10,22 @@ import Articles from "../Articles/Articles";
 import Subscribe from "../Subscribe/Subscribe";
 
 const HomePage = () => {
-    return (
-        <main>
-            <HomeHero/>
-            <HomeAbout/>
-            <Service/>
-            <WhyChooseUs/>
-            <DreamsToLife/>
-			<Testimonial />
-			<Pricing />
-			<Partners />
-			<Articles />
-			<Subscribe/>
-        </main>
-    )
-}
+  return (
+    <main>
+      <div className="container">
+        <HomeHero />
+        <HomeAbout />
+        <Service />
+        <WhyChooseUs />
+        <DreamsToLife />
+        <Testimonial />
+        <Pricing />
+        <Partners />
+        <Articles />
+        <Subscribe />
+      </div>
+    </main>
+  );
+};
 
-export default HomePage
+export default HomePage;
