@@ -62,9 +62,9 @@ const Footer = () => {
                 <a href="#" className={style.menuitem}>
                   Contact us
                 </a>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/faq"} className={style.menuitem}>
                   FAQ
-                </a>
+                </Link>
                 <a href="#" className={style.menuitem}>
                   Tems & Conditions
                 </a>

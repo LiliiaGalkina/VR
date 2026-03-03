@@ -1,0 +1,49 @@
+.wrapper {
+  position: relative;
+  padding: 6.7rem 0 15rem;
+}
+
+.leftdecor,
+.rightdecor {
+  position: absolute;
+  top: 15rem;
+  z-index: -1;
+}
+
+.leftdecor {
+  left: 0;
+}
+
+.rightdecor {
+  right: 0;
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 1200px) {
+  .leftdecor,
+  .rightdecor {
+    top: 8rem;
+    max-width: 17rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .leftdecor,
+  .rightdecor {
+    max-width: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftdecor,
+  .rightdecor {
+    max-width: 7rem;
+  }
+}
+
+@media (max-width: 600px) {
+      .leftdecor,
+  .rightdecor {
+    opacity: 0.3;
+  }
+}

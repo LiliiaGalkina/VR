@@ -10,7 +10,7 @@ const FaqItem: React.FC<PropsFaqItem> = ({ id, title, text }) => {
       <div className={style.itemup}>
         <h4 className={style.itemtitle}>{title}</h4>
         <img
-          src="public/images/about/faq-arrow.png"
+          src="/images/about/faq-arrow.png"
           alt="arrow down"
           className={style.arrow}
           onClick={() => setIsActive(!isActive)}

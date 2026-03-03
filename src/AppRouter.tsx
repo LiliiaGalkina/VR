@@ -5,6 +5,7 @@ import ServicePage from "./components/ServicePage/ServicePage";
 import PricingPage from "./components/PricingPage/PricingPage";
 import BlogPage from "./components/BlogPage/BlogPage";
 import TeamPage from "./components/TeamPage/TeamPage";
+import FaqPage from "./components/FaqPage/FaqPage";
 
 const AppRouter = () => {
 	return (
@@ -15,6 +16,7 @@ const AppRouter = () => {
 			<Route path={"/pricing"} element={<PricingPage />} />
 			<Route path={"/blog"} element={<BlogPage />} />
 			<Route path={"/team"} element={<TeamPage/>} />
+			<Route path={"/faq"} element={<FaqPage/>}/>
 		</Routes>
 	)
 }
