@@ -24,11 +24,7 @@ const BlogPageItems = () => {
         {filterData &&
           filterData.map((item) => (
             <BlogPageItem
-              id={item.id}
-              image={item.image}
-              alt={item.alt}
-              beige={item.beige}
-              title={item.title}
+              key={item.id} {...item}
             />
           ))}
       </div>

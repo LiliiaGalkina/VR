@@ -1,0 +1,101 @@
+@use "../../variables" as *;
+
+.scrumbs {
+    padding: 5.2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    span {
+        font-weight: 400;
+        color: $greyColor
+    }
+}
+
+.link {
+    @include title(1.6rem);
+    color: $whiteColor;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.blogdetail {
+    padding-bottom: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 7.67rem;
+}
+
+.content {
+    flex: 0 1 79rem;
+}
+
+.beige {
+    margin-bottom: 1.4rem;
+    padding: 0.2rem 1rem;
+    border-radius: 1.6rem;
+    background-color: $bgBeige;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.title {
+    @include title(4rem);
+    margin-bottom: 1.2rem;
+}
+
+.subtitle {
+    @include titleHeader;
+    margin-bottom: 2.4rem;
+}
+
+.image {
+    margin-bottom: 3rem;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.info {
+    margin-bottom: 2.4rem;
+    color: $greyColor;
+}
+
+.text:not(:last-child) {
+    margin-bottom: 2.4rem;
+}
+
+.beforeimages {
+        margin-bottom: 8rem;
+    }
+
+.images {
+    margin-bottom: 8rem;
+    display: flex;
+    gap: 3.4rem;
+}
+
+.texttitle {
+    @include title(1.6rem);
+    margin-bottom: 1.2rem;
+}
+
+.tags {
+    @include titleHeader;
+    margin-bottom: 1.7rem;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 175%;
+}
+
+.infosocial {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
