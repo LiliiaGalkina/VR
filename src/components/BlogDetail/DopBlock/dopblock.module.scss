@@ -1,16 +1,11 @@
 @use "../../../variables" as *;
 
-
-.dopblock {
-    flex: 0 1 33.33rem;
-}
-
-.dopblocktitle {
+.title {
     @include title(2rem);
     margin-bottom: 2.3rem;
 }
 
-.dopblockitems {
+.items {
     margin-bottom: 6.4rem;
     max-height: 40.6rem;
     padding-right: 1rem;
@@ -32,4 +27,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
+}
+
+.beige {
+  @include beige(1rem);
+}
+
+@media (max-width: 768px) {
+  .dopblock {
+    width: 100%;
+  }
+  .hashtags {
+    max-width: 100%;
+  }
 }

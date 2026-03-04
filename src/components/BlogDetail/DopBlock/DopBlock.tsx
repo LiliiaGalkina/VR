@@ -6,16 +6,16 @@ import { hashtags } from "../../../data";
 const DopBlock = () => {
   return (
     <div className={style.dopblock}>
-      <h3 className={style.dopblocktitle}>Recent Article</h3>
-      <div className={style.dopblockitems}>
+      <h3 className={style.title}>Recent Article</h3>
+      <div className={style.items}>
         {blogItems.map((item) => (
           <DopBlockItem key={item.id} {...item} />
         ))}
       </div>
-      <h3 className={style.dopblocktitle}>Popular Hashtag</h3>
+      <h3 className={style.title}>Popular Hashtag</h3>
       <div className={style.hashtags}>
         {hashtags.map((item) => (
-          <span key={item.id} className={style.dopblockbeige}>
+          <span key={item.id} className={style.beige}>
             {item.name}
           </span>
         ))}

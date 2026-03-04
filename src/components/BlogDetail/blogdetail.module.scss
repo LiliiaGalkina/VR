@@ -1,97 +1,160 @@
 @use "../../variables" as *;
 
 .scrumbs {
-    padding: 5.2rem 0;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+  padding: 5.2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
 
-    span {
-        font-weight: 400;
-        color: $greyColor
-    }
+  span {
+    font-weight: 400;
+    color: $greyColor;
+  }
 }
 
 .link {
-    @include title(1.6rem);
-    color: $whiteColor;
-    cursor: pointer;
-    transition: all 0.5s ease;
+  @include title(1.6rem);
+  color: $whiteColor;
+  cursor: pointer;
+  transition: all 0.5s ease;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .blogdetail {
-    padding-bottom: 7.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    gap: 7.67rem;
+  padding-bottom: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 7.67rem;
 }
 
 .content {
-    flex: 0 1 79rem;
+  max-width: 79rem;
 }
 
 .beige {
-    @include beige(1.4rem);
-    margin-bottom: 1.4rem;
+  @include beige(1.4rem);
+  margin-bottom: 1.4rem;
 }
 
 .title {
-    @include title(4rem);
-    margin-bottom: 1.2rem;
+  @include title(4rem);
+  margin-bottom: 1.2rem;
 }
 
 .subtitle {
-    @include titleHeader;
-    margin-bottom: 2.4rem;
+  @include titleHeader;
+  margin-bottom: 2.4rem;
 }
 
 .image {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  img {
     width: 100%;
-    img {
-        width: 100%;
-    }
+  }
 }
 
 .info {
-    margin-bottom: 2.4rem;
-    color: $greyColor;
+  margin-bottom: 2.4rem;
+  color: $greyColor;
 }
 
 .text:not(:last-child) {
-    margin-bottom: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .beforeimages {
-        margin-bottom: 8rem;
-    }
+  margin-bottom: 8rem;
+}
 
 .images {
-    margin-bottom: 8rem;
-    display: flex;
-    gap: 3.4rem;
+  width: 100%;
+  margin-bottom: 8rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.imageitem {
+  width: 50%;
+  img {
+    width: 100%;
+  }
 }
 
 .texttitle {
-    @include title(1.6rem);
-    margin-bottom: 1.2rem;
+  @include title(1.6rem);
+  margin-bottom: 1.2rem;
 }
 
 .tags {
-    @include titleHeader;
-    margin-bottom: 1.7rem;
-    text-transform: none;
-    letter-spacing: normal;
-    line-height: 175%;
+  @include titleHeader;
+  margin-bottom: 1.7rem;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 175%;
 }
 
 .infosocial {
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+@media (max-width: 1200px) {
+  .blogdetail {
+    gap: 4rem;
+  }
+  .content {
+    max-width: 70rem;
+  }
+
+  .title {
+    @include title(3.6rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogdetail {
+    gap: 3rem;
+  }
+  .content {
+    max-width: 54rem;
+  }
+  .images,
+  .beforeimages {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .blogdetail {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        @include title(3rem);
+    }
+    .images {
+        flex-direction: column;
+    }
+    .imageitem {
+        width: 100%;
+    }
 }
