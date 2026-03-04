@@ -1,0 +1,27 @@
+@use "../../../variables" as *;
+
+.article {
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid $circleBorderColor;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    display: block;
+    margin-right: 1.53rem;
+    max-width: 10.2rem;
+    height: 6.54rem;
+}
+
+.beige {
+    @include beige(1rem);
+    margin-bottom: 0.72rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    line-height: 166%;
+    font-weight: 400;
+    color: $whiteColor;
+}

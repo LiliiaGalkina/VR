@@ -53,6 +53,16 @@ $linearGradientBorderCircleFoto: linear-gradient(
   background-clip: text;
 }
 
+@mixin beige($fontSize) {
+   padding: 0.2rem 0.7rem;
+    border-radius: 1.15rem;
+    background-color: $bgBeige;
+    font-size: $fontSize;
+    line-height: 140%;
+    font-weight: 500;
+    color: $whiteColor;
+}
+
 @mixin imagWhithBgLight($bgPosVal, $lightPosX, $lightPosY) {
   .image {
     img {

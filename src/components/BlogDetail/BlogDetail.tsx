@@ -2,6 +2,7 @@ import { Link, useMatch } from "react-router-dom";
 import style from "./blogdetail.module.scss";
 import { blogItems } from "../../data";
 import Subscribe from "../Subscribe/Subscribe";
+import DopBlock from "./DopBlock/DopBlock";
 
 const BlogDetail = () => {
     const match = useMatch("/blog/:id");
@@ -107,9 +108,9 @@ const BlogDetail = () => {
                 <img src="/images/home/footer-instagram.svg" alt="instagram" />
               </div>
             </div>
-            <div></div>
+           <DopBlock/>
           </section>
-          <Subscribe/>
+          <Subscribe />
         </div>
       </main>
     );

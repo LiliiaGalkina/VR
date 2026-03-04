@@ -123,93 +123,6 @@ export const partners = [
   },
 ];
 
-export const articles = [
-  {
-    id: 1,
-    img: "/images/home/articles1.png",
-    alt: "VR classes",
-    category: "VR Education",
-    text: "The Future of Education: How VR is Revolutionizing the Classroom",
-  },
-  {
-    id: 2,
-    img: "/images/home/articles2.png",
-    alt: "man in VR classes",
-    category: "VR Architecture",
-    text: "Bringing Designs to Life: How VR is Changing Architecture",
-  },
-  {
-    id: 3,
-    img: "/images/home/articles3.png",
-    alt: "VR classes",
-    category: "VR Entertainment ",
-    text: "Making Events Memorable: The Power of VR for Corporate...",
-  },
-  {
-    id: 4,
-    img: "/images/home/articles4.png",
-    alt: "VR classes",
-    category: "two men in VR Event",
-    text: "Exploring New Worlds: The Benefits of VR Travel",
-  },
-  {
-    id: 5,
-    img: "/images/home/articles1.png",
-    alt: "VR classes",
-    category: "VR Education",
-    text: "The Future of Education: How VR is Revolutionizing the Classroom",
-  },
-  {
-    id: 6,
-    img: "/images/home/articles2.png",
-    alt: "man in VR classes",
-    category: "VR Architecture",
-    text: "Bringing Designs to Life: How VR is Changing Architecture",
-  },
-  {
-    id: 7,
-    img: "/images/home/articles3.png",
-    alt: "VR classes",
-    category: "VR Entertainment ",
-    text: "Making Events Memorable: The Power of VR for Corporate...",
-  },
-  {
-    id: 8,
-    img: "/images/home/articles4.png",
-    alt: "VR classes",
-    category: "two men in VR Event",
-    text: "Exploring New Worlds: The Benefits of VR Travel",
-  },
-  {
-    id: 9,
-    img: "/images/home/articles1.png",
-    alt: "VR classes",
-    category: "VR Education",
-    text: "The Future of Education: How VR is Revolutionizing the Classroom",
-  },
-  {
-    id: 10,
-    img: "/images/home/articles2.png",
-    alt: "man in VR classes",
-    category: "VR Architecture",
-    text: "Bringing Designs to Life: How VR is Changing Architecture",
-  },
-  {
-    id: 11,
-    img: "/images/home/articles3.png",
-    alt: "VR classes",
-    category: "VR Entertainment ",
-    text: "Making Events Memorable: The Power of VR for Corporate...",
-  },
-  {
-    id: 12,
-    img: "/images/home/articles4.png",
-    alt: "VR classes",
-    category: "two men in VR Event",
-    text: "Exploring New Worlds: The Benefits of VR Travel",
-  },
-];
-
 export const articlesSliderItems = [
   {
     id: 1,
@@ -545,5 +458,44 @@ export const blogItems = [
     alt: "a guy in VR glasses held out his hands",
     beige: "VR Architecture",
     title: "Bringing Designs to Life: How VR is Changing Architecture",
+  },
+];
+
+export const hashtags = [
+  {
+    id: 1,
+    name: "VRDesign",
+  },
+  {
+    id: 2,
+    name: "ArchitectureInnovation",
+  },
+  {
+    id: 3,
+    name: "DesignThinking",
+  },
+  {
+    id: 4,
+    name: "VirtualRealityArchitecture",
+  },
+  {
+    id: 5,
+    name: "BringingDesignsToLife",
+  },
+  {
+    id: 6,
+    name: "DesignVisualization",
+  },
+  {
+    id: 7,
+    name: "ArchitecturalVisualization",
+  },
+  {
+    id: 8,
+    name: "RevolutionizingArchitecture",
+  },
+  {
+    id: 9,
+    name: "BuildingInVR",
   },
 ];

@@ -1,17 +1,17 @@
 import style from "./articlesblock.module.scss";
-import { articles } from "../../data";
+import { blogItems } from "../../data";
 
 const ArticlesBlock = () => {
 	return (
     <div className={style.content}>
       <h3 className={style.itemtitle}>Recent Article</h3>
       <div className={style.articles}>
-        {articles.map((article) => (
+        {blogItems.map((article) => (
           <div key={article.id} className={style.article}>
-            <img src={article.img} alt={article.alt} className={style.image} />
+            <img src={article.image} alt={article.alt} className={style.image} />
             <div className={style.info}>
-              <span>{article.category}</span>
-              <p className={style.text}>{article.text}</p>
+              <span>{article.beige}</span>
+              <p className={style.text}>{article.title}</p>
             </div>
             <div className={style.arrow}>
               <img

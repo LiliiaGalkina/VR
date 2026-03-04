@@ -36,12 +36,8 @@
 }
 
 .beige {
+    @include beige(1.4rem);
     margin-bottom: 1.4rem;
-    padding: 0.2rem 1rem;
-    border-radius: 1.6rem;
-    background-color: $bgBeige;
-    font-size: 1.4rem;
-    font-weight: 500;
 }
 
 .title {
