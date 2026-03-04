@@ -14,7 +14,7 @@ const PricingPlans = () => {
       </p>
 			<div className={style.cards}>
 				{pricingPlans.map((item) => (
-					<PricingPlan id={item.id} name={item.name} price={item.price} otheritem={item.otheritem} />
+					<PricingPlan key={item.id} {...item} />
 				))}
 	  </div>
     </section>

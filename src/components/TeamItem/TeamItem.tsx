@@ -10,7 +10,7 @@ const TeamItem: React.FC<PropsTeamItem> = ({
   position,
 }) => {
   return (
-    <div key={id} className={style.item}>
+    <div className={style.item}>
       <div className={style.inneritem}>
         <img src={image} alt={alt} />
         <img

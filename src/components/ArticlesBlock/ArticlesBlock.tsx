@@ -1,5 +1,6 @@
 import style from "./articlesblock.module.scss";
 import { blogItems } from "../../data";
+import { Link } from "react-router-dom";
 
 const ArticlesBlock = () => {
 	return (
@@ -13,12 +14,12 @@ const ArticlesBlock = () => {
               <span>{article.beige}</span>
               <p className={style.text}>{article.title}</p>
             </div>
-            <div className={style.arrow}>
+            <Link to={`/blog/${article.id}`} className={style.arrow}>
               <img
                 src="/images/home/articles-arrow-right.svg"
                 alt="arrow-right"
               />
-            </div>
+            </Link>
           </div>
         ))}
       </div>

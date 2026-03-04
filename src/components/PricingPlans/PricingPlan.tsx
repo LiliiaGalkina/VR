@@ -4,13 +4,12 @@ import type React from "react";
 import ButtonBorder from "../ButtonBorder/ButtonBorder";
 
 const PricingPlan: React.FC<PropsPricingPlan> = ({
-  id,
   name,
   price,
   otheritem,
 }) => {
   return (
-    <div key={id} className={style.card}>
+    <div className={style.card}>
       <div>
         <h4 className={style.name}>{name}</h4>
         <p className={style.price}>

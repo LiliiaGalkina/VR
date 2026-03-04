@@ -18,7 +18,7 @@ const Team:React.FC<PropsTeam> = ({count}) => {
       </div>
       <div className={style.items}>
         {team.slice(0, count).map((item) => (
-			<TeamItem id={item.id} image={item.image} alt={item.alt} name={item.name} position={item.position}/>
+			<TeamItem key={item.id} {...item}/>
         ))}
       </div>
     </section>

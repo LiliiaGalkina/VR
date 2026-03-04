@@ -15,7 +15,7 @@ const Faq = () => {
       </p>
       <div className={style.items}>
         {faqItems.map((faqitem) => (
-          <FaqItem id={faqitem.id} title={faqitem.title} text={faqitem.text}/>
+          <FaqItem key={faqitem.id} {...faqitem}/>
         ))}
       </div>
       <img

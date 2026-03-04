@@ -47,3 +47,9 @@ export interface IBlogItems {
   beige: string;
   title: string;
 }
+
+export type PropsWhyChoose= {
+  id: number;
+  title: string;
+  text: string;
+}

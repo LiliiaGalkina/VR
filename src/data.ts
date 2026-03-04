@@ -499,3 +499,21 @@ export const hashtags = [
     name: "BuildingInVR",
   },
 ];
+
+export const whyChooseItems = [
+  {
+    id: 1,
+    title: "Passionate and Experienced Team",
+    text: "We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.",
+  },
+  {
+    id: 2,
+    title: "Customized Solutions",
+    text: "We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.",
+  },
+  {
+    id: 3,
+    title: "Exceptional Customer Service",
+    text: "We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.",
+  },
+];

@@ -16,11 +16,8 @@ const TeamPage = () => {
           <div className={style.items}>
             {team.map((item) => (
               <TeamItem
-                id={item.id}
-                image={item.image}
-                alt={item.alt}
-                name={item.name}
-                position={item.position}
+              key={item.id}
+               {...item}
               />
             ))}
           </div>
