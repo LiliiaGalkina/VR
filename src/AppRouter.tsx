@@ -8,6 +8,7 @@ import TeamPage from "./components/TeamPage/TeamPage";
 import FaqPage from "./components/FaqPage/FaqPage";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import BlogDetail from "./components/BlogDetail/BlogDetail";
+import ContactUsPage from "./components/ContactUs/ContactUsPage";
 
 const AppRouter = () => {
 	return (
@@ -21,6 +22,7 @@ const AppRouter = () => {
 			<Route path={"/faq"} element={<FaqPage/>}/>
 			<Route path={"/policy"} element={<PrivacyPolicy/>}/>
 			<Route path={`/blog/:elemId`} element={<BlogDetail/>}/>
+			<Route path="/contacts" element={<ContactUsPage/>}/>
 		</Routes>
 	)
 }

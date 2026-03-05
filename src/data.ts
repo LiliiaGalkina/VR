@@ -517,3 +517,27 @@ export const whyChooseItems = [
     text: "We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.",
   },
 ];
+
+export const contacts = [
+  {
+    id: 1,
+    image: "/images/contactus/icon-message.svg",
+    alt: "envelope",
+    title: "EMAIL",
+    text: "Support@VRNas.com",
+  },
+  {
+    id: 2,
+    image: "/images/contactus/icon-location.svg",
+    alt: "location",
+    title: "ADDRESS",
+    text: "Tanjung Sari Street no.48, Pontianak City",
+  },
+  {
+    id: 1,
+    image: "/images/contactus/icon-phone.svg",
+    alt: "phone",
+    title: "PHONE",
+    text: "+123 456 7890",
+  },
+];

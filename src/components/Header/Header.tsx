@@ -53,9 +53,9 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className={style.button}>
+          <Link to={"/contacts"} className={style.button}>
             <ButtonBorder textButton="Contact us" />
-          </div>
+          </Link>
         </div>
       </div>
     </header>

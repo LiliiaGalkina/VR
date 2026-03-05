@@ -53,3 +53,11 @@ export type PropsWhyChoose= {
   title: string;
   text: string;
 }
+
+export type PropsContactsItems = {
+  id: number;
+  image: string;
+  alt: string;
+  title: string;
+  text: string;
+}

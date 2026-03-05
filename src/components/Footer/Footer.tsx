@@ -59,9 +59,9 @@ const Footer = () => {
                 <Link to={"/about"} className={style.menuitem}>
                   About us
                 </Link>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/contacts"} className={style.menuitem}>
                   Contact us
-                </a>
+                </Link>
                 <Link to={"/faq"} className={style.menuitem}>
                   FAQ
                 </Link>

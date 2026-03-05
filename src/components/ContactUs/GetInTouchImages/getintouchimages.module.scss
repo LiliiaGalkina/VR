@@ -1,0 +1,53 @@
+@use "../../../variables" as *;
+.circle1 {
+    width: 68.6rem;
+    height: 68.6rem;
+    border-radius: 50%;
+     border: 0.1rem solid $circleBorderColor;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.circle2 {
+    width: 82.2%;
+    height: 82.2%;
+    border-radius: 50%;
+     border: 0.1rem solid $circleBorderColor;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.circle3 {
+    position: relative;
+    width: 80.2%;
+    height: 80.2%;
+    border-radius: 50%;
+     border: 0.1rem solid $circleBorderColor;
+     background-color: $circleBgColor;;
+}
+
+.mainimage {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 49%;
+
+    
+}
+
+.mainimgup {
+    position: absolute;
+    bottom: 11.5rem;
+    left: 56%;
+   transform: translateX(-43.5%);
+   border-radius: 0 0 0 10rem;
+}
+
+.mainimgdown {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 20rem 19rem;
+}

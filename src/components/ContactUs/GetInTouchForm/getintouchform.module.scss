@@ -1,0 +1,44 @@
+@use "../../../variables" as *;
+
+.subtitle {
+  @include titleHeader;
+}
+
+.title {
+  @include title;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  margin-bottom: 3.2rem;
+  color: $greyColor;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.input {
+  width: calc(50% - 1.2rem);
+}
+
+.message {
+  width: 100%;
+  min-height: 13.7rem;
+}
+
+.input,
+.message {
+  padding: 1.1rem 1.5rem;
+  background-color: $bgCards;
+  border: 0.1rem solid $whiteColor;
+  border-image: $linearGradientWhite;
+  border-image-slice: 1;
+  &::placeholder {
+    color: $greyColor;
+  }
+}

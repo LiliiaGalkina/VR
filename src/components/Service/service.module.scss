@@ -43,7 +43,7 @@
 
 .card {
   padding: 3.8rem 3.2rem;
-  background-color: rgba(37, 37, 50, 0.6);
+  background-color: $bgCards;
   border: 0.1rem solid $whiteColor;
   border-image: $linearGradientWhite;
   border-image-slice: 1;

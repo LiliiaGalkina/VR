@@ -3,18 +3,19 @@ $blueColor: #19b5f1;
 $purpleColor: #ca6aeb;
 $linearGradientBlueColor: #0cbaf1;
 $linearGradientPurpleColor: #e95ce9;
-$bgMenuMobile: #613F75;
+$bgMenuMobile: #613f75;
 $blackColor: #18181b;
 $blackLightColor: #252532;
 $greyColor: #b0b0b2;
 $greydarkColor: #d1d1d1;
 $whiteColor: #ffffff;
-$whiteLight: #71717A;
+$whiteLight: #71717a;
 $circleBorderColor: rgba(255, 255, 255, 0.17);
 $circlefotoBorderColor: #7c7c84;
 $circleBgColor: #333751;
-$bgsocialteam: #4F50A1;
-$bgBeige: #66666F;
+$bgsocialteam: #4f50a1;
+$bgBeige: #66666f;
+$bgCards: #202029;
 $linearGradientMain: linear-gradient(
   to right,
   $linearGradientBlueColor,
@@ -54,13 +55,13 @@ $linearGradientBorderCircleFoto: linear-gradient(
 }
 
 @mixin beige($fontSize) {
-   padding: 0.2rem 0.7rem;
-    border-radius: 1.15rem;
-    background-color: $bgBeige;
-    font-size: $fontSize;
-    line-height: 140%;
-    font-weight: 500;
-    color: $whiteColor;
+  padding: 0.2rem 0.7rem;
+  border-radius: 1.15rem;
+  background-color: $bgBeige;
+  font-size: $fontSize;
+  line-height: 140%;
+  font-weight: 500;
+  color: $whiteColor;
 }
 
 @mixin imagWhithBgLight($bgPosVal, $lightPosX, $lightPosY) {
@@ -82,7 +83,7 @@ $linearGradientBorderCircleFoto: linear-gradient(
     position: absolute;
     bottom: $lightPosY;
     left: $lightPosX;
-	filter: blur(4rem);
+    filter: blur(4rem);
   }
   .video {
     max-width: 19.6rem;
@@ -155,5 +156,30 @@ $linearGradientBorderCircleFoto: linear-gradient(
     position: absolute;
     height: 0.1rem;
     transition: all 0.3s ease 0s;
+  }
+}
+
+@mixin circleColoredBorder($size, $innersize) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  padding: 0.1rem;
+  background: $linearGradientMain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+
+  .inner {
+    width: $innersize;
+    height: $innersize;
+    border-radius: 50%;
+    background: $blackColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 49%;
+    }
   }
 }
