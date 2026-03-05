@@ -1,31 +1,52 @@
 @use "../../variables" as *;
 
 .whychoose {
-  padding: 0 0 10rem;
+  padding: 7rem 0 15rem;
 }
 
 .items {
-  min-height: 77.32rem;
+  min-height: 50rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 6.8rem;
 }
 
-@media (max-width: 1024px) {
-  .whychoose {
-    padding: 0 0 5rem;
-  }
+.itemimages {
+  max-width: 40%;
+}
+
+.iteminfo {
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
   .items {
-    gap: 3rem;
+    gap: 4rem;
   }
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 1024px) {
+  .whychoose {
+    padding: 4rem 0 10rem;
+  }
   .items {
     width: 100%;
     min-height: auto;
     flex-direction: column-reverse;
     gap: 7rem;
+  }
+  .itemimages {
+    max-width: 100%;
+  }
+  .iteminfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .whychoose {
+    padding: 4rem 0;
   }
 }

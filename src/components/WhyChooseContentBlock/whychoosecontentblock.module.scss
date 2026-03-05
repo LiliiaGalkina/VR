@@ -1,7 +1,9 @@
 @use "../../variables" as *;
 
 .content {
-  max-width: 56.2rem;
+  position: relative;
+  min-height: 50rem;
+  min-width: 100%;
 }
 
 .subtitle {
@@ -13,6 +15,12 @@
   margin-bottom: 3.2rem;
 }
 
+.block {
+  position: absolute;
+  top: 17rem;
+  width: 100%;
+}
+
 .item {
   &:not(:last-child) {
     margin-bottom: 4.8rem;
@@ -20,7 +28,7 @@
 }
 
 .itemup {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,20 +51,37 @@
 
 .itemtext {
   display: none;
-  padding-top: 1.2rem;
   font-weight: 400;
-   color: $greydarkColor;
+  color: $greydarkColor;
+}
+
+@media (max-width: 1200px) {
+  .block {
+    top: 15rem;
+  }
+  .item {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
 }
 
 @media (max-width: 1100px) {
   .title {
     @include title(3.6rem);
   }
+  .itemtitle {
+  @include title(1.8rem);
+}
 }
 
 @media (max-width: 1024px) {
   .content {
-    max-width: 45rem;
+    max-width: 100%;
+    min-height: auto;
+  }
+  .block {
+    position: static;
   }
 }
 
