@@ -42,3 +42,20 @@
     color: $greyColor;
   }
 }
+
+.button {
+  @include button;
+  width: 19.8rem;
+  background: $linearGradientMain;
+  color: $whiteColor;
+  transition: all 0.5s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1100px) {
+  .title {
+    @include title(3.6rem);
+  }
+}

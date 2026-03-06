@@ -1,53 +1,157 @@
 @use "../../../variables" as *;
 .circle1 {
-    width: 68.6rem;
-    height: 68.6rem;
-    border-radius: 50%;
-     border: 0.1rem solid $circleBorderColor;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+  position: relative;
+  width: 68.6rem;
+  height: 68.6rem;
+  border-radius: 50%;
+  border: 0.1rem solid $circleBorderColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle2 {
-    width: 82.2%;
-    height: 82.2%;
-    border-radius: 50%;
-     border: 0.1rem solid $circleBorderColor;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+  position: relative;
+  width: 82.2%;
+  height: 82.2%;
+  border-radius: 50%;
+  border: 0.1rem solid $circleBorderColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle3 {
-    position: relative;
-    width: 80.2%;
-    height: 80.2%;
-    border-radius: 50%;
-     border: 0.1rem solid $circleBorderColor;
-     background-color: $circleBgColor;;
+  position: relative;
+  width: 80.2%;
+  height: 80.2%;
+  border-radius: 50%;
+  border: 0.1rem solid $circleBorderColor;
+  background-color: $circleBgColor;
 }
 
 .mainimage {
-    position: absolute;
-    bottom: -0.5rem;
-    left: 49%;
-
-    
+  position: absolute;
+  bottom: -0.5rem;
+  left: 49%;
 }
 
 .mainimgup {
-    position: absolute;
-    bottom: 11.5rem;
-    left: 56%;
-   transform: translateX(-43.5%);
-   border-radius: 0 0 0 10rem;
+  position: absolute;
+  bottom: 11.5rem;
+  left: 56%;
+  transform: translateX(-43.5%);
+  border-radius: 0 0 0 10rem;
 }
 
 .mainimgdown {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 0 0 20rem 19rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 20rem 19rem;
+}
+
+.twitter,
+.fb,
+.instagram,
+.github {
+  @include circleColoredBorder(4.6rem, 4.4rem);
+  position: absolute;
+}
+
+.instagram {
+  bottom: 0;
+  left: 30%;
+  transform: translateY(10%);
+}
+
+.fb {
+  left: -0.8rem;
+  bottom: 30%;
+}
+
+.twitter {
+  left: 2.8rem;
+  top: 20%;
+}
+
+.github {
+  right: 2.8rem;
+  bottom: 18%;
+}
+
+@media (max-width: 1200px) {
+  .circle1 {
+    width: 58.6rem;
+    height: 58.6rem;
+  }
+  .maimimage {
+    max-width: 40rem;
+  }
+  .mainimgup {
+    max-width: 40rem;
+    bottom: 10.1rem;
+  }
+  .mainimgdown {
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .circle1 {
+    width: 78.6rem;
+    height: 78.6rem;
+  }
+  .circle3 {
+    max-width: 65.2%;
+    height: 65.2%;
+  }
+  .mainimgdown {
+    border-radius: 0 0 19rem 18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .circle1 {
+    width: 57rem;
+    height: 57rem;
+  }
+  .circle3 {
+    max-width: 75.2%;
+    height: 75.2%;
+  }
+  .maimimage {
+    max-width: 35rem;
+  }
+  .mainimgup {
+    max-width: 35rem;
+    bottom: 8.1rem;
+  }
+  .mainimgdown {
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle1 {
+    width: 45rem;
+    height: 45rem;
+  }
+  .maimimage {
+    max-width: 30rem;
+  }
+  .mainimgup {
+    max-width: 30rem;
+    bottom: 7.2rem;
+  }
+  .mainimgdown {
+    max-width: 25.8rem;
+  }
+  .twitter {
+    left: 1.1rem;
+  }
+  .github {
+     right: 1rem;
+  }
 }

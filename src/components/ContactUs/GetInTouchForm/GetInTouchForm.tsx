@@ -12,11 +12,36 @@ const GetInTouchForm = () => {
           help.
         </p>
         <form action="#" className={style.form}>
-          <input type="text" className={style.input} placeholder="First Name" required/>
-          <input type="text" className={style.input} placeholder="Last Name" required/>
-          <input type="email" className={style.input} placeholder="Email" required/>
-          <input type="phone" className={style.input} placeholder="Phone Number" />
-          <textarea name="message" id="message" className={style.message} placeholder="Message"></textarea>
+          <input
+            type="text"
+            className={style.input}
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            className={style.input}
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            className={style.input}
+            placeholder="Email"
+            required
+          />
+          <input
+            type="phone"
+            className={style.input}
+            placeholder="Phone Number"
+          />
+          <textarea
+            name="message"
+            id="message"
+            className={style.message}
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" className={style.button}>send message</button>
         </form>
       </div>
     );
