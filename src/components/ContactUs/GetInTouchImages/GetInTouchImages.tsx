@@ -48,7 +48,8 @@ const GetInTouchImages = () => {
               alt="a guy in VR glasses"
               className={style.mainimgup}
             />
-          </div>
+				  </div>
+				  <img src="/images/contactus/light.png" className={style.light} alt="multicolored abstractive" />
         </div>
       </div>
     </div>

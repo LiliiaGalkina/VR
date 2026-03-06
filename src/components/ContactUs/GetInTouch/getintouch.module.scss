@@ -39,3 +39,12 @@
         gap: 7rem;
     }
 }
+
+@media (max-width: 480px) {
+	.title {
+		@include title(3rem);
+	}
+	.imagesitem {
+		min-height: 45rem;
+	}
+}

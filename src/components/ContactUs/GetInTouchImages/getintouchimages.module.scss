@@ -58,6 +58,11 @@
 .github {
   @include circleColoredBorder(4.6rem, 4.4rem);
   position: absolute;
+  z-index: 2;
+  transition: all 0.5s ease;
+  &:hover {
+	transform: scale(1.2);
+  }
 }
 
 .instagram {
@@ -81,6 +86,13 @@
   bottom: 18%;
 }
 
+.light {
+  position: absolute;
+  top: -4rem;
+  left: -4.7rem;
+  filter: blur(4rem);
+}
+
 @media (max-width: 1200px) {
   .circle1 {
     width: 58.6rem;
@@ -95,6 +107,11 @@
   }
   .mainimgdown {
     max-width: 35rem;
+  }
+
+  .light {
+    left: -50%;
+    top: -50%;
   }
 }
 
@@ -152,6 +169,47 @@
     left: 1.1rem;
   }
   .github {
-     right: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle1 {
+    position: absolute;
+  }
+  .twitter,
+  .fb,
+  .instagram,
+  .github {
+    @include circleColoredBorder(3.1rem, 2.9rem);
+  }
+  .twitter {
+    top: -1rem;
+    left: 60%;
+  }
+  .fb {
+    left: 20%;
+    top: 2rem;
+  }
+  .instagram {
+    left: 40%;
+    bottom: -1rem;
+  }
+  .github {
+    right: 5rem;
+    bottom: 8%;
+  }
+}
+
+@media (max-width: 320px) {
+  .maimimage {
+    max-width: 27rem;
+  }
+  .mainimgup {
+    max-width: 27rem;
+    bottom: 7.2rem;
+  }
+  .mainimgdown {
+    max-width: 23.8rem;
   }
 }
