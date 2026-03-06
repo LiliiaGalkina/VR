@@ -65,9 +65,9 @@ const Footer = () => {
                 <Link to={"/faq"} className={style.menuitem}>
                   FAQ
                 </Link>
-                <a href="#" className={style.menuitem}>
+                <Link to={"/terms"} className={style.menuitem}>
                   Tems & Conditions
-                </a>
+                </Link>
                 <Link to={"/policy"} className={style.menuitem}>
                   Privacy Policy
                 </Link>

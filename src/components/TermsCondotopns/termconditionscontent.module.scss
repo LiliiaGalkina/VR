@@ -1,0 +1,63 @@
+@use "../../variables" as *;
+
+.content {
+	margin: 0 auto;
+	max-width: 78.8rem;
+	text-align: center;
+}
+
+.subtitle {
+	@include titleHeader;
+}
+
+.title {
+	@include title;
+	margin-bottom: 2.4rem;
+}
+
+.titletext {
+	margin: 0 auto 4.8rem;
+	max-width: 62.3rem;
+	color: $greyColor;
+}
+
+.blocktext {
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+	text-align: left;
+	color: $greyColor;
+}
+
+.blocktitle {
+	margin-bottom: 1.6rem;
+	font-size: 2rem;
+	font-weight: 500;
+	color: $whiteColor;
+}
+
+.list li{
+	list-style: disc inside;
+}
+
+@media (max-width: 1100px) {
+	.title {
+		@include title(3.6rem);
+	}
+}
+
+@media (max-width: 768px) {
+	.titletext {
+		max-width: 45rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.title {
+		@include title(3rem);
+	}
+
+	.titletext {
+		max-width: 35rem;
+	}
+}
