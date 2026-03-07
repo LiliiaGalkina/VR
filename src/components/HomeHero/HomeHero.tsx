@@ -1,6 +1,7 @@
 import style from "./homehero.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
 import HomeHeroCards from "../HomeHeroCards/HomeHeroCards";
+import { Link } from "react-router-dom";
 
 const HomeHero = () => {
   return (
@@ -12,9 +13,9 @@ const HomeHero = () => {
             Experience Unforgettable Events in VR. Bring your events to life
             like never before with our VR services
           </p>
-          <div className={style.button}>
+          <Link to={"/service"} className={style.button}>
             <ButtonColor textButton="discover more" />
-          </div>
+          </Link>
           <div className={style.body}>
             <div className={style.clients}>
               <div className={style.clientimages}>

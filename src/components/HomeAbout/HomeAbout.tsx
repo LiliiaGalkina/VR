@@ -1,6 +1,7 @@
 import style from "./homeabout.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
+import { Link } from "react-router-dom";
 
 const HomeAbout = () => {
   return (
@@ -40,9 +41,9 @@ const HomeAbout = () => {
               <span>Affordable and Accessible</span>
             </li>
           </ul>
-          <div className={style.button}>
+          <Link to={"/about"} className={style.button}>
             <ButtonColor textButton="read more" />
-          </div>
+          </Link>
         </div>
       </div>
     </section>

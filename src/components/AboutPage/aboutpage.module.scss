@@ -11,4 +11,6 @@
 
 .sectiontitle {
   @include sectiontitle;
+  margin: 0 auto 5.4rem;
+  max-width: 70.8rem;
 }

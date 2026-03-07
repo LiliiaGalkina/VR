@@ -28,6 +28,7 @@
 }
 
 .button {
+  display: block;
   margin-bottom: 4.2rem;
   max-width: 20.6rem;
 }
@@ -93,66 +94,66 @@
   }
 
   .clients {
-	flex-direction: column;
+    flex-direction: column;
   }
 
   .littlefoto {
-	max-width: 18rem;
-	img {
-		width: 100%;
-	}
+    max-width: 18rem;
+    img {
+      width: 100%;
+    }
   }
 }
 
 @media (max-width: 785px) {
-	.items {
-		flex-direction: column;
-	}
-	.content {
-		max-width: 100%;
-	}
-	.title {
-		font-size: 5.2rem;
-	}
-	.clients {
-		flex-direction: row;
-	}
+  .items {
+    flex-direction: column;
+  }
+  .content {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 5.2rem;
+  }
+  .clients {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 520px) {
-	.title {
-		font-size: 4.2rem;
-	}
-	.clients {
-		flex-direction: column;
-	}
+  .title {
+    font-size: 4.2rem;
+  }
+  .clients {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 380px) {
-	.title {
-		font-size: 3.6rem;
-	}
-	.body {
-		flex-direction: column;
-		align-items: start;
-	}
+  .title {
+    font-size: 3.6rem;
+  }
+  .body {
+    flex-direction: column;
+    align-items: start;
+  }
 
-	.images {
-		width: 100%;
-		height: 42.2rem;
-	}
-	.maimimage {
-		position: absolute;
-		bottom: 0;
-		right: -10rem;
-		img {
-			height: 42.2rem
-		}
-	}
-	.littlefoto {
-		max-width: 15rem;
-		position: absolute;
-		bottom: -9rem;
-		z-index: 2;
-	}
+  .images {
+    width: 100%;
+    height: 42.2rem;
+  }
+  .maimimage {
+    position: absolute;
+    bottom: 0;
+    right: -10rem;
+    img {
+      height: 42.2rem;
+    }
+  }
+  .littlefoto {
+    max-width: 15rem;
+    position: absolute;
+    bottom: -9rem;
+    z-index: 2;
+  }
 }

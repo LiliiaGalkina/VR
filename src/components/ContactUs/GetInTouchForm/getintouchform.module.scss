@@ -1,5 +1,10 @@
 @use "../../../variables" as *;
 
+.getintouchform {
+	position: relative;
+	z-index: 2;
+}
+
 .subtitle {
   @include titleHeader;
 }
@@ -24,6 +29,7 @@
 
 .input {
   width: calc(50% - 1.2rem);
+ 
 }
 
 .message {
@@ -38,6 +44,7 @@
   border: 0.1rem solid $whiteColor;
   border-image: $linearGradientWhite;
   border-image-slice: 1;
+   color: $whiteColor;
   &::placeholder {
     color: $greyColor;
   }

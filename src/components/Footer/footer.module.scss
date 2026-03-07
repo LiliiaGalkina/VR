@@ -1,14 +1,14 @@
 @use "../../variables" as *;
 
 .footer {
-	position: relative;
+  position: relative;
 }
 
 .decor {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .links {
-max-width: 24.4rem;
+  max-width: 24.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,29 +35,7 @@ max-width: 24.4rem;
 }
 
 .socialitem {
-  position: relative;
-  width: 4.6rem;
-  height: 4.6rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $blackColor;
-  transition: all 0.5s ease;
-  &::before {
-    content: "";
-    width: 4.8rem;
-    height: 4.8rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -0.1rem;
-    left: -0.1rem;
-    background: $linearGradientMain;
-    z-index: -1;
-  }
-  &:hover {
-    opacity: 0.7;
-  }
+  @include circleColoredBorder(4.6rem, 4.4rem);
 }
 
 .columns {
@@ -110,45 +88,41 @@ max-width: 24.4rem;
 }
 
 @media (max-width: 1100px) {
-	.up {
-		flex-wrap: wrap;
-		gap: 3.9rem;
-	}
-
-	.links {
-		min-width: 100%;
-		flex-direction: row;
-		align-items: center;
-	}
-
-	.columns {
-		width: 100%;
-	}
-
+  .up {
+    flex-wrap: wrap;
+    gap: 3.9rem;
+  }
+  .links {
+    min-width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .columns {
+    width: 100%;
+  }
 }
 
 @media (max-width: 630px) {
-	.columns {
-		flex-wrap: wrap;
-		justify-content: start;
-		gap: 3.9rem 8rem;
-	}
-
-	.contacts {
-		width: 100%;
-	}
+  .columns {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 3.9rem 8rem;
+  }
+  .contacts {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-	.links {
-		flex-direction: column;
-		align-items: start;
-		gap: 3.9rem;
-	}
+  .links {
+    flex-direction: column;
+    align-items: start;
+    gap: 3.9rem;
+  }
 }
 
 @media (max-width: 330px) {
-	.column {
-		padding-left: 3rem;
-	}
+  .column {
+    padding-left: 3rem;
+  }
 }

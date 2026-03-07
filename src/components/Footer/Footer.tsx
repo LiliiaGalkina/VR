@@ -3,8 +3,12 @@ import style from "./footer.module.scss";
 
 const Footer = () => {
   return (
-	  <footer className={style.footer}>
-		  <img src="/images/home/footer-decor.png" alt="multicolored abstractive" className={style.decor} />
+    <footer className={style.footer}>
+      <img
+        src="/images/home/footer-decor.png"
+        alt="multicolored abstractive"
+        className={style.decor}
+      />
       <div className="container">
         <div className={style.up}>
           <div className={style.links}>
@@ -12,24 +16,35 @@ const Footer = () => {
               <img src="./images/logo.png" alt="logo" />
             </div>
             <div className={style.social}>
-              <div className={style.socialitem}>
-                <img
-                  src="./images/home/footer-twitter.svg"
-                  alt="twitter icon"
-                />
-              </div>
-              <div className={style.socialitem}>
-                <img src="./images/home/footer-fb.svg" alt="fb icon" />
-              </div>
-              <div className={style.socialitem}>
-                <img
-                  src="./images/home/footer-instagram.svg"
-                  alt="instagram icon"
-                />
-              </div>
-              <div className={style.socialitem}>
-                <img src="./images/home/footer-github.svg" alt="github icon" />
-              </div>
+              <a href="#" className={style.socialitem} target="_blank">
+                <div className={style.inner}>
+                  <img
+                    src="./images/home/footer-twitter.svg"
+                    alt="twitter icon"
+                  />
+                </div>
+              </a>
+              <a href="#" className={style.socialitem} target="_blank">
+                <div className={style.inner}>
+                  <img src="./images/home/footer-fb.svg" alt="fb icon" />
+                </div>
+              </a>
+              <a href="#" className={style.socialitem} target="_blank">
+                <div className={style.inner}>
+                  <img
+                    src="./images/home/footer-instagram.svg"
+                    alt="instagram icon"
+                  />
+                </div>
+              </a>
+              <a href="#" className={style.socialitem} target="_blank">
+                <div className={style.inner}>
+                  <img
+                    src="./images/home/footer-github.svg"
+                    alt="github icon"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <div className={style.columns}>

@@ -17,7 +17,7 @@ const Pricing = () => {
           {pricing.map((item) => (
             <div key={item.id} className={style.pricingitem}>
               <div className={style.colored}>
-                <div className={style.img}>
+                <div className={style.inner}>
                   <img src="/images/home/pricing-cloud.svg" alt="cloud" />
                 </div>
               </div>
