@@ -10,7 +10,7 @@
 }
 
 .title {
-  @include title;
+  @include sectiontitle;
   margin-bottom: 4.8rem;
 }
 
@@ -24,18 +24,12 @@
   .team {
     padding: 7.5rem 0;
   }
-  .title {
-    @include title(3.6rem);
-  }
   .items {
     gap: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .title {
-    @include title(3rem);
-  }
   .items {
     grid-template-columns: 1fr;
   }

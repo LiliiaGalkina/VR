@@ -83,7 +83,7 @@
 }
 
 .title {
-  @include title;
+  @include sectiontitle;
 }
 
 .circlefoto1,
@@ -197,12 +197,6 @@
   .circlefoto2 {
     bottom: -3rem;
     transform: translateX(7rem);
-  }
-}
-
-@media (max-width: 1100px) {
-  .title {
-    @include title(3.6rem);
   }
 }
 
@@ -323,10 +317,6 @@
 }
 
 @media (max-width: 480px) {
-  .title {
-    @include title(3rem);
-  }
-
   .circlefoto3 {
     bottom: -3rem;
     transform: translateX(-9rem);

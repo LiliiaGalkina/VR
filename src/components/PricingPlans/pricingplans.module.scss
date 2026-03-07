@@ -10,7 +10,7 @@
 }
 
 .title {
-  @include title;
+  @include sectiontitle;
   margin-bottom: 1.6rem;
 }
 
@@ -91,9 +91,6 @@
   .card {
     padding: 2rem;
   }
-  .title {
-    @include title(3.6rem);
-  }
 }
 
 @media (max-width: 649px) {
@@ -106,9 +103,6 @@
 }
 
 @media (max-width: 480px) {
-	.title {
-		@include title(3rem);
-	}
 	.price {
 		 @include title(5rem);
 	}

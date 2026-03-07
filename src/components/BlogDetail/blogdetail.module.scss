@@ -42,7 +42,7 @@
 }
 
 .title {
-  @include title(4rem);
+  @include sectiontitle;
   margin-bottom: 1.2rem;
 }
 
@@ -112,10 +112,6 @@
   .content {
     max-width: 70rem;
   }
-
-  .title {
-    @include title(3.6rem);
-  }
 }
 
 @media (max-width: 1024px) {
@@ -148,9 +144,6 @@
 }
 
 @media (max-width: 480px) {
-    .title {
-        @include title(3rem);
-    }
     .images {
         flex-direction: column;
     }

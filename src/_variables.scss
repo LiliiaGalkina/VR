@@ -16,7 +16,7 @@ $circleBgColor: #333751;
 $bgsocialteam: #4f50a1;
 $bgBeige: #66666f;
 $bgCards: #202029;
-$bgGreyIcon: rgba(255,255,255,0.11);
+$bgGreyIcon: rgba(255, 255, 255, 0.11);
 $linearGradientMain: linear-gradient(
   to right,
   $linearGradientBlueColor,
@@ -39,10 +39,24 @@ $linearGradientBorderCircleFoto: linear-gradient(
   cursor: pointer;
 }
 
-@mixin title($fontSize: 4.8rem) {
+@mixin title($fontSize) {
   font-size: $fontSize;
   line-height: 121%;
   font-weight: 600;
+}
+
+@mixin sectiontitle {
+  font-size: 4.8rem;
+  line-height: 121%;
+  font-weight: 600;
+
+ @media (max-width: 1100px) {
+	font-size: 3.6rem;
+ }
+
+ @media (max-width: 480px) {
+	font-size: 3rem;
+ }
 }
 
 @mixin titleHeader {

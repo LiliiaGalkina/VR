@@ -1,32 +1,16 @@
-import style from "./../FaqPage/faqpage.module.scss";
 import TitleBlock from "../TitleBlock/TitleBlock";
 import TermConditionsContent from "./TermsConditionsContent";
-import Subscribe from "../Subscribe/Subscribe";
+import FaqTermsWrapper from "../FaqTermsWrapper/FaqTermsWrapper";
 
 const TermsConditions = () => {
-	    return (
-        <main>
-          <div className="container">
-            <TitleBlock titletext="Tems & Conditions" />
-          </div>
-          <div className={style.wrapper}>
-            <div className="container">
-             <TermConditionsContent/>
-              <Subscribe />
-            </div>
-            <img
-              src="/images/faq/decor.png"
-              alt="a guy in VR glasses"
-              className={style.leftdecor}
-            />
-            <img
-              src="/images/faq/decor.png"
-              alt="a guy in VR glasses"
-              className={style.rightdecor}
-            />
-          </div>
-        </main>
-      );
-}
+  return (
+    <main>
+      <div className="container">
+        <TitleBlock titletext="Tems & Conditions" />
+      </div>
+      <FaqTermsWrapper>{<TermConditionsContent />}</FaqTermsWrapper>
+    </main>
+  );
+};
 
 export default TermsConditions;

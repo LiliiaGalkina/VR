@@ -11,7 +11,7 @@
 }
 
 .title {
-	@include title;
+	@include sectiontitle;
 	margin-bottom: 2.4rem;
 }
 
@@ -40,12 +40,6 @@
 	list-style: disc inside;
 }
 
-@media (max-width: 1100px) {
-	.title {
-		@include title(3.6rem);
-	}
-}
-
 @media (max-width: 768px) {
 	.titletext {
 		max-width: 45rem;
@@ -53,10 +47,6 @@
 }
 
 @media (max-width: 480px) {
-	.title {
-		@include title(3rem);
-	}
-
 	.titletext {
 		max-width: 35rem;
 	}
