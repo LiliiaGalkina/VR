@@ -89,4 +89,18 @@
   }
 }
 
+@media (max-width: 1024px) {
+	.item {
+		&:nth-child(4) {
+			grid-column: 2 / 3;
+		}
+	}
+}
 
+@media (max-width: 773px) {
+	.item {
+		&:nth-child(4) {
+			grid-column: auto;
+		}
+	}
+}

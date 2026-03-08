@@ -29,8 +29,8 @@
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 0.928rem;
+  grid-template-columns: repeat(auto-fit, minmax(24.18rem, 1fr));
+  gap: 2rem 0.928rem; 
 }
 
 
@@ -40,11 +40,14 @@
   }
 }
 
+
+
 @media (max-width: 900px) {
   .team {
     padding: 8rem 0 4rem;
   }
 }
+
 
 @media (max-width: 650px) {
   .titleblock {
