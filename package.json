@@ -2,7 +2,7 @@
   "name": "vr",
   "private": true,
   "version": "0.0.0",
-  "homepage": " https://liliiagalkina.github.io/VR/",
+  "homepage": "https://liliiagalkina.github.io/VR/",
   "type": "module",
   "scripts": {
     "dev": "vite",
