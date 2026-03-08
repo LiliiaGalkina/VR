@@ -11,7 +11,7 @@ const Achievements = () => {
         </div>
       ))}
       <img
-        src="/images/service/bg.png"
+        src="./images/service/bg.png"
         alt="multicolored abstractive"
         className={style.bg}
       />

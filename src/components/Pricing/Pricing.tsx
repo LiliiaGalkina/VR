@@ -18,7 +18,7 @@ const Pricing = () => {
             <div key={item.id} className={style.pricingitem}>
               <div className={style.colored}>
                 <div className={style.inner}>
-                  <img src="/images/home/pricing-cloud.svg" alt="cloud" />
+                  <img src="./images/home/pricing-cloud.svg" alt="cloud" />
                 </div>
               </div>
               <div>
@@ -30,7 +30,7 @@ const Pricing = () => {
         </div>
         <div className={style.emptyblock}></div>
         <img
-          src="/images/home/pricing-light.png"
+          src="./images/home/pricing-light.png"
           alt="multicolored abstraction"
           className={style.light}
         />

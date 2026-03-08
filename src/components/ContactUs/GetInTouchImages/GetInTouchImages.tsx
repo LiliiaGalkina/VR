@@ -6,7 +6,7 @@ const GetInTouchImages = () => {
       <a href="#" target="_blank" className={style.twitter}>
         <div className={style.inner}>
           <img
-            src="/images/contactus/twitter.svg"
+            src="./images/contactus/twitter.svg"
             alt="twitter"
           />
         </div>
@@ -14,7 +14,7 @@ const GetInTouchImages = () => {
       <a href="#" target="_blank" className={style.fb}>
         <div className={style.inner}>
           <img
-            src="/images/contactus/fb.svg"
+            src="./images/contactus/fb.svg"
             alt="facebook"
           />
         </div>
@@ -22,7 +22,7 @@ const GetInTouchImages = () => {
       <a href="#" target="_blank" className={style.instagram}>
         <div className={style.inner}>
           <img
-            src="/images/contactus/instagram.svg"
+            src="./images/contactus/instagram.svg"
             alt="twitter"
           />
         </div>
@@ -31,7 +31,7 @@ const GetInTouchImages = () => {
         <a href="#" target="_blank" className={style.github}>
           <div className={style.inner}>
             <img
-              src="/images/contactus/github.svg"
+              src="./images/contactus/github.svg"
               alt="github"
             />
           </div>
@@ -39,12 +39,12 @@ const GetInTouchImages = () => {
         <div className={style.circle3}>
           <div className={style.mainimage}>
             <img
-              src="/images/contactus/main-down.png"
+              src="./images/contactus/main-down.png"
               alt="a guy in VR glasses"
               className={style.mainimgdown}
             />
             <img
-              src="/images/contactus/main-up.png"
+              src="./images/contactus/main-up.png"
               alt="a guy in VR glasses"
               className={style.mainimgup}
             />

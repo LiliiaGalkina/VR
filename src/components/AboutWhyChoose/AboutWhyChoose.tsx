@@ -8,12 +8,12 @@ const AboutWhyChoose = () => {
       <div className={style.items}>
         <div className={style.itemimages}>
           <ImagesBlock
-            mainimage="/images/about/whychooseus-mainimage.png"
+            mainimage="./images/about/whychooseus-mainimage.png"
             mainimagealt="guy in VR glasses runs"
-            video="/images/about/whychooseus-video.png"
+            video="./images/about/whychooseus-video.png"
             videoalt="VR glasses"
-            light="/images/about/whychooseuse-light.png"
-            bg="/images/home/about-main-bg.png"
+            light="./images/about/whychooseuse-light.png"
+            bg="./images/home/about-main-bg.png"
           />
         </div>
         <div className={style.iteminfo}>

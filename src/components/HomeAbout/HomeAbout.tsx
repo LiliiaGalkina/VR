@@ -8,12 +8,12 @@ const HomeAbout = () => {
     <section className={style.about}>
       <div className={style.items}>
         <ImagesBlock
-          mainimage="/images/home/about-main.png"
+          mainimage="./images/home/about-main.png"
           mainimagealt="a guy wearing virtual reality glasses with his hand raised"
-          video="/images/home/about-video.png"
+          video="./images/home/about-video.png"
           videoalt="virtual reality glasses"
-          light="/images/home/about-main-light.png"
-          bg="/images/home/about-main-bg.png"
+          light="./images/home/about-main-light.png"
+          bg="./images/home/about-main-bg.png"
         />
         <div className={style.content}>
           <h3 className={style.subtitle}>ABOUT US</h3>
@@ -29,15 +29,15 @@ const HomeAbout = () => {
           </p>
           <ul className={style.list}>
             <li className={style.listitem}>
-              <img src="/images/home/about-checkbox.svg" alt="checkbox" />
+              <img src="./images/home/about-checkbox.svg" alt="checkbox" />
               <span>Cutting-Edge Technology</span>
             </li>
             <li className={style.listitem}>
-              <img src="/images/home/about-checkbox.svg" alt="checkbox" />
+              <img src="./images/home/about-checkbox.svg" alt="checkbox" />
               <span>Versatile Applications</span>
             </li>
             <li className={style.listitem}>
-              <img src="/images/home/about-checkbox.svg" alt="checkbox" />
+              <img src="./images/home/about-checkbox.svg" alt="checkbox" />
               <span>Affordable and Accessible</span>
             </li>
           </ul>

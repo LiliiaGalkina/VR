@@ -16,11 +16,11 @@ const BlogDetail = () => {
           <Link to={"/"} className={style.link}>
             Home
           </Link>
-          <img src="/images/about/titleblock-arrow.svg" alt="arrow right" />
+          <img src="./images/about/titleblock-arrow.svg" alt="arrow right" />
           <Link to={"/blog"} className={style.link}>
             Blog
           </Link>
-          <img src="/images/about/titleblock-arrow.svg" alt="arrow right" />
+          <img src="./images/about/titleblock-arrow.svg" alt="arrow right" />
           <span>Bringing Designs to Life: How VR is Changing Architecture</span>
         </div>
         <section className={style.blogdetail}>
@@ -71,12 +71,12 @@ const BlogDetail = () => {
               <div className={style.images}>
                 <div className={style.imageitem}>
                   <img
-                    src="/images/blog/blog6.png"
+                    src="./images/blog/blog6.png"
                     alt="the index finger presses the infinity symbol"
                   />
                 </div>
                 <div className={style.imageitem}>
-                  <img src="/images/blog/blog9.png" alt="VR glasses" />
+                  <img src="./images/blog/blog9.png" alt="VR glasses" />
                 </div>
               </div>
               <p className={style.text}>
@@ -106,13 +106,13 @@ const BlogDetail = () => {
             <h4 className={style.texttitle}>Share :</h4>
             <div className={style.infosocial}>
               <a href="#" className={style.infosocialitem} target="_blank">
-                <img src="/images/home/footer-twitter.svg" alt="twitter" />
+                <img src="./images/home/footer-twitter.svg" alt="twitter" />
               </a>
               <a href="#" className={style.infosocialitem} target="_blank">
-                <img src="/images/home/footer-fb.svg" alt="facebook" />
+                <img src="./images/home/footer-fb.svg" alt="facebook" />
               </a>
               <a href="#" className={style.infosocialitem} target="_blank">
-                <img src="/images/home/footer-instagram.svg" alt="instagram" />
+                <img src="./images/home/footer-instagram.svg" alt="instagram" />
               </a>
             </div>
           </div>

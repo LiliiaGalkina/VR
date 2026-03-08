@@ -16,7 +16,7 @@ const ArticlesBlock = () => {
             </div>
             <Link to={`/blog/${article.id}`} className={style.arrow}>
               <img
-                src="/images/home/articles-arrow-right.svg"
+                src="./images/home/articles-arrow-right.svg"
                 alt="arrow-right"
               />
             </Link>

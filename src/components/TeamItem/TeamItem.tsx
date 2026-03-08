@@ -13,7 +13,7 @@ const TeamItem: React.FC<PropsTeamItem> = ({
       <div className={style.inneritem}>
         <img src={image} alt={alt} />
         <img
-          src="/images/about/team-bg.png"
+          src="./images/about/team-bg.png"
           alt="bg rectangle"
           className={style.bg}
         />
@@ -24,18 +24,18 @@ const TeamItem: React.FC<PropsTeamItem> = ({
       </div>
       <div className={style.social}>
         <div className={style.outitem}>
-          <a href="#" className={style.socialitem}>
-            <img src="/images/home/footer-instagram.svg" alt="instagram" />
+          <a href="#" className={style.socialitem} target="_blank">
+            <img src="./images/home/footer-instagram.svg" alt="instagram" />
           </a>
         </div>
         <div className={style.outitem}>
-          <a href="#" className={style.socialitem}>
-            <img src="/images/home/footer-fb.svg" alt="facebook" />
+          <a href="#" className={style.socialitem} target="_blank">
+            <img src="./images/home/footer-fb.svg" alt="facebook" />
           </a>
         </div>
         <div className={style.outitem}>
-          <a href="#" className={style.socialitem}>
-            <img src="/images/home/footer-twitter.svg" alt="twitter" />
+          <a href="#" className={style.socialitem} target="_blank">
+            <img src="./images/home/footer-twitter.svg" alt="twitter" />
           </a>
         </div>
       </div>

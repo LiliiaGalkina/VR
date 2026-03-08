@@ -12,12 +12,12 @@ const FaqTermsWrapper = ({ children }:PropsElement)=> {
             <Subscribe/>
           </div>
           <img
-            src="/images/faq/decor.png"
+            src="./images/faq/decor.png"
             alt="a guy in VR glasses"
             className={style.leftdecor}
           />
           <img
-            src="/images/faq/decor.png"
+            src="./images/faq/decor.png"
             alt="a guy in VR glasses"
             className={style.rightdecor}
           />

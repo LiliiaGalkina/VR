@@ -19,7 +19,7 @@ const Faq = () => {
         ))}
       </div>
       <img
-        src="/images/about/faq-light.png"
+        src="./images/about/faq-light.png"
         alt="multicolored abstractive"
         className={style.light}
       />

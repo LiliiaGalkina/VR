@@ -23,22 +23,22 @@ const Partners = () => {
               <div className={style.circle4}>
                 <div className={style.maimimage}>
                   <img
-                    src="/images/home/partners-bg.png"
+                    src="./images/home/partners-bg.png"
                     className={style.bg}
                     alt="purple rectangle"
                   />
                   <img
-                    src="/images/home/partners-light.png"
+                    src="./images/home/partners-light.png"
                     className={style.light}
                     alt="multicolored abstraction"
                   />
                   <img
-                    src="/images/home/partners-main2.png"
+                    src="./images/home/partners-main2.png"
                     alt="a guy in a white shirt and virtual reality glasses"
                     className={style.mainimgdown}
                   />
                   <img
-                    src="/images/home/partners-main.png"
+                    src="./images/home/partners-main.png"
                     alt="a guy in a white shirt and virtual reality glasses"
                     className={style.mainimgup}
                   />

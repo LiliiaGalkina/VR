@@ -29,7 +29,7 @@ const ArticlesSlider = () => {
                   <h3 className={style.slidertitle}>{item.title}</h3>
                   <Link to={`/blog/${item.id}`} className={style.arrow}>
                     <img
-                      src="/images/home/articles-arrow-right.svg"
+                      src="./images/home/articles-arrow-right.svg"
                       alt="arrow-right"
                     />
                   </Link>
@@ -40,7 +40,7 @@ const ArticlesSlider = () => {
         </Swiper>
       </div>
       <img
-        src="/images/home/articles-main-light.png"
+        src="./images/home/articles-main-light.png"
         alt="multicolored abstractive"
         className={style.light}
       />

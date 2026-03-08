@@ -12,11 +12,11 @@ const TitleBlock:React.FC<PropsTitle> = ({titletext}) => {
         <Link to={"/"} className={style.link}>
           Home
         </Link>
-        <img src="/images/about/titleblock-arrow.svg" alt="arrow right" />
+        <img src="./images/about/titleblock-arrow.svg" alt="arrow right" />
         <span className={style.text}>{titletext}</span>
       </div>
       <img
-        src="/images/about/titleblock-light.png"
+        src="./images/about/titleblock-light.png"
         alt="multicolor abstractive"
         className={style.light}
       />

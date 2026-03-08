@@ -34,12 +34,12 @@ const AboutUs = () => {
           </div>
         </div>
         <ImagesBlock
-          mainimage="/images/about/hero-mainimage.png"
+          mainimage="./images/about/hero-mainimage.png"
           mainimagealt="guy in VR glasses"
-          video="/images/home/hero-video.png"
+          video="./images/home/hero-video.png"
           videoalt="girl in VR glasses"
-          light="/images/about/hero-light.png"
-          bg="/images/home/about-main-bg.png"
+          light="./images/about/hero-light.png"
+          bg="./images/home/about-main-bg.png"
         />
       </div>
     </section>

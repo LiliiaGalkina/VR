@@ -13,11 +13,11 @@ const ContactUsPage = () => {
         <GetInTouch />
         <div className={style.mapblock}>
           <div className={style.map}>
-            <img src="/images/contactus/map.png" className={style.mapimg} alt="map" />
+            <img src="./images/contactus/map.png" className={style.mapimg} alt="map" />
             <div className={style.location}>
               <div className={style.inner}>
                 <img
-                  src="/images/contactus/icon-location.svg"
+                  src="./images/contactus/icon-location.svg"
                   alt="location icon"
                 />
               </div>

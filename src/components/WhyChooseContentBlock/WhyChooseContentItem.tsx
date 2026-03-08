@@ -10,7 +10,7 @@ import type { PropsWhyChoose } from "../../types";
         <div className={style.itemup}>
           <h4 className={style.itemtitle}>{title}</h4>
           <img
-            src="/images/home/choose-arrow.svg"
+            src="./images/home/choose-arrow.svg"
             onClick={() => setIsActive(!isActive)}
             style={{
               transform: isActive ? "rotate(180deg)" : "rotate(0deg)",

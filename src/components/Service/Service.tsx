@@ -17,7 +17,7 @@ const Service = () => {
           have.
         </p>
         <img
-          src="/images/home/service-light.png"
+          src="./images/home/service-light.png"
           alt="multicolored abstractive"
           className={style.light}
         />

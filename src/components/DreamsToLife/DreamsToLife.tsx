@@ -21,23 +21,23 @@ const DreamsToLife = () => {
       </h2>
       <div className={style.videoblock}>
         <video
-          src="/video/dreams.mov"
+          src="./video/dreams.mov"
           controls
-          poster="/images/home/dreams-video.png"
+          poster="./images/home/dreams-video.png"
           ref={videoRef}
           className={style.video}
         ></video>
         <span className={style.beige}>VR Service</span>
         <h3 className={style.videotitle}>How to get started</h3>
         <img
-          src="/images/home/dreams-play-button.png"
+          src="./images/home/dreams-play-button.png"
           className={style.play}
           onClick={handleVideoPlay}
           style={{ display: showButton ? "block" : "none" }}
           alt="play button"
         />
         <img
-          src="/images/home/started-light.png"
+          src="./images/home/started-light.png"
           className={style.videolight}
           alt="multicolored abstraction "
         />
