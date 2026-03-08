@@ -3,7 +3,6 @@ import type { PropsTeamItem } from "../../types";
 import type React from "react";
 
 const TeamItem: React.FC<PropsTeamItem> = ({
-  id,
   image,
   alt,
   name,

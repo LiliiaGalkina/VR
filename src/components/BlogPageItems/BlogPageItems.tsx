@@ -12,7 +12,7 @@ const BlogPageItems = () => {
 
   useEffect(() => {
     return setFilterData(
-      blogItems.filter((item, index) => {
+      blogItems.filter((_, index) => {
         return index >= page * n && index < (page + 1) * n;
       }),
     );
