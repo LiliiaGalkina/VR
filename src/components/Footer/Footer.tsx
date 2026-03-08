@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <img
-        src="/images/home/footer-decor.png"
+        src="./images/home/footer-decor.png"
         alt="multicolored abstractive"
         className={style.decor}
       />

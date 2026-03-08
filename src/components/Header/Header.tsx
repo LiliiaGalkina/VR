@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={style.header}>
       <img
-        src="/images/home/header-decor-up.png"
+        src="./images/home/header-decor-up.png"
         alt="multicolored abstractive"
         className={style.headerdecor}
       />
