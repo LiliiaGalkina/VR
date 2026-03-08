@@ -2,8 +2,8 @@
   "name": "vr",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://liliiagalkina.github.io/VR/",
   "type": "module",
+  "homepage": "https://liliiagalkina.github.io/VR",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
