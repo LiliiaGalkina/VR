@@ -12,9 +12,9 @@ const Footer = () => {
       <div className="container">
         <div className={style.up}>
           <div className={style.links}>
-            <div className={style.logo}>
+            <Link to={"/"} className={style.logo}>
               <img src="./images/logo.png" alt="logo" />
-            </div>
+            </Link>
             <div className={style.social}>
               <a href="#" className={style.socialitem} target="_blank">
                 <div className={style.inner}>

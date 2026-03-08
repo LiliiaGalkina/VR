@@ -32,13 +32,16 @@
 }
 
 .menulist {
+	position: relative;
   display: flex;
   align-items: center;
   gap: 6.4rem;
+  z-index: 5;
 }
 
 .menulink {
   color: $whiteColor;
+  cursor: pointer;
   transition: all 0.5s ease;
 
   &:hover {

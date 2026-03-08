@@ -1,50 +1,56 @@
 @use "../../variables" as *;
 
 .cards {
-    padding: 4.2rem 6.5rem 5.3rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
-    background-color: $blackLightColor;
+  padding: 4.2rem 6.5rem 5.3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  background-color: $blackLightColor;
 }
 
 .image {
-    margin-bottom: 4.2rem;
-    width: 7rem;
-    height: 7rem;
-    img {
-        width: 100%;
-    }
+  margin-bottom: 4.2rem;
+  width: 7rem;
+  height: 7rem;
+  img {
+    width: 100%;
+  }
 }
 
 .title {
-    margin-bottom: 1.2rem;
-    font-size: 2rem;
-    line-height: 100%;
-    font-weight: 400;
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 400;
 }
 
 .text {
-    font-size: 1.4rem;
-    line-height: 200%;
-    color: $greyColor;
+  font-size: 1.4rem;
+  line-height: 200%;
+  color: $greyColor;
 }
 
 @media (max-width: 1024px) {
-	.cards {
-		padding: 2rem;
-	}
+  .cards {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
-	.cards {
-		flex-wrap: wrap;
-		padding: 3.6rem;
-	}
+  .cards {
+    flex-wrap: wrap;
+    padding: 3.6rem;
+  }
+  .card {
+    padding: 1rem;
+    border: 0.1rem solid $linearGradientBlueColor;
+    border-image: $linearGradientWhite;
+    border-image-slice: 1;
+  }
 }
 
 @media (max-width: 375px) {
-	.cards {
-		padding: 2rem;
-	}
+  .cards {
+    padding: 2rem;
+  }
 }

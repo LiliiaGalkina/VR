@@ -133,24 +133,24 @@ export const articlesSliderItems = [
   },
   {
     id: 2,
-    img: "/images/home/articles-main.png",
-    alt: "a guy wearing virtual reality glasses driving a game car",
+    img: "/images/blog/blog2.png",
+    alt: "VR glasses",
     category: "VR Games",
     title: "Entertainment Goes Virtual: The Rise of VR Gaming",
   },
   {
     id: 3,
-    img: "/images/home/articles-main.png",
-    alt: "a guy wearing virtual reality glasses driving a game car",
+    img: "/images/blog/blog7.png",
+    alt: "two girls in VR glasses",
     category: "VR Games",
     title: "Entertainment Goes Virtual: The Rise of VR Gaming",
   },
   {
     id: 4,
-    img: "/images/home/articles-main.png",
-    alt: "a guy wearing virtual reality glasses driving a game car",
-    category: "VR Games",
-    title: "Entertainment Goes Virtual: The Rise of VR Gaming",
+    img: "/images/blog/blog5.png",
+    alt: "a guy in VR glasses held out his hands",
+    category: "VR Architecture",
+    title: "Bringing Designs to Life: How VR is Changing Architecture",
   },
 ];
 
@@ -534,7 +534,7 @@ export const contacts = [
     text: "Tanjung Sari Street no.48, Pontianak City",
   },
   {
-    id: 1,
+    id: 3,
     image: "/images/contactus/icon-phone.svg",
     alt: "phone",
     title: "PHONE",

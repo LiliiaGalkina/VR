@@ -71,9 +71,9 @@
 }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .content {
-    max-width: 100%;
+    min-width: 100%;
     min-height: auto;
   }
   .block {
@@ -81,9 +81,5 @@
   }
 }
 
-@media (max-width: 900px) {
-  .content {
-    min-width: 100%;
-  }
-}
+
 

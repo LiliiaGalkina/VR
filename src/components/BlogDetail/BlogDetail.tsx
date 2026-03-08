@@ -105,9 +105,15 @@ const BlogDetail = () => {
             </div>
             <h4 className={style.texttitle}>Share :</h4>
             <div className={style.infosocial}>
-              <img src="/images/home/footer-twitter.svg" alt="twitter" />
-              <img src="/images/home/footer-fb.svg" alt="facebook" />
-              <img src="/images/home/footer-instagram.svg" alt="instagram" />
+              <a href="#" className={style.infosocialitem} target="_blank">
+                <img src="/images/home/footer-twitter.svg" alt="twitter" />
+              </a>
+              <a href="#" className={style.infosocialitem} target="_blank">
+                <img src="/images/home/footer-fb.svg" alt="facebook" />
+              </a>
+              <a href="#" className={style.infosocialitem} target="_blank">
+                <img src="/images/home/footer-instagram.svg" alt="instagram" />
+              </a>
             </div>
           </div>
           <DopBlock />

@@ -4,6 +4,7 @@ import { articlesSliderItems } from "../../data";
 import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import "./swiperstyles.scss";
+import { Link } from "react-router-dom";
 
 const ArticlesSlider = () => {
 	return (
@@ -26,12 +27,12 @@ const ArticlesSlider = () => {
                 <span className={style.beige}>{item.category}</span>
                 <div className={style.titlesliderblock}>
                   <h3 className={style.slidertitle}>{item.title}</h3>
-                  <div className={style.arrow}>
+                  <Link to={`/blog/${item.id}`} className={style.arrow}>
                     <img
                       src="/images/home/articles-arrow-right.svg"
                       alt="arrow-right"
                     />
-                  </div>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

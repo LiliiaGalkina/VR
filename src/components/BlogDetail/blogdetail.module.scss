@@ -100,9 +100,18 @@
 }
 
 .infosocial {
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   gap: 2.4rem;
+}
+
+.infosocialitem {
+  display: block;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -134,20 +143,20 @@
 }
 
 @media (max-width: 768px) {
-    .blogdetail {
-        flex-direction: column;
-        gap: 5rem;
-    }
-    .content {
-        max-width: 100%;
-    }
+  .blogdetail {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .content {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-    .images {
-        flex-direction: column;
-    }
-    .imageitem {
-        width: 100%;
-    }
+  .images {
+    flex-direction: column;
+  }
+  .imageitem {
+    width: 100%;
+  }
 }
