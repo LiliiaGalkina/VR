@@ -20,12 +20,15 @@ const Header = () => {
           </Link>
           <nav className={style.menu}>
             <div
-             className={isMenuOpen ? style.burgeractive : style.burger}
+              className={isMenuOpen ? style.burgeractive : style.burger}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span></span>
             </div>
-            <ul className={isMenuOpen ? style.menulistactive : style.menulist}>
+            <ul
+              className={isMenuOpen ? style.menulistactive : style.menulist}
+              onClick={() => setIsMenuOpen(false)}
+            >
               <li className={style.menuitem}>
                 <Link to={"/"} className={style.menulink}>
                   Home
