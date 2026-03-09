@@ -8,19 +8,27 @@ const ArticlesBlock = () => {
       <h3 className={style.itemtitle}>Recent Article</h3>
       <div className={style.articles}>
         {blogItems.map((article) => (
-          <div key={article.id} className={style.article}>
-            <img src={article.image} alt={article.alt} className={style.image} />
+          <Link
+            to={`/blog/${article.id}`}
+            key={article.id}
+            className={style.article}
+          >
+            <img
+              src={article.image}
+              alt={article.alt}
+              className={style.image}
+            />
             <div className={style.info}>
               <span>{article.beige}</span>
               <p className={style.text}>{article.title}</p>
             </div>
-            <Link to={`/blog/${article.id}`} className={style.arrow}>
+            <div className={style.arrow}>
               <img
                 src="./images/home/articles-arrow-right.svg"
                 alt="arrow-right"
               />
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

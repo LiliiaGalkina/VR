@@ -30,9 +30,8 @@
 .items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24.18rem, 1fr));
-  gap: 2rem 0.928rem; 
+  gap: 2rem 0.928rem;
 }
-
 
 @media (max-width: 1100px) {
   .team {
@@ -40,14 +39,11 @@
   }
 }
 
-
-
 @media (max-width: 900px) {
   .team {
     padding: 8rem 0 4rem;
   }
 }
-
 
 @media (max-width: 650px) {
   .titleblock {
@@ -157,9 +153,11 @@
 }
 
 @media (max-width: 773px) {
-  .item {
-    &:nth-child(4) {
-      grid-column: auto;
+  .team {
+    .item {
+      &:nth-child(4) {
+        grid-column: auto;
+      }
     }
   }
 }
