@@ -15,7 +15,7 @@ export const heroItems = [
   },
   {
     id: 3,
-    img: "./images/home/hero-card2.svg",
+    img: "./images/home/hero-card3.svg",
     title: "Service",
     text: "We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience.",
     alt: "mens head in virtual reality glasses",
