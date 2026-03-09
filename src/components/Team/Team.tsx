@@ -3,10 +3,10 @@ import ButtonBorder from "../ButtonBorder/ButtonBorder";
 import { team } from "../../data";
 import type { PropsTeam } from "../../types";
 import type React from "react";
-import TeamItem from "../TeamItem/TeamItem";
+import TeamItem from "./TeamItem";
 import { Link } from "react-router-dom";
 
-const Team:React.FC<PropsTeam> = ({count}) => {
+const Team: React.FC<PropsTeam> = ({ count }) => {
   return (
     <section className={style.team}>
       <h3 className={style.subtitle}>OUR TEAM</h3>
@@ -18,7 +18,7 @@ const Team:React.FC<PropsTeam> = ({count}) => {
       </div>
       <div className={style.items}>
         {team.slice(0, count).map((item) => (
-			<TeamItem key={item.id} {...item}/>
+          <TeamItem key={item.id} {...item} />
         ))}
       </div>
     </section>

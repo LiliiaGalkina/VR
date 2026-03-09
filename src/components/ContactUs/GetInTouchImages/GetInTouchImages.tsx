@@ -49,7 +49,7 @@ const GetInTouchImages = () => {
               className={style.mainimgup}
             />
 				  </div>
-				  <img src="/images/contactus/light.png" className={style.light} alt="multicolored abstractive" />
+				  <img src="./images/contactus/light.png" className={style.light} alt="multicolored abstractive" />
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import style from "./teamitem.module.scss";
+import style from "./../Team/team.module.scss";
 import type { PropsTeamItem } from "../../types";
 import type React from "react";
 
