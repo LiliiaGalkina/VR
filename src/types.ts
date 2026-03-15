@@ -9,6 +9,7 @@ export type PropsImagesBlock = {
   videoalt: string;
   light: string;
   bg?: string;
+  gsapfunction?: (target: HTMLDivElement | null) => void;
 };
 
 export type PropsFaqItem = {

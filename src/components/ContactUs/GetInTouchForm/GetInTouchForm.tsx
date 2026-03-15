@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import style from "./getintouchform.module.scss";
+import { itemsDownUP } from "../../../helpers";
+import { gsap } from "gsap/gsap-core";
 
 const GetInTouchForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -7,9 +9,17 @@ const GetInTouchForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const contentRef = useRef(null);
+
+  useLayoutEffect(() => {
+    itemsDownUP(contentRef.current);
+    return () => {
+      gsap.killTweensOf(contentRef.current);
+    };
+  }, []);
 
   return (
-    <div className={style.getintouchform}>
+    <div className={style.getintouchform} ref={contentRef}>
       <h3 className={style.subtitle}>CONTACT US</h3>
       <h2 className={style.title}>Get in Touch</h2>
       <p className={style.text}>

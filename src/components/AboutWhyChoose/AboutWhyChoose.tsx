@@ -1,6 +1,7 @@
 import style from "./aboutwhychoose.module.scss";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
 import WhyChooseContentBlock from "../WhyChooseContentBlock/WhyChooseContentBlock";
+import { leftToRight } from "../../helpers";
 
 const AboutWhyChoose = () => {
   return (
@@ -14,6 +15,7 @@ const AboutWhyChoose = () => {
             videoalt="VR glasses"
             light="./images/about/whychooseuse-light.png"
             bg="./images/home/about-main-bg.png"
+            gsapfunction={leftToRight}
           />
         </div>
         <div className={style.iteminfo}>

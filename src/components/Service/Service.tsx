@@ -2,6 +2,7 @@ import style from "./service.module.scss";
 import { homeServiceItems } from "../../data";
 
 const Service = () => {
+
   return (
     <section className={style.service}>
       <div className={style.infoblock}>

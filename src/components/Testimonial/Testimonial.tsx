@@ -1,13 +1,23 @@
 import style from "./testimonial.module.scss";
+import { disappearAndResize, downToUp } from "../../helpers";
+import { useLayoutEffect, useRef } from "react";
 
 const Testimonial = () => {
+	const titleRef = useRef(null);
+	const blockRef = useRef(null);
+
+	useLayoutEffect(() => {
+		disappearAndResize(blockRef.current);
+		downToUp(titleRef.current);
+	}, [])
+
   return (
     <section className={style.testimonial}>
-      <div className={style.titleblock}>
+      <div className={style.titleblock} ref={titleRef}>
         <h3 className={style.subtitle}>TESTIMONIAL</h3>
         <h2 className={style.title}>What Our Clients Are Saying</h2>
       </div>
-      <div className={style.circle1}>
+      <div className={style.circle1} ref={blockRef}>
         <div className={style.circlefoto1}>
           <img src="./images/home/hero-circle-foto1.png" alt="foto in circle" />
           <div className={style.beige}>

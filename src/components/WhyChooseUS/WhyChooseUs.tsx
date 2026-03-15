@@ -1,6 +1,7 @@
 import style from "./whychooseus.module.scss";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
 import WhyChooseContentBlock from "../WhyChooseContentBlock/WhyChooseContentBlock";
+import { rightToLeft } from "../../helpers";
 
 const WhyChooseUs = () => {
   return (
@@ -14,6 +15,7 @@ const WhyChooseUs = () => {
           videoalt="virtual reality glasses"
           light="./images/home/choose-light.png"
           bg="./images/home/choose-bg.png"
+          gsapfunction={rightToLeft}
         />
       </div>
     </div>

@@ -15,6 +15,10 @@
   max-width: 56.2rem;
 }
 
+.subtitle {
+	@include titleHeader;
+}
+
 .title {
   @include sectiontitle;
   margin-bottom: 1.2rem;

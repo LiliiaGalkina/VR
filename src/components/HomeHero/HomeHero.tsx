@@ -2,12 +2,27 @@ import style from "./homehero.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
 import HomeHeroCards from "../HomeHeroCards/HomeHeroCards";
 import { Link } from "react-router-dom";
+import { itemsDownUPNoTrigger, rightToLeftNoTrigger } from "../../helpers";
+import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap/gsap-core";
 
 const HomeHero = () => {
+	const contentRef = useRef<HTMLDivElement>(null);
+	const imagesRef = useRef(null);
+
+	useLayoutEffect(() => {
+		itemsDownUPNoTrigger(contentRef.current);
+		rightToLeftNoTrigger(imagesRef.current);
+		 return () => {
+       gsap.killTweensOf(contentRef.current);
+       gsap.killTweensOf(imagesRef.current);
+     };
+	}, []);
+
   return (
     <section className={style.hero}>
       <div className={style.items}>
-        <div className={style.content}>
+        <div className={style.content} ref={contentRef}>
           <h1 className={style.title}>Immerse Yourself in Virtual Reality</h1>
           <p className={style.text}>
             Experience Unforgettable Events in VR. Bring your events to life
@@ -44,7 +59,7 @@ const HomeHero = () => {
             </div>
           </div>
         </div>
-        <div className={style.images}>
+        <div className={style.images} ref={imagesRef}>
           <div className={style.maimimage}>
             <img
               src="./images/home/hero-main.png"

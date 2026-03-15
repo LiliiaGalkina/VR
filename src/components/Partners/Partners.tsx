@@ -1,12 +1,24 @@
 import style from "./partners.module.scss";
 import { partners } from "../../data";
+import { disappearAndResize } from "../../helpers";
+import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap/gsap-core";
 
 const Partners = () => {
+	const blockRef = useRef(null);
+
+	useLayoutEffect(() => {
+		disappearAndResize(blockRef.current);
+		return () => {
+      gsap.killTweensOf(blockRef.current);
+    };
+	}, [])
+
   return (
     <section className={style.partners}>
         <h3 className={style.subtitle}>Our Trusted Partners</h3>
         <h2 className={style.title}>Discover the Companies We Work With</h2>
-        <div className={style.circle1}>
+        <div className={style.circle1} ref={blockRef}>
           <div className={style.circle2}>
             {partners.map((partner) => (
               <div key={partner.id} className={style.partner}>

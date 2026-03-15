@@ -1,11 +1,23 @@
 import style from "./aboutus.module.scss";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
+import { useLayoutEffect, useRef } from "react";
+import { itemsDownUP, rightToLeft } from "../../helpers";
+import { gsap } from "gsap/gsap-core";
 
 const AboutUs = () => {
-	return (
+  const contentRef = useRef(null);
+
+  useLayoutEffect(() => {
+    itemsDownUP(contentRef.current);
+    return () => {
+      gsap.killTweensOf(contentRef.current);
+    };
+  }, []);
+
+  return (
     <section className={style.aboutus}>
       <div className={style.items}>
-        <div className={style.content}>
+        <div className={style.content} ref={contentRef}>
           <h3 className={style.subtitle}>ABOUT US</h3>
           <h2 className={style.title}>
             Bringing Your Vision to Life: Learn About VRNas
@@ -40,10 +52,11 @@ const AboutUs = () => {
           videoalt="girl in VR glasses"
           light="./images/about/hero-light.png"
           bg="./images/home/about-main-bg.png"
+          gsapfunction={rightToLeft}
         />
       </div>
     </section>
   );
-}
+};
 
 export default AboutUs;

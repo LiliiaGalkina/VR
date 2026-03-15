@@ -2,8 +2,21 @@ import style from "./homeabout.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
 import { Link } from "react-router-dom";
+import {useLayoutEffect, useRef } from "react";
+import { itemsDownUP } from "../../helpers";
+import { leftToRight } from "../../helpers";
+import { gsap } from "gsap/gsap-core";
 
 const HomeAbout = () => {
+  const contentRef = useRef(null);
+
+  useLayoutEffect(() => {
+	  itemsDownUP(contentRef.current);
+	    return () => {
+        gsap.killTweensOf(contentRef.current);
+      };
+  }, []);
+
   return (
     <section className={style.about}>
       <div className={style.items}>
@@ -13,9 +26,10 @@ const HomeAbout = () => {
           video="./images/home/about-video.png"
           videoalt="virtual reality glasses"
           light="./images/home/about-main-light.png"
-          bg="./images/home/about-main-bg.png"
+				  bg="./images/home/about-main-bg.png"
+				  gsapfunction={leftToRight}
         />
-        <div className={style.content}>
+        <div className={style.content} ref={contentRef}>
           <h3 className={style.subtitle}>ABOUT US</h3>
           <h2 className={style.title}>
             Bring your events to life like never before with our VR services.
