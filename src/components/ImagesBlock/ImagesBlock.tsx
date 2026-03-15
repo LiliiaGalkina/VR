@@ -2,7 +2,7 @@ import style from "./imagesblock.module.scss";
 import type { PropsImagesBlock } from "../../types";
 import type React from "react";
 import { useEffect, useRef } from "react";
-import { leftToRight } from "../../helpers";
+
 
 const ImagesBlock: React.FC<PropsImagesBlock> = ({
   mainimage,
