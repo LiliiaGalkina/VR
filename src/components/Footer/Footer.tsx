@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import style from "./footer.module.scss";
 import Logo from "../Logo/Logo";
 import Social from "../Social/Social";
