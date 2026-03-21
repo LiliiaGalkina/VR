@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+@media (max-width: 630px) {
+  .contacts {
+    width: 100%;
+  }
+}

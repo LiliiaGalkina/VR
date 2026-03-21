@@ -541,3 +541,79 @@ export const contacts = [
     text: "+123 456 7890",
   },
 ];
+
+export const socialItems = [
+  {
+    id: 1,
+    image: "./images/home/footer-twitter.svg",
+    alt: "twitter icon",
+  },
+  {
+    id: 2,
+    image: "./images/home/footer-fb.svg",
+    alt: "fb icon",
+  },
+  {
+    id: 3,
+    image: "./images/home/footer-instagram.svg",
+    alt: "instagram icon",
+  },
+  {
+    id: 4,
+    image: "./images/home/footer-github.svg",
+    alt: "github icon",
+  },
+];
+
+export const footerMenuItems = [
+  {
+    id: 1,
+    name: "Home",
+    path: "/",
+  },
+  {
+    id: 2,
+    name: "Pricing Plan",
+    path: "/pricing",
+  },
+  {
+    id: 3,
+    name: "Service",
+    path: "/service",
+  },
+  {
+    id: 4,
+    name: "Blog",
+    path: "/blog",
+  },
+  {
+    id: 5,
+    name: "Our Team",
+    path: "/team",
+  },
+  {
+    id: 6,
+    name: "About us",
+    path: "/about",
+  },
+  {
+    id: 7,
+    name: "Contact us",
+    path: "/contacts",
+  },
+  {
+    id: 8,
+    name: "FAQ",
+    path: "/faq",
+  },
+  {
+    id: 9,
+    name: "Tems & Conditions",
+    path: "/terms",
+  },
+  {
+    id: 10,
+    name: " Privacy Policy",
+    path: "/policy",
+  },
+];

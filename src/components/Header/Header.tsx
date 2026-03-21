@@ -2,6 +2,7 @@ import style from "./header.module.scss";
 import ButtonBorder from "../ButtonBorder/ButtonBorder";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../Logo/Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,9 +16,7 @@ const Header = () => {
       />
       <div className="container">
         <div className={style.items}>
-          <Link to={"/"} className={style.logo}>
-            <img src="./images/logo.png" alt="logo" />
-          </Link>
+          <Logo/>
           <nav className={style.menu}>
             <div
               className={isMenuOpen ? style.burgeractive : style.burger}

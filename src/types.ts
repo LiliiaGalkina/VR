@@ -62,3 +62,14 @@ export type PropsContactsItems = {
   title: string;
   text: string;
 }
+
+export type PropsSocialItems = {
+	id: number;
+	image: string;
+	alt: string;
+}
+
+export type PropsFooterMenuItemsCount = {
+	min: number;
+	max: number;
+}
