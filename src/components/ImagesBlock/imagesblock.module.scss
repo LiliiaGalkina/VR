@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 .images {
-  @include imagWhithBgLight(0, -2.36rem, 9.43rem);
+  @include imagWhithBgLight(0, -10rem, 6.43rem);
   position: relative;
 }
 

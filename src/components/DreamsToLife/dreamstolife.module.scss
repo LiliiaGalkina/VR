@@ -70,10 +70,9 @@
 
 .videolight {
   position: absolute;
-  top: -12.7rem;
+  top: 0;
   left: -9.7rem;
-  width: 45.4rem;
-  height: 29.9rem;
+  transform: translateY(-50%);
   filter: blur(3rem);
 }
 
