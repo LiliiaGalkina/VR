@@ -1,15 +1,19 @@
 import style from "./whychoosecontentblock.module.scss";
 import WhyChooseContentItem from "./WhyChooseContentItem";
 import { whyChooseItems } from "../../data";
-import { useEffect, useRef } from "react";
+import {useLayoutEffect, useRef } from "react";
 import { downToUp } from "../../helpers";
+import { gsap } from "gsap/gsap-core";
 
 const WhyChooseContentBlock = () => {
 	const contentRef = useRef(null);
 
-	useEffect(() => {
-		downToUp(contentRef.current)
-	}, [])
+	  useLayoutEffect(() => {
+     downToUp(contentRef.current);
+      return () => {
+        gsap.killTweensOf(contentRef.current);
+      };
+    }, []);
 
 	return (
     <div className={style.content} ref={contentRef}>

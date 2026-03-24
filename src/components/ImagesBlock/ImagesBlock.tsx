@@ -1,8 +1,8 @@
 import style from "./imagesblock.module.scss";
 import type { PropsImagesBlock } from "../../types";
 import type React from "react";
-import { useEffect, useRef } from "react";
-
+import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap/gsap-core";
 
 const ImagesBlock: React.FC<PropsImagesBlock> = ({
   mainimage,
@@ -15,10 +15,13 @@ const ImagesBlock: React.FC<PropsImagesBlock> = ({
 }) => {
   const imagesRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (gsapfunction) {
       gsapfunction(imagesRef.current);
     }
+    return () => {
+      gsap.killTweensOf(imagesRef.current);
+    };
   }, []);
 
   return (

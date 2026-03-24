@@ -1,15 +1,20 @@
 import style from "./testimonial.module.scss";
 import { disappearAndResize, downToUp } from "../../helpers";
 import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap/gsap-core";
 
 const Testimonial = () => {
-	const titleRef = useRef(null);
-	const blockRef = useRef(null);
+  const titleRef = useRef(null);
+  const blockRef = useRef(null);
 
-	useLayoutEffect(() => {
-		disappearAndResize(blockRef.current);
-		downToUp(titleRef.current);
-	}, [])
+  useLayoutEffect(() => {
+    disappearAndResize(blockRef.current);
+    downToUp(titleRef.current);
+    return () => {
+      gsap.killTweensOf(blockRef.current);
+      gsap.killTweensOf(titleRef.current);
+    };
+  }, []);
 
   return (
     <section className={style.testimonial}>
