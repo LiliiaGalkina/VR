@@ -9,21 +9,12 @@ const DreamsToLife = () => {
 	const videoRef = useRef<HTMLVideoElement>(null);
 	const contentRef = useRef(null);
 
-<<<<<<< HEAD
-	  useLayoutEffect(() => {
-      itemsDownUP(contentRef.current);
-      return () => {
-        gsap.killTweensOf(contentRef.current);
-      };
-    }, []);
-=======
   useLayoutEffect(() => {
     itemsDownUP(contentRef.current);
     return () => {
       gsap.killTweensOf(contentRef.current);
     };
   }, []);
->>>>>>> 78640a1c969b1af5872ef3908876e9706ddbdc28
 
   const handleVideoPlay = () => {
     if (videoRef.current) {
