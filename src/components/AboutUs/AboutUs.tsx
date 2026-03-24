@@ -1,6 +1,6 @@
 import style from "./aboutus.module.scss";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { itemsDownUP, rightToLeft } from "../../helpers";
 import { gsap } from "gsap/gsap-core";
 import useResponsiveEvent from "../../useResponsiveEvent";
@@ -8,18 +8,13 @@ import useResponsiveEvent from "../../useResponsiveEvent";
 const AboutUs = () => {
   const contentRef = useRef(null);
 
-   const isDesktop = useResponsiveEvent(1024);
+useLayoutEffect(() => {
+    itemsDownUP(contentRef.current);
+    return () => {
+      gsap.killTweensOf(contentRef.current);
+    };
+  }, []);
 
-   const manageAnimations = (shouldAnimate: boolean) => {
-     gsap.killTweensOf([contentRef.current]);
-     if (shouldAnimate) {
-      itemsDownUP(contentRef.current);
-     }
-   };
-
-   useEffect(() => {
-     manageAnimations(isDesktop);
-   }, [isDesktop]);
 
 
   return (
