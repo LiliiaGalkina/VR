@@ -8,6 +8,8 @@ import { leftToRight } from "../../helpers";
 import { gsap } from "gsap/gsap-core";
 
 const HomeAbout = () => {
+  const contentRef = useRef(null);
+
   useLayoutEffect(() => {
     itemsDownUP(contentRef.current);
     return () => {
