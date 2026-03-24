@@ -14,8 +14,6 @@ useLayoutEffect(() => {
     };
   }, []);
 
-
-
   return (
     <section className={style.aboutus}>
       <div className={style.items}>
