@@ -3,7 +3,6 @@ import ImagesBlock from "../ImagesBlock/ImagesBlock";
 import { useLayoutEffect, useRef } from "react";
 import { itemsDownUP, rightToLeft } from "../../helpers";
 import { gsap } from "gsap/gsap-core";
-import useResponsiveEvent from "../../useResponsiveEvent";
 
 const AboutUs = () => {
   const contentRef = useRef(null);
