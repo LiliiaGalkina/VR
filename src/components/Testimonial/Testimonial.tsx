@@ -1,27 +1,20 @@
 import style from "./testimonial.module.scss";
 import { disappearAndResize, downToUp } from "../../helpers";
-import { useEffect, useRef } from "react";
-import useResponsiveEvent from "../../useResponsiveEvent";
+import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap/gsap-core";
 
 const Testimonial = () => {
 	const titleRef = useRef(null);
 	const blockRef = useRef(null);
 
-   const isDesktop = useResponsiveEvent(1024);
-
-   const manageAnimations = (shouldAnimate: boolean) => {
-     gsap.killTweensOf([titleRef.current, blockRef.current]);
-     if (shouldAnimate) {
-     	disappearAndResize(blockRef.current);
-      downToUp(titleRef.current);
-     }
-   };
-
-   useEffect(() => {
-     manageAnimations(isDesktop);
-   }, [isDesktop]);
-
+ useLayoutEffect(() => {
+    disappearAndResize(blockRef.current);
+    downToUp(titleRef.current);
+    return () => {
+      gsap.killTweensOf(blockRef.current);
+      gsap.killTweensOf(titleRef.current);
+    };
+  }, []);
 
   return (
     <section className={style.testimonial}>
