@@ -29,6 +29,7 @@
 }
 
 .card {
+  position: relative;
   padding: 3.5rem;
   border-radius: 0.6rem;
   background-color: $blackLightColor;
@@ -38,6 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
   &:hover {
     border: 0.1rem solid $linearGradientBlueColor;
     border-image: $linearGradientMain;

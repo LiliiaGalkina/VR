@@ -1,7 +1,7 @@
 import style from "./imagesblock.module.scss";
 import type { PropsImagesBlock } from "../../types";
 import type React from "react";
-import { useLayoutEffect, useRef } from "react";
+import {useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap/gsap-core";
 
 const ImagesBlock: React.FC<PropsImagesBlock> = ({

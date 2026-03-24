@@ -7,7 +7,7 @@ const Testimonial = () => {
   const titleRef = useRef(null);
   const blockRef = useRef(null);
 
-  useLayoutEffect(() => {
+ useLayoutEffect(() => {
     disappearAndResize(blockRef.current);
     downToUp(titleRef.current);
     return () => {

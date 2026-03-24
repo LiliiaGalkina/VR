@@ -7,7 +7,7 @@ import { gsap } from "gsap/gsap-core";
 const AboutUs = () => {
   const contentRef = useRef(null);
 
-  useLayoutEffect(() => {
+useLayoutEffect(() => {
     itemsDownUP(contentRef.current);
     return () => {
       gsap.killTweensOf(contentRef.current);

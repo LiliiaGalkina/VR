@@ -13,7 +13,7 @@ const HomeHeroCards = () => {
         gsap.killTweensOf(blockRef.current);
       };
 	}, [])
-
+     
     return (
         <div className={style.cards} ref={blockRef}>
             {heroItems.map((heroItem) => (

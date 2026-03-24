@@ -8,12 +8,9 @@ import { gsap } from "gsap/gsap-core";
 const WhyChooseContentBlock = () => {
 	const contentRef = useRef(null);
 
-	  useLayoutEffect(() => {
-     downToUp(contentRef.current);
-      return () => {
-        gsap.killTweensOf(contentRef.current);
-      };
-    }, []);
+	useEffect(() => {
+		downToUp(contentRef.current)
+	}, [])
 
 	return (
     <div className={style.content} ref={contentRef}>

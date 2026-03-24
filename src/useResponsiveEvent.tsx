@@ -1,26 +1,21 @@
 import { useState, useEffect } from 'react';
 
 const useResponsiveEvent = (breakpoint: number) => {
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobileScreen(window.innerWidth < breakpoint);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
     };
 
-    // Run on initial render
-    checkScreenSize();
+    window.addEventListener("resize", handleResize);
 
-    // Listen for window resize events
-    window.addEventListener('resize', checkScreenSize);
-
-    // Cleanup event listener on unmount
     return () => {
-      window.removeEventListener('resize', checkScreenSize);
+      window.removeEventListener("resize", handleResize);
     };
-  }, [breakpoint]);
+  }, []); 
 
-  return isMobileScreen;
+  return windowWidth > breakpoint;
 };
 
 export default useResponsiveEvent;
