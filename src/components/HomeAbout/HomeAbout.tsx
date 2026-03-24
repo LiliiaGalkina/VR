@@ -2,7 +2,7 @@ import style from "./homeabout.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
 import { Link } from "react-router-dom";
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { itemsDownUP } from "../../helpers";
 import { leftToRight } from "../../helpers";
 import { gsap } from "gsap/gsap-core";
