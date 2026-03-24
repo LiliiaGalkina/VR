@@ -1,7 +1,8 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import style from "./getintouchform.module.scss";
 import { itemsDownUP } from "../../../helpers";
 import { gsap } from "gsap/gsap-core";
+import useResponsiveEvent from "../../../useResponsiveEvent";
 
 const GetInTouchForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -11,12 +12,18 @@ const GetInTouchForm = () => {
   const [message, setMessage] = useState("");
   const contentRef = useRef(null);
 
-  useLayoutEffect(() => {
-    itemsDownUP(contentRef.current);
-    return () => {
-      gsap.killTweensOf(contentRef.current);
-    };
-  }, []);
+   const isDesktop = useResponsiveEvent(1024);
+
+   const manageAnimations = (shouldAnimate: boolean) => {
+     gsap.killTweensOf([contentRef.current]);
+     if (shouldAnimate) {
+        itemsDownUP(contentRef.current);
+     }
+   };
+
+   useEffect(() => {
+     manageAnimations(isDesktop);
+   }, [isDesktop]);
 
   return (
     <div className={style.getintouchform} ref={contentRef}>

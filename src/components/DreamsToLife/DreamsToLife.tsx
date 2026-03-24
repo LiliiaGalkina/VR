@@ -1,16 +1,28 @@
 import style from "./dreamstolife.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { itemsDownUP } from "../../helpers";
+import useResponsiveEvent from "../../useResponsiveEvent";
+import { gsap } from "gsap/gsap-core";
 
 const DreamsToLife = () => {
   const [showButton, setShowButton] = useState(true);
 	const videoRef = useRef<HTMLVideoElement>(null);
 	const contentRef = useRef(null);
 
-	useLayoutEffect(() => {
-		itemsDownUP(contentRef.current);
-	}, [])
+   const isDesktop = useResponsiveEvent(1024);
+
+   const manageAnimations = (shouldAnimate: boolean) => {
+     gsap.killTweensOf([contentRef.current]);
+     if (shouldAnimate) {
+    	itemsDownUP(contentRef.current);
+     }
+   };
+
+   useEffect(() => {
+     manageAnimations(isDesktop);
+   }, [isDesktop]);
+
 
   const handleVideoPlay = () => {
     if (videoRef.current) {

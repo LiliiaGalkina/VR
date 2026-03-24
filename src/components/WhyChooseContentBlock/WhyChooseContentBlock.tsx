@@ -3,13 +3,24 @@ import WhyChooseContentItem from "./WhyChooseContentItem";
 import { whyChooseItems } from "../../data";
 import { useEffect, useRef } from "react";
 import { downToUp } from "../../helpers";
+import useResponsiveEvent from "../../useResponsiveEvent";
+import { gsap } from "gsap/gsap-core";
 
 const WhyChooseContentBlock = () => {
 	const contentRef = useRef(null);
 
-	useEffect(() => {
-		downToUp(contentRef.current)
-	}, [])
+   const isDesktop = useResponsiveEvent(1024);
+
+   const manageAnimations = (shouldAnimate: boolean) => {
+     gsap.killTweensOf([contentRef.current]);
+     if (shouldAnimate) {
+    downToUp(contentRef.current);
+     }
+   };
+
+   useEffect(() => {
+     manageAnimations(isDesktop);
+   }, [isDesktop]);
 
 	return (
     <div className={style.content} ref={contentRef}>

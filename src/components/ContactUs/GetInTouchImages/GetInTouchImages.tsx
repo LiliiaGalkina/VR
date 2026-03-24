@@ -1,17 +1,24 @@
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import style from "./getintouchimages.module.scss";
 import { disappearAndResize } from "../../../helpers";
 import { gsap } from "gsap/gsap-core";
+import useResponsiveEvent from "../../../useResponsiveEvent";
 
 const GetInTouchImages = () => {
   const imagesRef = useRef(null);
 
-  useLayoutEffect(() => {
-    disappearAndResize(imagesRef.current);
-    return () => {
-      gsap.killTweensOf(imagesRef.current);
-    };
-  }, []);
+     const isDesktop = useResponsiveEvent(1024);
+
+     const manageAnimations = (shouldAnimate: boolean) => {
+       gsap.killTweensOf([imagesRef.current]);
+       if (shouldAnimate) {
+           disappearAndResize(imagesRef.current);
+       }
+     };
+
+     useEffect(() => {
+       manageAnimations(isDesktop);
+     }, [isDesktop]);
 
   return (
     <div className={style.circle1} ref={imagesRef}>

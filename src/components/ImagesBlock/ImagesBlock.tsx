@@ -2,7 +2,8 @@ import style from "./imagesblock.module.scss";
 import type { PropsImagesBlock } from "../../types";
 import type React from "react";
 import { useEffect, useRef } from "react";
-
+import useResponsiveEvent from "../../useResponsiveEvent";
+import { gsap } from "gsap/gsap-core";
 
 const ImagesBlock: React.FC<PropsImagesBlock> = ({
   mainimage,
@@ -15,11 +16,20 @@ const ImagesBlock: React.FC<PropsImagesBlock> = ({
 }) => {
   const imagesRef = useRef(null);
 
-  useEffect(() => {
-    if (gsapfunction) {
-      gsapfunction(imagesRef.current);
+  const isDesktop = useResponsiveEvent(1024);
+
+  const manageAnimations = (shouldAnimate: boolean) => {
+    gsap.killTweensOf([imagesRef.current]);
+    if (shouldAnimate) {
+      if (gsapfunction) {
+        gsapfunction(imagesRef.current);
+      }
     }
-  }, []);
+  };
+
+  useEffect(() => {
+    manageAnimations(isDesktop);
+  }, [isDesktop]);
 
   return (
     <div className={style.images} ref={imagesRef}>

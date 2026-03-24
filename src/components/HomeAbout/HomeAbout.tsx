@@ -2,20 +2,28 @@ import style from "./homeabout.module.scss";
 import ButtonColor from "../ButtonColor/ButtonColor";
 import ImagesBlock from "../ImagesBlock/ImagesBlock";
 import { Link } from "react-router-dom";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { itemsDownUP } from "../../helpers";
 import { leftToRight } from "../../helpers";
 import { gsap } from "gsap/gsap-core";
+import useResponsiveEvent from "../../useResponsiveEvent";
 
 const HomeAbout = () => {
   const contentRef = useRef(null);
 
-  useLayoutEffect(() => {
-    itemsDownUP(contentRef.current);
-    return () => {
-      gsap.killTweensOf(contentRef.current);
+    const isDesktop = useResponsiveEvent(1024);
+
+    const manageAnimations = (shouldAnimate: boolean) => {
+      gsap.killTweensOf([contentRef.current]);
+      if (shouldAnimate) {
+        itemsDownUP(contentRef.current);
+      }
     };
-  }, []);
+
+    useEffect(() => {
+      manageAnimations(isDesktop);
+    }, [isDesktop]);
+
 
   return (
     <section className={style.about}>

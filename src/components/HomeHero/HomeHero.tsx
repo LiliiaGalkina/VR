@@ -3,21 +3,29 @@ import ButtonColor from "../ButtonColor/ButtonColor";
 import HomeHeroCards from "../HomeHeroCards/HomeHeroCards";
 import { Link } from "react-router-dom";
 import { itemsDownUPNoTrigger, rightToLeftNoTrigger } from "../../helpers";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap/gsap-core";
+import useResponsiveEvent from "../../useResponsiveEvent";
+
 
 const HomeHero = () => {
 	const contentRef = useRef<HTMLDivElement>(null);
 	const imagesRef = useRef(null);
 
-	useLayoutEffect(() => {
-		itemsDownUPNoTrigger(contentRef.current);
-		rightToLeftNoTrigger(imagesRef.current);
-		 return () => {
-       gsap.killTweensOf(contentRef.current);
-       gsap.killTweensOf(imagesRef.current);
-     };
-	}, []);
+   const isDesktop = useResponsiveEvent(1024);
+
+   const manageAnimations = (shouldAnimate: boolean) => {
+     gsap.killTweensOf([contentRef.current, imagesRef.current]);
+     if (shouldAnimate) {
+       itemsDownUPNoTrigger(contentRef.current);
+       rightToLeftNoTrigger(imagesRef.current);
+     }
+   };
+
+   useEffect(() => {
+     manageAnimations(isDesktop);
+   }, [isDesktop]);
+
 
   return (
     <section className={style.hero}>
