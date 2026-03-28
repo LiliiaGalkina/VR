@@ -1,8 +1,14 @@
 @use "../../variables" as *;
 
 .images {
-  @include imagWhithBgLight(0, -10rem, 6.43rem);
+  @include imagWhithBgLight(95%, -10rem, 6.43rem);
   position: relative;
+}
+
+@media (max-width: 1024px) {
+	.images {
+		 @include imagWhithBgLight(90%, -10rem, 6.43rem);
+	}
 }
 
 @media (max-width: 900px) {
@@ -27,9 +33,9 @@
 }
 
 @media (max-width: 375px) {
-.images {
-	  @include imagWhithBgLight(0, -2.36rem, 0);
-}
+  .images {
+    @include imagWhithBgLight(0, -2.36rem, 0);
+  }
   .bg {
     width: 22rem;
   }

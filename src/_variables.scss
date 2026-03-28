@@ -50,13 +50,13 @@ $linearGradientBorderCircleFoto: linear-gradient(
   line-height: 121%;
   font-weight: 600;
 
- @media (max-width: 1100px) {
-	font-size: 3.6rem;
- }
+  @media (max-width: 1100px) {
+    font-size: 3.6rem;
+  }
 
- @media (max-width: 480px) {
-	font-size: 3rem;
- }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+  }
 }
 
 @mixin titleHeader {
@@ -81,18 +81,19 @@ $linearGradientBorderCircleFoto: linear-gradient(
   color: $whiteColor;
 }
 
-@mixin imagWhithBgLight($bgPosVal, $lightPosX, $lightPosY) {
+@mixin imagWhithBgLight($bgWidth, $lightPosX, $lightPosY) {
   .image {
     img {
       width: 100%;
     }
   }
   .bg {
-    max-width: 39.89rem;
+    width: $bgWidth;
     position: absolute;
     bottom: 0;
     z-index: -1;
-    left: $bgPosVal;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .light {
     position: absolute;
