@@ -9,6 +9,7 @@
   max-width: 45%;
 }
 .imagesitem {
+  position: relative;
   max-width: 55%;
 }
 
@@ -29,22 +30,22 @@
 }
 
 @media (max-width: 768px) {
-    .getintouch {
-        padding: 3rem 0 7.5rem;
-    }
+  .getintouch {
+    padding: 3rem 0 7.5rem;
+  }
 }
 
 @media (max-width: 600px) {
-    .getintouch {
-        gap: 7rem;
-    }
+  .getintouch {
+    gap: 7rem;
+  }
 }
 
 @media (max-width: 480px) {
-	.title {
-		@include title(3rem);
-	}
-	.imagesitem {
-		min-height: 45rem;
-	}
+  .title {
+    @include title(3rem);
+  }
+  .imagesitem {
+    min-height: 45rem;
+  }
 }
