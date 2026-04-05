@@ -11,8 +11,8 @@ const BlogPageItems = () => {
   const [filterData, setFilterData] = useState<IBlogItems[]>([]);
 
   const isLaptop = useResponsiveEvent(1119);
-  let count = isLaptop ? 10 : 9;
-
+	let count = isLaptop ? 10 : 9;
+	
   useEffect(() => {
     return setFilterData(
       blogItems.filter((_, index) => {
