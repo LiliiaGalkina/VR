@@ -9,14 +9,14 @@ export const itemsDownUPNoTrigger = (target: HTMLDivElement | null) => {
     gsap.fromTo(
       children,
       {
-        y: 200,
+        y: 100,
         opacity: 0,
       },
       {
-        duration: 4,
+        duration: 3,
         y: 0,
         opacity: 1,
-        stagger: 0.5,
+        stagger: 0.3,
         ease: "power3.out",
       },
     );
